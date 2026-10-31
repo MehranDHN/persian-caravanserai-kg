@@ -4,7 +4,7 @@
 
 This project builds a FAIR/LOUD Linked Open Data graph of Persian caravanserais (کاروانسراهای ایرانی). It integrates Wikidata, UNESCO World Heritage List **1668**, and unstructured scholarly reports (MIFAO 81 and 82) into one model that **extends BOT** and overlays CIDOC CRM / CRMba exactly as specified in persarch.
 
-**Status:** harvest and alignment layer in place. Unstructured MIFAO records require human review before they become Wikidata candidates.
+**Status:** harvest and alignment layer in place. MIFAO 81/82 names are extracted as an editor-controlled candidate list (`data/mifao-review-queue.csv`) with source and page/plate evidence. They require human review before they become Wikidata candidates or RDF.
 
 ## Vision
 
@@ -38,8 +38,8 @@ See `ontology/persarch-caravanserai-extension.ttl`.
 | --- | --- | --- | --- |
 | **Wikidata** | SPARQL | Instances of [Q186347](https://www.wikidata.org/wiki/Q186347) in Iran (P17 = Q794), plus parts of [Q66030932](https://www.wikidata.org/wiki/Q66030932). **466 items** in the current harvest; most are **not** UNESCO components. | Automatable. `scripts/harvest_wikidata.py` |
 | **UNESCO WHC 1668** | Semi-structured | The **54** inscribed Persian Caravanserais ([whc.unesco.org/en/list/1668](https://whc.unesco.org/en/list/1668/)): official names, coordinates, property/buffer areas. | Automatable from the maps table. `scripts/harvest_unesco.py` |
-| **MIFAO 81** | Unstructured | Maxime Siroux, *Caravansérails d'Iran et petites constructions routières* (IFAO, 1949). [Internet Archive](https://archive.org/details/MIFAO81). | OCR + **human-in-the-loop**. |
-| **MIFAO 82** | Unstructured | Maxime Siroux, *Anciennes voies et monuments routiers de la région d'Ispahân* (IFAO, 1971). [Internet Archive](https://archive.org/details/MIFAO82). ~60 caravanserais around Isfahan. | OCR + **human-in-the-loop**. |
+| **MIFAO 81** | Unstructured | Maxime Siroux, *Caravansérails d'Iran et petites constructions routières* (IFAO, 1949). [Internet Archive](https://archive.org/details/MIFAO81). | TOC / index / plate list → `data/mifao-review-queue.csv` + **human-in-the-loop**. |
+| **MIFAO 82** | Unstructured | Maxime Siroux, *Anciennes voies et monuments routiers de la région d'Ispahân* (IFAO, 1971). [Internet Archive](https://archive.org/details/MIFAO82). ~60 caravanserais around Isfahan; 98 plans, 170 photographs. | Same queue; evidence rows keep volume + page/figure/plate. |
 
 Human review is a first-class requirement for MIFAO. Automated extraction produces *candidates*; only accepted rows are ingested or proposed to Wikidata.
 
@@ -181,7 +181,7 @@ The living list is [`docs/wikidata-candidates.md`](docs/wikidata-candidates.md).
 
 **C. New candidates from unstructured sources (editor-controlled)**
 
-Placeholder rows live in `docs/wikidata-candidates.md` §C and `data/mifao-review-queue.csv`. After MIFAO 81/82 review, each accepted building that is absent from Wikidata becomes a **new-item** candidate modelled on Q42627405; each building that already has an item becomes an **enrich** candidate modelled on Q5905596.
+The living MIFAO list is [`data/mifao-review-queue.csv`](data/mifao-review-queue.csv) (buildings) plus [`data/mifao-evidence.csv`](data/mifao-evidence.csv) (source name + page/figure/plate). Narrative copy: [`docs/mifao-name-list.md`](docs/mifao-name-list.md). After review, each accepted building that is absent from Wikidata becomes a **new-item** candidate modelled on Q42627405; each building that already has an item becomes an **enrich** candidate modelled on Q5905596.
 
 ## IIIF enrichment
 
@@ -218,7 +218,7 @@ See `case-studies/`.
 persian-caravanserai-kg/
 ├── README.md
 ├── ontology/          # BOT + CRM extension (persarch namespace)
-├── data/              # UNESCO 1668, Wikidata harvest, links, MIFAO queue
+├── data/              # UNESCO 1668, Wikidata harvest, links, MIFAO queue + evidence
 ├── queries/           # Harvest, gap detection, competency questions
 ├── docs/              # Blueprint, UNESCO↔Wikidata join, candidates, MIFAO notes
 ├── iiif/              # IIIF Manifests
@@ -233,6 +233,7 @@ pip install -r scripts/requirements.txt
 python scripts/harvest_unesco.py
 python scripts/harvest_wikidata.py
 python scripts/compare_unesco_wikidata.py
+python scripts/seed_mifao_review_queue.py   # once; do not re-run after editorial CSV edits
 ```
 
 Load `ontology/persarch-caravanserai-extension.ttl`, `data/unesco-1668.ttl`, `data/unesco-wikidata-links.ttl`, `data/wikidata-iran-caravanserais.ttl`, and `case-studies/*.ttl` into a triple store that supports BOT transitive `containsZone` and CRM.

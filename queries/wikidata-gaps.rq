@@ -1,0 +1,31 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+# Gap detection against the Q42627405 / Q5905596 minimum bar.
+
+SELECT ?item ?itemLabel ?missing WHERE {
+  ?item wdt:P31/wdt:P279* wd:Q186347 ;
+        wdt:P17 wd:Q794 .
+  OPTIONAL { ?item wdt:P31 wd:Q186347 . BIND(true AS ?hasP31Caravanserai) }
+  OPTIONAL { ?item wdt:P625 ?coord . }
+  OPTIONAL { ?item wdt:P131 ?admin . }
+  OPTIONAL { ?item wdt:P1435 ?heritage . }
+  OPTIONAL { ?item wdt:P1369 ?reg . }
+  OPTIONAL { ?item wdt:P18 ?image . }
+  OPTIONAL { ?item wdt:P361 wd:Q66030932 . BIND(true AS ?unesco) }
+  BIND(
+    CONCAT(
+      IF(BOUND(?hasP31Caravanserai), "", "P31-Q186347 "),
+      IF(BOUND(?coord), "", "P625 "),
+      IF(BOUND(?admin), "", "P131 "),
+      IF(BOUND(?heritage), "", "P1435 "),
+      IF(BOUND(?reg), "", "P1369 "),
+      IF(BOUND(?image), "", "P18 ")
+    ) AS ?missing
+  )
+  FILTER(STRLEN(?missing) > 0)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,fa". }
+}
+ORDER BY ?itemLabel

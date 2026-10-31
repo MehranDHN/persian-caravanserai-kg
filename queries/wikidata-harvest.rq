@@ -1,0 +1,43 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Harvest Iranian caravanserais:
+#   (a) instances (or subclasses) of Q186347 located in Iran
+#   (b) components of UNESCO serial property Q66030932 / WHC 1668
+# Some UNESCO components are not yet typed as Q186347; both branches are required.
+
+SELECT DISTINCT ?item ?itemLabel ?itemLabelFa ?itemDescription
+       ?coord ?heritage ?heritageLabel ?admin ?adminLabel
+       ?inception ?opening ?image ?unescoPart ?whsId ?natReg
+       ?material ?materialLabel ?style ?styleLabel ?commons
+       ?instance ?instanceLabel
+WHERE {
+  {
+    ?item wdt:P31/wdt:P279* wd:Q186347 ;
+          wdt:P17 wd:Q794 .
+  } UNION {
+    ?item wdt:P361 wd:Q66030932 .
+  } UNION {
+    ?item wdt:P757 ?whsIdFilter .
+    FILTER(STRSTARTS(?whsIdFilter, "1668-"))
+  }
+  OPTIONAL { ?item wdt:P31 ?instance . }
+  OPTIONAL { ?item wdt:P625 ?coord . }
+  OPTIONAL { ?item wdt:P1435 ?heritage . }
+  OPTIONAL { ?item wdt:P131 ?admin . }
+  OPTIONAL { ?item wdt:P571 ?inception . }
+  OPTIONAL { ?item wdt:P1619 ?opening . }
+  OPTIONAL { ?item wdt:P18 ?image . }
+  OPTIONAL { ?item wdt:P361 wd:Q66030932 . BIND(true AS ?unescoPart) }
+  OPTIONAL { ?item wdt:P757 ?whsId . }
+  OPTIONAL { ?item wdt:P1369 ?natReg . }
+  OPTIONAL { ?item wdt:P186 ?material . }
+  OPTIONAL { ?item wdt:P149 ?style . }
+  OPTIONAL { ?item wdt:P373 ?commons . }
+  OPTIONAL { ?item rdfs:label ?itemLabelFa FILTER(LANG(?itemLabelFa) = "fa") }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,fa". }
+}
+ORDER BY ?itemLabel

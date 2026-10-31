@@ -1,0 +1,67 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://w3id.org/persian-caravanserai-kg/iiif/example/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Example Caravanserai"
+    ],
+    "fa": []
+  },
+  "summary": {
+    "en": [
+      "Placeholder. UNESCO 1668-xxx. Canvases will be filled with MIFAO plates, Wikimedia photographs, and survey drawings. Linked from the RDF graph via persarch:hasIiifManifest."
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "UNESCO component"
+        ]
+      },
+      "value": {
+        "en": [
+          "1668-xxx"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Model"
+        ]
+      },
+      "value": {
+        "en": [
+          "persarch:hasPresentation / persarch:PlanImage / persarch:Photograph"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Rights"
+        ]
+      },
+      "value": {
+        "en": [
+          "Replace with the licence of each canvas"
+        ]
+      }
+    }
+  ],
+  "items": [],
+  "seeAlso": [
+    {
+      "id": "https://w3id.org/persian-caravanserai-kg#example",
+      "type": "Dataset",
+      "format": "text/turtle",
+      "label": {
+        "en": [
+          "RDF record in persian-caravanserai-kg"
+        ]
+      }
+    }
+  ]
+}

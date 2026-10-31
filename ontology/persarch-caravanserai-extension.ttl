@@ -1,0 +1,382 @@
+@prefix persarch: <https://w3id.org/persian-architecture#> .
+@prefix pckg:     <https://w3id.org/persian-caravanserai-kg#> .
+@prefix bot:      <https://w3id.org/bot#> .
+@prefix crm:      <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmba:    <http://www.cidoc-crm.org/extensions/crmba/> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix geo:      <http://www.opengis.net/ont/geosparql#> .
+@prefix wd:       <http://www.wikidata.org/entity/> .
+@prefix aat:      <http://vocab.getty.edu/aat/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+
+#################################################################
+# Persian Caravanserai ontology module
+# Extends BOT (required) and aligns CIDOC CRM / CRMba following
+# https://github.com/MehranDHN/persarch
+#
+# BOT answers "what sits next to what".
+# CIDOC CRM answers "who made it, when, of what, in which style".
+# The two layers share individuals; they do not share properties.
+#################################################################
+
+pckg: a owl:Ontology ;
+    rdfs:label "Persian Caravanserai Knowledge Graph ontology"@en ;
+    dcterms:title "Persian Caravanserai — BOT extension and CRM overlay"@en ;
+    dcterms:creator "MehranDHN" ;
+    dcterms:license <https://www.gnu.org/licenses/gpl-3.0> ;
+    owl:versionInfo "0.2.0" ;
+    dcterms:source <https://github.com/MehranDHN/persarch> ;
+    rdfs:seeAlso <https://w3c-lbd-cg.github.io/bot/> ,
+                 <https://cidoc-crm.org/> ,
+                 <https://whc.unesco.org/en/list/1668/> ;
+    owl:imports <https://w3id.org/bot#> ;
+    rdfs:comment "Caravanserai-specific extension of the persarch BOT + CIDOC CRM / CRMba model. Classes already declared in persarch are restated here so this repository loads independently; they remain in the persarch namespace so case studies import without remapping."@en .
+
+#################################################################
+# Building types — subclass bot:Building AND crmba:B1_Built_Work
+#################################################################
+
+persarch:Caravanserai a owl:Class ;
+    rdfs:label "Caravanserai"@en , "کاروانسرا"@fa ;
+    rdfs:subClassOf bot:Building , crmba:B1_Built_Work ;
+    skos:exactMatch aat:300007148 , wd:Q186347 ;
+    rdfs:comment "Roadside inn providing lodging for caravans, pilgrims and travellers. Present-day topology is modelled with BOT; historical layers with CIDOC CRM events."@en .
+
+persarch:FourIwanCaravanserai a owl:Class ;
+    rdfs:label "Four-iwan caravanserai"@en ;
+    rdfs:subClassOf persarch:Caravanserai ;
+    rdfs:comment "Courtyard caravanserai organised on the classic four-iwan plan."@en .
+
+persarch:DualCourtCaravanserai a owl:Class ;
+    rdfs:label "Dual-court caravanserai"@en ;
+    rdfs:subClassOf persarch:Caravanserai ;
+    rdfs:comment "Ribat or caravanserai with two successive courtyards, typically a public/stabling court and a royal or inner court (e.g. Ribat-i Sharaf, Miandasht)."@en .
+
+persarch:CircularCaravanserai a owl:Class ;
+    rdfs:label "Circular caravanserai"@en ;
+    rdfs:subClassOf persarch:Caravanserai ;
+    rdfs:comment "Centralised circular or near-circular plan (e.g. Zein-o-din)."@en .
+
+persarch:OctagonalCaravanserai a owl:Class ;
+    rdfs:label "Octagonal caravanserai"@en ;
+    rdfs:subClassOf persarch:Caravanserai .
+
+persarch:MountainCaravanserai a owl:Class ;
+    rdfs:label "Mountain caravanserai"@en ;
+    rdfs:subClassOf persarch:Caravanserai ;
+    rdfs:comment "Compact plan adapted to mountain passes; often documented by Siroux (MIFAO 81)."@en .
+
+persarch:UrbanCaravanserai a owl:Class ;
+    rdfs:label "Urban caravanserai"@en ;
+    rdfs:subClassOf persarch:Caravanserai ;
+    rdfs:comment "Caravanserai integrated into a city bazaar or institutional complex (e.g. Ganjali Khan, Saadossaltaneh)."@en .
+
+persarch:PavilionCaravanserai a owl:Class ;
+    rdfs:label "Pavilion caravanserai"@en ;
+    rdfs:subClassOf persarch:Caravanserai .
+
+#################################################################
+# Spaces — subclass bot:Space (itself a bot:Zone)
+#################################################################
+
+persarch:Sahn a owl:Class ;
+    rdfs:label "Sahn (courtyard)"@en , "صحن"@fa ;
+    rdfs:subClassOf bot:Space ;
+    skos:exactMatch aat:300004095 .
+
+persarch:Iwan a owl:Class ;
+    rdfs:label "Iwan"@en , "ایوان"@fa ;
+    rdfs:subClassOf bot:Space ;
+    skos:exactMatch aat:300002882 .
+
+persarch:DomeChamber a owl:Class ;
+    rdfs:label "Dome chamber"@en ;
+    rdfs:subClassOf bot:Space .
+
+persarch:Stable a owl:Class ;
+    rdfs:label "Stable"@en , "اصطبل"@fa ;
+    rdfs:subClassOf bot:Space .
+
+persarch:Hashti a owl:Class ;
+    rdfs:label "Hashti (vestibule)"@en , "هشتی"@fa ;
+    rdfs:subClassOf bot:Space .
+
+persarch:Hujra a owl:Class ;
+    rdfs:label "Hujra (lodging cell)"@en , "حجره"@fa ;
+    rdfs:subClassOf bot:Space .
+
+persarch:PishtaqSpace a owl:Class ;
+    rdfs:label "Pishtaq space"@en ;
+    rdfs:subClassOf bot:Space .
+
+persarch:MosqueSpace a owl:Class ;
+    rdfs:label "Mosque space within a caravanserai"@en ;
+    rdfs:subClassOf persarch:DomeChamber .
+
+persarch:BathSpace a owl:Class ;
+    rdfs:label "Bath / hammam space"@en ;
+    rdfs:subClassOf bot:Space .
+
+persarch:KitchenSpace a owl:Class ;
+    rdfs:label "Kitchen"@en ;
+    rdfs:subClassOf bot:Space .
+
+persarch:AbAnbarSpace a owl:Class ;
+    rdfs:label "Ab anbar (cistern) space"@en , "آب‌انبار"@fa ;
+    rdfs:subClassOf bot:Space .
+
+#################################################################
+# Bare zones — functional / axial extents that are not rooms
+#################################################################
+
+persarch:PublicServiceZone a owl:Class ;
+    rdfs:label "Public-service zone"@en ;
+    rdfs:subClassOf bot:Zone ;
+    rdfs:comment "Bare bot:Zone grouping stables, travellers' rooms and the outer court. Not itself a Space."@en .
+
+persarch:RoyalSuiteZone a owl:Class ;
+    rdfs:label "Royal-suite zone"@en ;
+    rdfs:subClassOf bot:Zone .
+
+persarch:ProcessionalAxis a owl:Class ;
+    rdfs:label "Processional axis"@en ;
+    rdfs:subClassOf bot:Zone ;
+    rdfs:comment "Circulation extent that bot:intersectsZone successive spaces from pishtaq to inner hall."@en .
+
+#################################################################
+# Elements — subclass bot:Element
+#################################################################
+
+persarch:Mihrab a owl:Class ;
+    rdfs:label "Mihrab"@en ;
+    rdfs:subClassOf bot:Element ;
+    skos:exactMatch aat:300002746 .
+
+persarch:Minaret a owl:Class ;
+    rdfs:label "Minaret"@en ;
+    rdfs:subClassOf bot:Element .
+
+persarch:Dome a owl:Class ;
+    rdfs:label "Dome"@en ;
+    rdfs:subClassOf bot:Element .
+
+persarch:Pishtaq a owl:Class ;
+    rdfs:label "Pishtaq"@en ;
+    rdfs:subClassOf bot:Element .
+
+persarch:Inscription a owl:Class ;
+    rdfs:label "Inscription"@en ;
+    rdfs:subClassOf bot:Element , crm:E34_Inscription .
+
+persarch:Howz a owl:Class ;
+    rdfs:label "Howz (courtyard pool)"@en ;
+    rdfs:subClassOf bot:Element .
+
+persarch:Well a owl:Class ;
+    rdfs:label "Well"@en ;
+    rdfs:subClassOf bot:Element .
+
+persarch:CornerTower a owl:Class ;
+    rdfs:label "Corner tower"@en ;
+    rdfs:subClassOf bot:Element .
+
+#################################################################
+# Media / IIIF presentation layer (persarch)
+#################################################################
+
+persarch:PresentationResource a owl:Class ;
+    rdfs:label "Presentation resource"@en ;
+    rdfs:subClassOf crm:E73_Information_Object ;
+    rdfs:comment "Plan, photograph, slide or other document presented via IIIF or a media URI."@en .
+
+persarch:Photograph a owl:Class ;
+    rdfs:label "Photograph"@en ;
+    rdfs:subClassOf persarch:PresentationResource .
+
+persarch:PlanImage a owl:Class ;
+    rdfs:label "Plan image"@en ;
+    rdfs:subClassOf persarch:PresentationResource .
+
+persarch:IiifManifest a owl:Class ;
+    rdfs:label "IIIF Presentation API 3 Manifest"@en ;
+    rdfs:subClassOf persarch:PresentationResource ;
+    rdfs:comment "A IIIF Manifest that packages plans, photographs and historical documents for a caravanserai."@en .
+
+persarch:hasPresentation a owl:ObjectProperty ;
+    rdfs:label "has presentation"@en ;
+    rdfs:domain bot:Zone ;
+    rdfs:range persarch:PresentationResource .
+
+persarch:hasPlanPresentation a owl:ObjectProperty ;
+    rdfs:label "has plan presentation"@en ;
+    rdfs:subPropertyOf persarch:hasPresentation ;
+    rdfs:range persarch:PlanImage .
+
+persarch:hasIiifManifest a owl:ObjectProperty ;
+    rdfs:label "has IIIF Manifest"@en ;
+    rdfs:subPropertyOf persarch:hasPresentation ;
+    rdfs:range persarch:IiifManifest .
+
+#################################################################
+# CRM role shortcuts (sub-properties of P14) — from persarch
+#################################################################
+
+persarch:commissionedBy a owl:ObjectProperty ;
+    rdfs:label "commissioned by"@en ;
+    rdfs:subPropertyOf crm:P14_carried_out_by ;
+    rdfs:range crm:E39_Actor .
+
+persarch:designedBy a owl:ObjectProperty ;
+    rdfs:label "designed by"@en ;
+    rdfs:subPropertyOf crm:P14_carried_out_by ;
+    rdfs:range crm:E39_Actor .
+
+persarch:executedBy a owl:ObjectProperty ;
+    rdfs:label "executed by"@en ;
+    rdfs:subPropertyOf crm:P14_carried_out_by ;
+    rdfs:range crm:E39_Actor .
+
+persarch:calligraphedBy a owl:ObjectProperty ;
+    rdfs:label "calligraphed by"@en ;
+    rdfs:subPropertyOf crm:P14_carried_out_by ;
+    rdfs:range crm:E39_Actor .
+
+persarch:hasScriptStyle a owl:ObjectProperty ;
+    rdfs:label "has script style"@en ;
+    rdfs:subPropertyOf crm:P2_has_type ;
+    rdfs:range crm:E55_Type .
+
+persarch:hasMotifType a owl:ObjectProperty ;
+    rdfs:label "has motif type"@en ;
+    rdfs:subPropertyOf crm:P2_has_type .
+
+#################################################################
+# Caravanserai KG data properties (this repository)
+#################################################################
+
+persarch:unescoListId a owl:DatatypeProperty ;
+    rdfs:label "UNESCO list identifier"@en ;
+    rdfs:range xsd:string .
+
+persarch:unescoComponentId a owl:DatatypeProperty ;
+    rdfs:label "UNESCO component identifier"@en ;
+    rdfs:comment "WHC component id of the form 1668-001."@en ;
+    rdfs:range xsd:string .
+
+persarch:isUnescoComponent a owl:DatatypeProperty ;
+    rdfs:label "is UNESCO component"@en ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "True when the building is one of the 54 inscribed components of WHC 1668. Many Wikidata caravanserais in Iran are not."@en .
+
+persarch:nationalHeritageNumber a owl:DatatypeProperty ;
+    rdfs:label "Iranian National Heritage registration number"@en ;
+    rdfs:range xsd:string .
+
+persarch:province a owl:DatatypeProperty ;
+    rdfs:label "province"@en ;
+    rdfs:range rdf:langString .
+
+persarch:propertyAreaHectare a owl:DatatypeProperty ;
+    rdfs:label "property area in hectares"@en ;
+    rdfs:range xsd:decimal .
+
+persarch:bufferAreaHectare a owl:DatatypeProperty ;
+    rdfs:label "buffer zone area in hectares"@en ;
+    rdfs:range xsd:decimal .
+
+persarch:mifaoReference a owl:DatatypeProperty ;
+    rdfs:label "MIFAO page or plate reference"@en ;
+    rdfs:range xsd:string .
+
+persarch:reviewStatus a owl:DatatypeProperty ;
+    rdfs:label "human review status"@en ;
+    rdfs:comment "candidate | in-review | accepted | rejected. Required for unstructured-source records (MIFAO 81/82)."@en ;
+    rdfs:range xsd:string .
+
+#################################################################
+# Shared vocabulary individuals (E55 / E57) — skos:exactMatch only
+#################################################################
+
+persarch:type_caravanserai a crm:E55_Type ;
+    rdfs:label "caravanserai"@en ;
+    skos:exactMatch aat:300007148 , wd:Q186347 .
+
+persarch:type_four_iwan_plan a crm:E55_Type ;
+    rdfs:label "four-iwan plan"@en ;
+    skos:exactMatch aat:300000882 .
+
+persarch:type_ribat a crm:E55_Type ;
+    rdfs:label "ribat"@en ;
+    skos:exactMatch wd:Q1972493 .
+
+persarch:style_sasanian a crm:E55_Type ;
+    rdfs:label "Sasanian"@en ;
+    skos:exactMatch wd:Q83958 .
+
+persarch:style_seljuk a crm:E55_Type ;
+    rdfs:label "Seljuk"@en ;
+    skos:exactMatch wd:Q7448523 , aat:300106807 .
+
+persarch:style_great_seljuk a crm:E55_Type ;
+    rdfs:label "Great Seljuk"@en .
+
+persarch:style_ilkhanid a crm:E55_Type ;
+    rdfs:label "Ilkhanid"@en ;
+    skos:exactMatch wd:Q178150 .
+
+persarch:style_timurid a crm:E55_Type ;
+    rdfs:label "Timurid"@en ;
+    skos:exactMatch aat:300021800 .
+
+persarch:style_safavid a crm:E55_Type ;
+    rdfs:label "Safavid"@en ;
+    skos:exactMatch wd:Q5957125 , aat:300021818 .
+
+persarch:style_qajar a crm:E55_Type ;
+    rdfs:label "Qajar"@en ;
+    skos:exactMatch wd:Q5718239 .
+
+persarch:mat_brick a crm:E57_Material ;
+    rdfs:label "brick"@en ;
+    skos:exactMatch aat:300010463 , wd:Q40089 .
+
+persarch:mat_stone a crm:E57_Material ;
+    rdfs:label "stone"@en ;
+    skos:exactMatch wd:Q22731 .
+
+persarch:mat_adobe a crm:E57_Material ;
+    rdfs:label "adobe"@en ;
+    skos:exactMatch wd:Q183496 .
+
+persarch:mat_stucco a crm:E57_Material ;
+    rdfs:label "stucco"@en ;
+    skos:exactMatch aat:300014932 .
+
+persarch:mat_tile a crm:E57_Material ;
+    rdfs:label "tile"@en ;
+    skos:exactMatch wd:Q468402 .
+
+persarch:script_kufic a crm:E55_Type ;
+    rdfs:label "Kufic"@en ;
+    skos:exactMatch aat:300021734 , wd:Q26529 .
+
+persarch:script_thuluth a crm:E55_Type ;
+    rdfs:label "Thuluth"@en ;
+    skos:exactMatch wd:Q3513382 .
+
+persarch:role_patron a crm:E55_Type ;
+    rdfs:label "patron"@en .
+
+persarch:role_architect a crm:E55_Type ;
+    rdfs:label "architect"@en .
+
+persarch:role_workshop a crm:E55_Type ;
+    rdfs:label "workshop"@en .
+
+persarch:role_calligrapher a crm:E55_Type ;
+    rdfs:label "calligrapher"@en .

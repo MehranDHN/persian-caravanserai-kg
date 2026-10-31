@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix :     <https://w3id.org/persian-caravanserai-kg#> .
+
+# Compatibility stub. Detailed individuals live in:
+#   data/unesco-1668.ttl
+#   data/unesco-wikidata-links.ttl
+#   data/wikidata-iran-caravanserais.ttl
+#   case-studies/persarch-import.ttl
+#
+# owl:imports those graphs conceptually; load them together in the triple store.
+
+<> rdfs:comment "See case-studies/persarch-import.ttl for the ten persarch proof-of-concept records."@en .

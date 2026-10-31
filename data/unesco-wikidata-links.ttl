@@ -1,0 +1,168 @@
+@prefix : <https://w3id.org/persian-caravanserai-kg#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# One-to-one UNESCO 1668 local IRIs → Wikidata items.
+
+:deyr_e_gachin skos:exactMatch wd:Q6394061 ;
+    rdfs:comment "UNESCO 1668-001 matched by P757"@en .
+
+:noushirvan skos:exactMatch wd:Q5873186 ;
+    rdfs:comment "UNESCO 1668-002 matched by P757"@en .
+
+:ahovan skos:exactMatch wd:Q5891443 ;
+    rdfs:comment "UNESCO 1668-003 matched by P757"@en .
+
+:parand skos:exactMatch wd:Q42575545 ;
+    rdfs:comment "UNESCO 1668-004 matched by P757"@en .
+
+:robat_e_sharaf skos:exactMatch wd:Q2577338 ;
+    rdfs:comment "UNESCO 1668-005 matched by P757"@en .
+
+:anjireh_ajori skos:exactMatch wd:Q122706913 ;
+    rdfs:comment "UNESCO 1668-006 matched by P757"@en .
+
+:anjireh_sangi skos:exactMatch wd:Q5911963 ;
+    rdfs:comment "UNESCO 1668-007 matched by P757"@en .
+
+:abbas_abad_taybad skos:exactMatch wd:Q109340152 ;
+    rdfs:comment "UNESCO 1668-008 matched by P757"@en .
+
+:jamal_abad skos:exactMatch wd:Q5907713 ;
+    rdfs:comment "UNESCO 1668-009 matched by P757"@en .
+
+:qelli skos:exactMatch wd:Q6537569 ;
+    rdfs:comment "UNESCO 1668-010 matched by P757"@en .
+
+:fakhr_e_davud skos:exactMatch wd:Q5813213 ;
+    rdfs:comment "UNESCO 1668-011 matched by P757"@en .
+
+:sheikhali_khan skos:exactMatch wd:Q5905596 ;
+    rdfs:comment "UNESCO 1668-012 matched by P757"@en .
+
+:maranjab skos:exactMatch wd:Q5730585 ;
+    rdfs:comment "UNESCO 1668-013 matched by P757"@en .
+
+:amin_abad skos:exactMatch wd:Q5907540 ;
+    rdfs:comment "UNESCO 1668-014 matched by P757"@en .
+
+:gabr_abad skos:exactMatch wd:Q5873197 ;
+    rdfs:comment "UNESCO 1668-015 matched by P757"@en .
+
+:mahyar skos:exactMatch wd:Q5904114 ;
+    rdfs:comment "UNESCO 1668-016 matched by P757"@en .
+
+:gaz skos:exactMatch wd:Q5871566 ;
+    rdfs:comment "UNESCO 1668-017 matched by P757"@en .
+
+:kuhpayeh skos:exactMatch wd:Q5906011 ;
+    rdfs:comment "UNESCO 1668-018 matched by P757"@en .
+
+:mazinan skos:exactMatch wd:Q5904562 ;
+    rdfs:comment "UNESCO 1668-019 matched by P757"@en .
+
+:mehr skos:exactMatch wd:Q5900091 ;
+    rdfs:comment "UNESCO 1668-020 matched by P757"@en .
+
+:zaferaniyeh skos:exactMatch wd:Q5923727 ;
+    rdfs:comment "UNESCO 1668-021 matched by P757"@en .
+
+:fakhr_abad skos:exactMatch wd:Q5913234 ;
+    rdfs:comment "UNESCO 1668-022 matched by P757"@en .
+
+:sarayan skos:exactMatch wd:Q5893109 ;
+    rdfs:comment "UNESCO 1668-023 matched by P757"@en .
+
+:qasr_e_bahram skos:exactMatch wd:Q5867812 ;
+    rdfs:comment "UNESCO 1668-024 matched by P757"@en .
+
+:mayamey skos:exactMatch wd:Q5892124 ;
+    rdfs:comment "UNESCO 1668-025 matched by P757"@en .
+
+:abbas_abad skos:exactMatch wd:Q5915113 ;
+    rdfs:comment "UNESCO 1668-026 matched by P757"@en .
+
+:miandasht skos:exactMatch wd:Q5705395 ;
+    rdfs:comment "UNESCO 1668-027 matched by P757"@en .
+
+:zeynoddin skos:exactMatch wd:Q15068974 ;
+    rdfs:comment "UNESCO 1668-028 matched by P757"@en .
+
+:meybod skos:exactMatch wd:Q5887312 ;
+    rdfs:comment "UNESCO 1668-029 matched by P757"@en .
+
+:farasfaj skos:exactMatch wd:Q5907778 ;
+    rdfs:comment "UNESCO 1668-030 matched by P757"@en .
+
+:izadkhast skos:exactMatch wd:Q5873579 ;
+    rdfs:comment "UNESCO 1668-031 matched by geo+name"@en .
+
+:bisotun skos:exactMatch wd:Q5908224 ;
+    rdfs:comment "UNESCO 1668-032 matched by geo+name"@en .
+
+:ganjali_khan skos:exactMatch wd:Q5905314 ;
+    rdfs:comment "UNESCO 1668-033 matched by geo+name"@en .
+
+:yengeh_emam skos:exactMatch wd:Q5902267 ;
+    rdfs:comment "UNESCO 1668-034 matched by geo+name"@en .
+
+:khajeh_nazar skos:exactMatch wd:Q6558875 ;
+    rdfs:comment "UNESCO 1668-035 matched by P757"@en .
+
+:goujebel skos:exactMatch wd:Q5907181 ;
+    rdfs:comment "UNESCO 1668-036 matched by geo"@en .
+
+:saeen skos:exactMatch wd:Q5928207 ;
+    rdfs:comment "UNESCO 1668-037 matched by P757"@en .
+
+:titi skos:exactMatch wd:Q5888547 ;
+    rdfs:comment "UNESCO 1668-038 matched by geo+name"@en .
+
+:dehdasht skos:exactMatch wd:Q5899756 ;
+    rdfs:comment "UNESCO 1668-039 matched by geo+name"@en .
+
+:khoy skos:exactMatch wd:Q42708726 ;
+    rdfs:comment "UNESCO 1668-040 matched by geo+name"@en .
+
+:bagh_e_sheikh skos:exactMatch wd:Q5917647 ;
+    rdfs:comment "UNESCO 1668-041 matched by P757"@en .
+
+:neyestanak skos:exactMatch wd:Q5904265 ;
+    rdfs:comment "UNESCO 1668-042 matched by P757"@en .
+
+:chehel_payeh skos:exactMatch wd:Q5945649 ;
+    rdfs:comment "UNESCO 1668-043 matched by P757"@en .
+
+:khan skos:exactMatch wd:Q138647472 ;
+    rdfs:comment "UNESCO 1668-044 matched by geo"@en .
+
+:deh_mohammad skos:exactMatch wd:Q5868984 ;
+    rdfs:comment "UNESCO 1668-045 matched by P757"@en .
+
+:taj_abad skos:exactMatch wd:Q5904949 ;
+    rdfs:comment "UNESCO 1668-046 matched by geo"@en .
+
+:chah_kuran skos:exactMatch wd:Q5910864 ;
+    rdfs:comment "UNESCO 1668-047 matched by P757"@en .
+
+:kharanaq skos:exactMatch wd:Q5887896 ;
+    rdfs:comment "UNESCO 1668-048 matched by geo+name"@en .
+
+:rashti skos:exactMatch wd:Q5905602 ;
+    rdfs:comment "UNESCO 1668-049 matched by geo+name"@en .
+
+:borazjan skos:exactMatch wd:Q5894632 ;
+    rdfs:comment "UNESCO 1668-050 matched by geo"@en .
+
+:chameshk skos:exactMatch wd:Q5677204 ;
+    rdfs:comment "UNESCO 1668-051 matched by geo+name"@en .
+
+:afzal skos:exactMatch wd:Q5895519 ;
+    rdfs:comment "UNESCO 1668-052 matched by geo+name"@en .
+
+:bastak skos:exactMatch wd:Q6394073 ;
+    rdfs:comment "UNESCO 1668-053 matched by P757"@en .
+
+:saadossaltaneh skos:exactMatch wd:Q1484050 ;
+    rdfs:comment "UNESCO 1668-054 matched by geo"@en .

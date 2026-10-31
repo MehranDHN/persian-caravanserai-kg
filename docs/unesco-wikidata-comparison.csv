@@ -1,0 +1,55 @@
+unesco_id,unesco_name,province,lat,lon,property_ha,qid,wd_label,wd_label_fa,match,distance_km,status,gaps,p757,p361,p1435,p1369,p625,p18
+1668-001,Deyr-e Gachin,Qom,35.058353,51.420136,1.9,Q6394061,Dayr-e Gachin Caravanserai,کاروانسرای دیرگچین,P757,0.009,enrich,P361→Q66030932,yes,no,yes,10408,yes,yes
+1668-002,Noushirvan,Semnan,35.770731,53.732372,0.64,Q5873186,Ahvan Stone Caravanserai,کاروانسرای سنگی آهوان,P757,0.010,enrich,P361→Q66030932,yes,no,yes,1727,yes,yes
+1668-003,Ahovan,Semnan,35.770539,53.730144,0.69,Q5891443,Shah Abbasi Caravanserai of Ahvan,کاروانسرای شاهعباسی,P757,0.015,enrich,P361→Q66030932,yes,no,yes,1373,yes,yes
+1668-004,Parand,Tehran,35.458228,50.974597,0.4,Q42575545,Robat Karim Stone Caravanserai,کاروانسرای سنگی رباط کریم,P757,0.008,enrich,P361→Q66030932; P571/P1619,yes,no,yes,10822,yes,yes
+1668-005,Robat-e Sharaf,Razavi Khorasan,36.266569,60.655161,1.12,Q2577338,Sharaf Caravanserai,رباط شرف,P757,0.023,enrich,P361→Q66030932,yes,no,yes,359,yes,yes
+1668-006,Anjireh Ajori,Yazd,32.153244,54.477108,1.76,Q122706913,Anjireh Brick Caravanserai,کاروانسرای آجری انجیره,P757,0.006,enrich,P18; P361→Q66030932; P571/P1619,yes,no,yes,32812,yes,no
+1668-007,Anjireh Sangi,Yazd,32.162211,54.484039,0.09,Q5911963,Anjireh Stone Caravanserai,کاروانسرای سنگی انجیره,P757,0.002,enrich,P18; P361→Q66030932; P571/P1619,yes,no,yes,2449,yes,no
+1668-008,Abbas Abad Taybad,Razavi Khorasan,34.995936,60.718367,0.41,Q109340152,Abbasabad Caravanserai,کاروانسرای عباسآباد تایباد,P757,0.010,enrich,P1369; P361→Q66030932; P571/P1619,yes,no,yes,,yes,yes
+1668-009,Jamal Abad,East Azerbaijan,37.271914,47.843100,0.37,Q5907713,Jamalabad Caravanserai,کاروانسرای جمالآباد,P757,0.005,enrich,P361→Q66030932,yes,no,yes,6152,yes,yes
+1668-010,Qelli,North Khorasan,37.153294,56.920742,0.2,Q6537569,Qelli Caravanserai,رباط قلی,P757,0.010,enrich,P18; P361→Q66030932; P571/P1619,yes,no,yes,1806,yes,no
+1668-011,Fakhr-e Davud,Razavi Khorasan,35.999886,59.313486,0.16,Q5813213,Fakhr-e Davud Caravanserai,کاروانسرای فخر داوود,P757,0.010,enrich,P361→Q66030932,yes,no,yes,2108,yes,yes
+1668-012,Sheikhali Khan,Isfahan,32.868158,51.370403,0.82,Q5905596,Chaleh Siah Caravanserai,کاروانسرای شیخعلیخان,P757,0.008,enrich,P361→Q66030932,yes,no,yes,1716,yes,yes
+1668-013,Maranjab,Isfahan,34.299136,51.812386,0.46,Q5730585,Maranjab Caravanserai,کاروانسرای مرنجاب,P757,0.000,enrich,P361→Q66030932,yes,no,yes,12126,yes,yes
+1668-014,Amin Abad,Isfahan,31.672694,52.068447,0.4,Q5907540,Aminabad Caravanserai,کاروانسرای امینآباد,P757,0.006,enrich,P361→Q66030932,yes,no,yes,884,yes,yes
+1668-015,Gabr Abad,Isfahan,33.768600,51.489525,0.44,Q5873197,Gabrabad Caravanserai,کاروانسرای گبرآباد قمصر,P757,0.013,enrich,P18; P361→Q66030932; P571/P1619,yes,no,yes,1095,yes,no
+1668-016,Mahyar,Isfahan,32.265017,51.809733,0.92,Q5904114,Mahyar Caravanserai,کاروانسرای مهیار,P757,0.011,enrich,P361→Q66030932,yes,no,yes,354,yes,yes
+1668-017,Gaz,Isfahan,32.809358,51.609322,0.9,Q5871566,Gaz Caravanserai,کاروانسرای گز,P757,0.009,enrich,P361→Q66030932; P571/P1619,yes,no,yes,379,yes,yes
+1668-018,Kuhpayeh,Isfahan,32.713431,52.435786,0.61,Q5906011,Kuhpayeh Caravanserai,کاروانسرای کوهپایه,P757,0.008,enrich,P18; P361→Q66030932,yes,no,yes,2698,yes,no
+1668-019,Mazinan,Razavi Khorasan,36.307878,56.806442,0.47,Q5904562,Mazinan Caravanserai,کاروانسرای مزینان,P757,0.004,enrich,P361→Q66030932,yes,no,yes,1664,yes,yes
+1668-020,Mehr,Razavi Khorasan,36.284592,57.143603,0.57,Q5900091,Mehr Caravanserai,رباط مهر,P757,0.008,enrich,P361→Q66030932; P571/P1619,yes,no,yes,1660,yes,yes
+1668-021,Zaferaniyeh,Razavi Khorasan,36.165719,58.086231,0.63,Q5923727,Zafaraniyeh Caravanserai,کاروانسرای زعفرانیه,P757,0.004,enrich,P361→Q66030932; P571/P1619,yes,no,yes,1696,yes,yes
+1668-022,Fakhr Abad,Razavi Khorasan,34.744636,58.055386,0.32,Q5913234,Fakhrabad Caravanserai,کاروانسرای فخرآباد,P757,0.266,enrich,P18; P361→Q66030932; P571/P1619,yes,no,yes,6656,yes,no
+1668-023,Sarayan,South Khorasan,33.855286,58.518017,0.19,Q5893109,Sarayan Caravanserai,کاروانسرای سرایان,P757,0.007,enrich,P361→Q66030932,yes,no,yes,8733,yes,yes
+1668-024,Qasr-e Bahram,Semnan,34.765281,52.177136,0.65,Q5867812,Qasr-e Bahram Caravanserai,کاروانسرای قصر بهرام,P757,0.003,enrich,P361→Q66030932,yes,no,yes,1059,yes,yes
+1668-025,Mayamey,Semnan,36.409186,55.653300,0.53,Q5892124,Meyami Caravanserai,کاروانسرای میامی,P757,0.008,enrich,P361→Q66030932,yes,no,yes,1718,yes,yes
+1668-026,Abbas Abad,Semnan,36.361219,56.387875,0.86,Q5915113,Shah Abbasi Caravanserai of Abbasabad,کاروانسرای شاهعباسی,P757,0.013,enrich,P361→Q66030932; P571/P1619,yes,no,yes,1726,yes,yes
+1668-027,Miandasht,Semnan,36.428131,56.060578,2.44,Q5705395,Miandasht Caravanserai,کاروانسراهای میاندشت,P757,0.074,enrich,P361→Q66030932,yes,no,yes,1439,yes,yes
+1668-028,Zeynoddin,Yazd,31.411858,54.706853,0.41,Q15068974,Zein-o-Din Caravanserai,رباط زین الدین,P757,0.011,enrich,P361→Q66030932,yes,no,yes,926,yes,yes
+1668-029,Meybod,Yazd,32.227925,54.009194,0.67,Q5887312,Meybod Caravanserai,کاروانسرای میبد,P757,0.013,enrich,P361→Q66030932,yes,no,yes,1618,yes,yes
+1668-030,Farasfaj,Hamedan,34.487967,48.282989,0.46,Q5907778,Farasfaj Caravanserai,کاروانسرای فرسفج,P757,0.003,enrich,P361→Q66030932,yes,no,yes,1970,yes,yes
+1668-031,Izadkhast,Fars,31.513364,52.133206,0.49,Q5873579,Izadkhast Caravanserai,کاروانسرای ایزدخواست,geo+name,0.015,enrich,P361→Q66030932; P757 1668-xxx,no,no,yes,1112,yes,yes
+1668-032,Bisotun,Kermanshah,34.384533,47.434933,0.81,Q5908224,Shah Abbasi Caravanserai of Bisotun,کاروانسرای شاهعباسی,geo+name,0.012,enrich,P361→Q66030932; P757 1668-xxx,no,no,yes,974,yes,yes
+1668-033,Ganjali Khan,Kerman,30.290956,57.078936,0.38,Q5905314,Ganjali Khan Caravanserai,مدرسه و کاروانسرای گنجعلیخان,geo+name,0.014,enrich,P361→Q66030932; P757 1668-xxx,no,no,yes,297,yes,yes
+1668-034,Yengeh Emam,Alborz,35.936286,50.719622,0.49,Q5902267,Yengi Emam Caravanserai,کاروانسرای ینگه امام,geo+name,0.001,enrich,P361→Q66030932; P757 1668-xxx,no,no,yes,2175,yes,yes
+1668-035,Khajeh Nazar,East Azerbaijan,38.977444,45.576972,0.23,Q6558875,Khajeh Nazar Caravanserai,کاروانسرای خواجه نظر,P757,0.007,enrich,P361→Q66030932,yes,no,yes,7744,yes,yes
+1668-036,Goujebel,East Azerbaijan,38.343894,46.863350,0.15,Q5907181,Guycheh Bil Caravanserai,کاروانسرای گویچهبیل,geo,0.769,enrich,P361→Q66030932; P757 1668-xxx; P571/P1619; P186; P149,no,no,yes,2920,yes,yes
+1668-037,Saeen,Ardabil,38.001044,47.881586,0.06,Q5928207,Sain Stone Caravanserai,کاروانسرای سنگی صائین,P757,0.004,enrich,P361→Q66030932; P571/P1619,yes,no,yes,1653,yes,yes
+1668-038,Titi,Gilan,37.044775,49.902236,0.11,Q5888547,Titi Caravanserai,تی تی کاروانسرا,geo+name,0.006,enrich,P361→Q66030932; P757 1668-xxx,no,no,yes,1784,yes,yes
+1668-039,Dehdasht,Kohgiluyeh and Boyer-Ahmad,30.788203,50.561525,0.16,Q5899756,Dehdasht Caravanserai,کاروانسرای دهدشت,geo+name,0.132,enrich,P361→Q66030932; P757 1668-xxx; P571/P1619; P186; P149,no,no,yes,3551,yes,yes
+1668-040,Khoy,West Azerbaijan,38.466000,44.623528,0.04,Q42708726,Shah Abbasi Caravanserai of Khoy,بقایای کاروانسرای شاه عباسی,geo+name,1.122,enrich,P131; P18; P361→Q66030932; P757 1668-xxx; P571/P1619; P186; P149,no,no,yes,16391,yes,no
+1668-041,Bagh-e Sheikh,Markazi,34.990831,50.446956,0.53,Q5917647,Bagh-e Sheikh Caravanserai,کاروانسرای باغ شیخ,P757,0.005,enrich,P361→Q66030932,yes,no,yes,1185,yes,yes
+1668-042,Neyestanak,Isfahan,32.971206,52.799364,0.48,Q5904265,Neyestanak Caravanserai,کاروانسرای نیستانک,P757,0.007,enrich,P361→Q66030932; P571/P1619,yes,no,yes,18773,yes,yes
+1668-043,Chehel Payeh,Kerman,31.940011,57.140408,0.33,Q5945649,Chehel Payeh Caravanserai,چهلپایه,P757,0.005,enrich,P18; P361→Q66030932; P571/P1619,yes,no,yes,33158,yes,no
+1668-044,Khan,South Khorasan,33.366381,56.070414,0.34,Q138647472,Q138647472,,geo,0.011,new-item,en label; fa label; P1435; P1369; P18; P361→Q66030932; P757 1668-xxx; P571/P1619; P186; P149,no,no,no,,yes,no
+1668-045,Deh Mohammad,South Khorasan,33.991561,56.979178,0.25,Q5868984,Deh-e Mohammad Caravanserai,رباط ده محمد,P757,0.004,enrich,P361→Q66030932,yes,no,yes,2381,yes,yes
+1668-046,Taj Abad,Hamedan,34.876633,48.220728,0.28,Q5904949,Tajabad Caravanserai,کاروانسرای تاجآباد,geo,0.006,enrich,P361→Q66030932; P757 1668-xxx,no,no,yes,1872,yes,yes
+1668-047,Chah Kuran,Kerman,31.569333,56.850169,0.16,Q5910864,Chah Kuran Caravanserai,کاروانسرای چاه کوران,P757,0.007,enrich,P361→Q66030932,yes,no,yes,2946,yes,yes
+1668-048,Kharanaq,Yazd,32.344947,54.667983,0.28,Q5887896,Kharanaq Caravanserai,کاروانسرای خرانق,geo+name,0.009,enrich,P361→Q66030932; P757 1668-xxx,no,no,yes,2238,yes,yes
+1668-049,Rashti,Yazd,32.440722,53.631053,0.5,Q5905602,Rashti Caravanserai,کاروانسرای رشتی,geo+name,0.006,enrich,P361→Q66030932; P757 1668-xxx,no,no,yes,2298,yes,yes
+1668-050,Borazjan,Bushehr,29.267114,51.208258,0.78,Q5894632,Moshir al-Molk Caravanserai,دژ برازجان,geo,0.024,enrich,P361→Q66030932; P757 1668-xxx,no,no,yes,1638,yes,yes
+1668-051,Chameshk,Lorestan,33.237956,48.211336,0.22,Q5677204,Chameshk Caravanserai,کاروانسرای چمشک,geo+name,0.014,enrich,P18; P361→Q66030932; P757 1668-xxx; P571/P1619; P186; P149,no,no,yes,2119,yes,no
+1668-052,Afzal,Khuzestan,32.043961,48.852128,0.1,Q5895519,Afzal Caravanserai,کاروانسرای افضل,geo+name,0.016,enrich,P361→Q66030932; P757 1668-xxx; P571/P1619; P186; P149,no,no,yes,7940,yes,yes
+1668-053,Bastak,Hormozgan,27.198500,54.375972,0.1,Q6394073,Bastak Caravanserai,کاروانسرای بستک,P757,0.004,enrich,P361→Q66030932,yes,no,yes,2233,yes,yes
+1668-054,Saadossaltaneh,Qazvin,36.269294,50.000708,2.58,Q1484050,Sa'd al-Saltaneh Caravanserai,کاروانسرای سعدالسلطنه,geo,0.047,enrich,P361→Q66030932; P757 1668-xxx,no,no,yes,2089,yes,yes

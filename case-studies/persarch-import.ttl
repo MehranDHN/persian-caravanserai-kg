@@ -1,0 +1,453 @@
+@prefix :         <https://w3id.org/persian-caravanserai-kg#> .
+@prefix persarch: <https://w3id.org/persian-architecture#> .
+@prefix bot:      <https://w3id.org/bot#> .
+@prefix crm:      <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmba:    <http://www.cidoc-crm.org/extensions/crmba/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix geo:      <http://www.opengis.net/ont/geosparql#> .
+@prefix wd:       <http://www.wikidata.org/entity/> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+
+#################################################################
+# Ten persarch-aligned case studies.
+# BOT = present topology. CRM = who / when / of what.
+# Same individuals may appear in data/unesco-1668.ttl; this file adds depth.
+#################################################################
+
+#----- 1. Ribat-e Sharaf (1668-005 / Q2577338) dual-court Seljuk -----
+
+:ribat_sharaf a persarch:DualCourtCaravanserai , persarch:Caravanserai ,
+        bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Ribat-e Sharaf"@en , "رباط شرف"@fa ;
+    skos:exactMatch wd:Q2577338 ;
+    persarch:unescoComponentId "1668-005" ;
+    persarch:isUnescoComponent true ;
+    persarch:nationalHeritageNumber "359" ;
+    crm:P2_has_type persarch:type_caravanserai , persarch:type_four_iwan_plan ,
+        persarch:style_seljuk , persarch:style_great_seljuk ;
+    crm:P45_consists_of persarch:mat_brick ;
+    geo:asWKT "POINT(60.655161 36.266569)"^^geo:wktLiteral ;
+    crm:P53_has_former_or_current_location :place_ribat_sharaf ;
+    bot:hasStorey :ribat_sharaf_ground ;
+    bot:containsZone :ribat_sharaf_public_zone , :ribat_sharaf_royal_zone ,
+        :ribat_sharaf_axis ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/ribat-sharaf/manifest.json> ;
+    dcterms:source <https://www.archnet.org/sites/3873> ;
+    rdfs:seeAlso <https://w3id.org/persian-architecture/data/ribat-sharaf#Ribat_i_Sharaf> .
+
+:place_ribat_sharaf a crm:E53_Place ;
+    rdfs:label "Nishapur–Sarakhs road, Sarakhs County"@en .
+
+:ribat_sharaf_ground a bot:Storey ;
+    rdfs:label "Ground storey – Ribat-e Sharaf"@en ;
+    bot:hasSpace :ribat_sharaf_outer_court , :ribat_sharaf_inner_court ,
+        :ribat_sharaf_corridor , :ribat_sharaf_entrance_iwan ,
+        :ribat_sharaf_stables , :ribat_sharaf_outer_mosque , :ribat_sharaf_inner_mosque .
+
+:ribat_sharaf_public_zone a persarch:PublicServiceZone , bot:Zone ;
+    rdfs:label "Public-service zone"@en ;
+    bot:containsZone :ribat_sharaf_outer_court , :ribat_sharaf_stables ,
+        :ribat_sharaf_entrance_iwan , :ribat_sharaf_outer_mosque .
+
+:ribat_sharaf_royal_zone a persarch:RoyalSuiteZone , bot:Zone ;
+    rdfs:label "Royal-suite zone"@en ;
+    bot:containsZone :ribat_sharaf_inner_court , :ribat_sharaf_inner_mosque .
+
+:ribat_sharaf_outer_court a persarch:Sahn , bot:Space ;
+    rdfs:label "Outer courtyard (public / stabling)"@en ;
+    rdfs:comment "Rectangle ≈ 32.4 × 16.5 m."@en ;
+    bot:adjacentZone :ribat_sharaf_entrance_iwan , :ribat_sharaf_corridor ,
+        :ribat_sharaf_stables , :ribat_sharaf_outer_mosque ;
+    bot:containsElement :ribat_sharaf_outer_well .
+
+:ribat_sharaf_inner_court a persarch:Sahn , bot:Space ;
+    rdfs:label "Inner courtyard (royal)"@en ;
+    rdfs:comment "Square ≈ 31.8 × 31.3 m."@en ;
+    bot:adjacentZone :ribat_sharaf_corridor , :ribat_sharaf_inner_mosque ;
+    bot:containsElement :ribat_sharaf_inner_howz .
+
+:ribat_sharaf_corridor a bot:Space ;
+    rdfs:label "Connecting iwan between the two courts"@en ;
+    bot:adjacentZone :ribat_sharaf_outer_court , :ribat_sharaf_inner_court ;
+    bot:intersectsZone :ribat_sharaf_public_zone , :ribat_sharaf_royal_zone .
+
+:ribat_sharaf_axis a persarch:ProcessionalAxis , bot:Zone ;
+    rdfs:label "Processional axis from pishtaq to inner mosque"@en ;
+    bot:intersectsZone :ribat_sharaf_entrance_iwan , :ribat_sharaf_outer_court ,
+        :ribat_sharaf_corridor , :ribat_sharaf_inner_court , :ribat_sharaf_inner_mosque .
+
+:ribat_sharaf_entrance_iwan a persarch:Iwan , bot:Space ;
+    rdfs:label "South-east entrance iwan"@en ;
+    bot:adjacentZone :ribat_sharaf_outer_court ;
+    bot:adjacentElement :ribat_sharaf_pishtaq .
+
+:ribat_sharaf_stables a persarch:Stable , bot:Space ;
+    rdfs:label "South-west stables"@en ;
+    bot:adjacentZone :ribat_sharaf_outer_court .
+
+:ribat_sharaf_outer_mosque a persarch:MosqueSpace , bot:Space ;
+    rdfs:label "Mosque of the outer court"@en ;
+    bot:adjacentZone :ribat_sharaf_outer_court ;
+    bot:adjacentElement :ribat_sharaf_outer_mihrab .
+
+:ribat_sharaf_inner_mosque a persarch:MosqueSpace , bot:Space ;
+    rdfs:label "Mosque of the inner court"@en ;
+    bot:adjacentZone :ribat_sharaf_inner_court .
+
+:ribat_sharaf_outer_well a persarch:Well , bot:Element ;
+    rdfs:label "Well in the outer courtyard"@en .
+:ribat_sharaf_inner_howz a persarch:Howz , bot:Element ;
+    rdfs:label "Howz in the inner courtyard"@en .
+:ribat_sharaf_pishtaq a persarch:Pishtaq , bot:Element ;
+    rdfs:label "South-east entrance pishtaq"@en ;
+    bot:hasSubElement :ribat_sharaf_pishtaq_inscription .
+:ribat_sharaf_pishtaq_inscription a persarch:Inscription , crm:E34_Inscription , bot:Element ;
+    rdfs:label "Foundation / restoration inscription"@en ;
+    persarch:hasScriptStyle persarch:script_kufic .
+:ribat_sharaf_outer_mihrab a persarch:Mihrab , bot:Element ;
+    rdfs:label "Mihrab of the outer mosque"@en .
+
+:actor_sharaf_al_din a crm:E21_Person ;
+    rdfs:label "Sharaf al-Din Abu Tahir"@en , "شرف‌الدین ابو طاهر"@fa ;
+    crm:P2_has_type persarch:role_patron .
+:actor_katib_ali a crm:E21_Person ;
+    rdfs:label "Katib Ali al-Mansur Asad b. Muhammad al-Sarahsi"@en ;
+    crm:P2_has_type persarch:role_architect .
+:actor_turkan_khatun a crm:E21_Person ;
+    rdfs:label "Turkan Khatun"@en , "ترکان خاتون"@fa ;
+    crm:P2_has_type persarch:role_patron .
+
+:ts_ribat_foundation a crm:E52_Time-Span ;
+    rdfs:label "508 AH / 1114–1115 CE"@en ;
+    crm:P82a_begin_of_the_begin "1114"^^xsd:gYear ;
+    crm:P82b_end_of_the_end "1115"^^xsd:gYear .
+:ts_ribat_restoration a crm:E52_Time-Span ;
+    rdfs:label "549 AH / 1154–1155 CE"@en ;
+    crm:P82a_begin_of_the_begin "1154"^^xsd:gYear ;
+    crm:P82b_end_of_the_end "1155"^^xsd:gYear .
+
+:evt_ribat_foundation a crm:E12_Production ;
+    rdfs:label "Foundation of Ribat-e Sharaf"@en ;
+    crm:P4_has_time-span :ts_ribat_foundation ;
+    persarch:commissionedBy :actor_sharaf_al_din ;
+    persarch:designedBy :actor_katib_ali ;
+    crm:P108_has_produced :ribat_sharaf ;
+    crm:P126_employed persarch:mat_brick .
+
+:evt_ribat_restoration a crm:E11_Modification ;
+    rdfs:label "Restoration after the Ghuzz invasion"@en ;
+    crm:P4_has_time-span :ts_ribat_restoration ;
+    persarch:commissionedBy :actor_turkan_khatun ;
+    crm:P31_has_modified :ribat_sharaf .
+
+#----- 2. Deyr-e Gachin (1668-001 / Q6394061) -----
+
+:deyr_e_gachin a persarch:FourIwanCaravanserai , persarch:Caravanserai ,
+        bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Deyr-e Gachin"@en , "دیر گچین"@fa ;
+    skos:exactMatch wd:Q6394061 ;
+    persarch:unescoComponentId "1668-001" ;
+    persarch:isUnescoComponent true ;
+    persarch:nationalHeritageNumber "10408" ;
+    persarch:province "Qom"@en ;
+    crm:P2_has_type persarch:type_caravanserai , persarch:type_four_iwan_plan ,
+        persarch:style_sasanian , persarch:style_safavid ;
+    crm:P45_consists_of persarch:mat_brick , persarch:mat_stone ;
+    geo:asWKT "POINT(51.420136 35.058353)"^^geo:wktLiteral ;
+    bot:hasStorey :deyr_ground ;
+    bot:containsZone :deyr_sahn ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/deyr-e-gachin/manifest.json> ;
+    dcterms:description "Often called the mother of Persian caravanserais; Sasanian origin with later Islamic rebuilds, mosque and bath."@en .
+
+:deyr_ground a bot:Storey ;
+    bot:hasSpace :deyr_sahn , :deyr_south_iwan , :deyr_mosque , :deyr_bath , :deyr_stables .
+:deyr_sahn a persarch:Sahn , bot:Space ;
+    rdfs:label "Central courtyard"@en ;
+    bot:adjacentZone :deyr_south_iwan , :deyr_mosque , :deyr_stables .
+:deyr_south_iwan a persarch:Iwan , bot:Space ;
+    rdfs:label "South iwan"@en ;
+    bot:adjacentZone :deyr_sahn .
+:deyr_mosque a persarch:MosqueSpace , bot:Space ;
+    rdfs:label "Mosque"@en ;
+    bot:adjacentZone :deyr_sahn .
+:deyr_bath a persarch:BathSpace , bot:Space ;
+    rdfs:label "Bathhouse"@en .
+:deyr_stables a persarch:Stable , bot:Space ;
+    rdfs:label "Stables"@en ;
+    bot:adjacentZone :deyr_sahn .
+
+:evt_deyr_sasanian a crm:E12_Production ;
+    rdfs:label "Sasanian foundation of Deyr-e Gachin"@en ;
+    crm:P108_has_produced :deyr_e_gachin ;
+    crm:P2_has_type persarch:style_sasanian .
+
+#----- 3. Sheikhali Khan / Chaleh Siah (1668-012 / Q5905596) -----
+
+:sheikhali_khan a persarch:FourIwanCaravanserai , persarch:Caravanserai ,
+        bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Sheikhali Khan Caravanserai"@en , "کاروانسرای شیخعلی‌خان"@fa ;
+    skos:altLabel "Chaleh Siah Caravanserai"@en , "کاروانسرای چاله سیاه"@fa ;
+    skos:exactMatch wd:Q5905596 ;
+    persarch:unescoComponentId "1668-012" ;
+    persarch:isUnescoComponent true ;
+    persarch:nationalHeritageNumber "1716" ;
+    persarch:province "Isfahan"@en ;
+    persarch:propertyAreaHectare "0.82"^^xsd:decimal ;
+    crm:P2_has_type persarch:type_caravanserai , persarch:style_safavid ;
+    crm:P45_consists_of persarch:mat_brick , persarch:mat_stone , persarch:mat_adobe ;
+    geo:asWKT "POINT(51.370403 32.868158)"^^geo:wktLiteral ;
+    bot:hasStorey :sheikhali_ground ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/sheikhali-khan/manifest.json> ;
+    dcterms:description "UNESCO 1668-012. Wikidata best-practice item (Q5905596)."@en .
+
+:sheikhali_ground a bot:Storey ;
+    bot:hasSpace :sheikhali_sahn , :sheikhali_iwan_s , :sheikhali_hashti , :sheikhali_stables .
+:sheikhali_sahn a persarch:Sahn , bot:Space ;
+    bot:adjacentZone :sheikhali_iwan_s , :sheikhali_hashti , :sheikhali_stables .
+:sheikhali_iwan_s a persarch:Iwan , bot:Space .
+:sheikhali_hashti a persarch:Hashti , bot:Space .
+:sheikhali_stables a persarch:Stable , bot:Space .
+
+:actor_sheikh_ali_khan a crm:E21_Person ;
+    rdfs:label "Sheikh Ali Khan Zanganeh"@en ;
+    crm:P2_has_type persarch:role_patron .
+
+:evt_sheikhali_safavid a crm:E12_Production ;
+    rdfs:label "Safavid construction of Sheikhali Khan caravanserai"@en ;
+    persarch:commissionedBy :actor_sheikh_ali_khan ;
+    crm:P108_has_produced :sheikhali_khan ;
+    crm:P126_employed persarch:mat_brick .
+
+#----- 4. Maranjab (1668-013 / Q5730585) -----
+
+:maranjab a persarch:FourIwanCaravanserai , persarch:Caravanserai ,
+        bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Maranjab Caravanserai"@en , "کاروانسرای مرنجاب"@fa ;
+    skos:exactMatch wd:Q5730585 ;
+    persarch:unescoComponentId "1668-013" ;
+    persarch:isUnescoComponent true ;
+    persarch:nationalHeritageNumber "12126" ;
+    persarch:province "Isfahan"@en ;
+    crm:P2_has_type persarch:style_safavid , persarch:type_four_iwan_plan ;
+    crm:P45_consists_of persarch:mat_brick ;
+    geo:asWKT "POINT(51.812386 34.299136)"^^geo:wktLiteral ;
+    bot:hasStorey :maranjab_ground ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/maranjab/manifest.json> ;
+    dcterms:description "Safavid desert fortress on the Kashan–Mesr route near the salt lake."@en .
+
+:maranjab_ground a bot:Storey ;
+    bot:hasSpace :maranjab_sahn , :maranjab_iwan_s , :maranjab_iwan_n ,
+        :maranjab_iwan_e , :maranjab_iwan_w , :maranjab_stables .
+:maranjab_sahn a persarch:Sahn , bot:Space ;
+    bot:adjacentZone :maranjab_iwan_s , :maranjab_iwan_n , :maranjab_iwan_e , :maranjab_iwan_w .
+:maranjab_iwan_s a persarch:Iwan , bot:Space .
+:maranjab_iwan_n a persarch:Iwan , bot:Space .
+:maranjab_iwan_e a persarch:Iwan , bot:Space .
+:maranjab_iwan_w a persarch:Iwan , bot:Space .
+:maranjab_stables a persarch:Stable , bot:Space ;
+    bot:adjacentZone :maranjab_sahn .
+:maranjab_tower a persarch:CornerTower , bot:Element ;
+    rdfs:label "Corner watchtower"@en .
+:maranjab bot:adjacentElement :maranjab_tower .
+
+:evt_maranjab_abbas a crm:E12_Production ;
+    rdfs:label "Safavid construction attributed to the Shah Abbas road programme"@en ;
+    crm:P108_has_produced :maranjab ;
+    crm:P2_has_type persarch:style_safavid .
+
+#----- 5. Zein-o-din (1668-028 / Q15068974) circular -----
+
+:zeynoddin a persarch:CircularCaravanserai , persarch:Caravanserai ,
+        bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Zein-o-din Caravanserai"@en , "رباط زین‌الدین"@fa ;
+    skos:exactMatch wd:Q15068974 ;
+    persarch:unescoComponentId "1668-028" ;
+    persarch:isUnescoComponent true ;
+    persarch:nationalHeritageNumber "926" ;
+    persarch:province "Yazd"@en ;
+    crm:P2_has_type persarch:style_safavid ;
+    crm:P45_consists_of persarch:mat_brick ;
+    geo:asWKT "POINT(54.706853 31.411858)"^^geo:wktLiteral ;
+    bot:hasStorey :zein_ground ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/zeynoddin/manifest.json> ;
+    dcterms:description "Rare circular plan on the Yazd–Kerman road; adaptive reuse as a hotel."@en .
+
+:zein_ground a bot:Storey ;
+    bot:hasSpace :zein_sahn , :zein_cells , :zein_stables .
+:zein_sahn a persarch:Sahn , bot:Space ;
+    rdfs:label "Circular courtyard"@en ;
+    bot:adjacentZone :zein_cells , :zein_stables .
+:zein_cells a persarch:Hujra , bot:Space ;
+    rdfs:label "Ring of lodging cells"@en .
+:zein_stables a persarch:Stable , bot:Space .
+
+:evt_zein_safavid a crm:E12_Production ;
+    rdfs:label "Safavid construction of Zein-o-din"@en ;
+    crm:P108_has_produced :zeynoddin .
+
+#----- 6. Ganjali Khan (1668-033 / Q5905314) urban -----
+
+:ganjali_khan a persarch:UrbanCaravanserai , persarch:Caravanserai ,
+        bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Ganjali Khan Caravanserai"@en , "کاروانسرای گنجعلی‌خان"@fa ;
+    skos:exactMatch wd:Q5905314 ;
+    persarch:unescoComponentId "1668-033" ;
+    persarch:isUnescoComponent true ;
+    persarch:nationalHeritageNumber "297" ;
+    persarch:province "Kerman"@en ;
+    crm:P2_has_type persarch:style_safavid ;
+    crm:P45_consists_of persarch:mat_brick , persarch:mat_tile ;
+    geo:asWKT "POINT(57.078936 30.290956)"^^geo:wktLiteral ;
+    bot:hasStorey :ganjali_ground ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/ganjali-khan/manifest.json> .
+
+:ganjali_site a bot:Site ;
+    rdfs:label "Ganjali Khan complex, Kerman"@en ;
+    bot:hasBuilding :ganjali_khan .
+
+:ganjali_ground a bot:Storey ;
+    bot:hasSpace :ganjali_sahn , :ganjali_hashti , :ganjali_cells .
+:ganjali_sahn a persarch:Sahn , bot:Space ;
+    bot:adjacentZone :ganjali_hashti , :ganjali_cells .
+:ganjali_hashti a persarch:Hashti , bot:Space .
+:ganjali_cells a persarch:Hujra , bot:Space .
+
+:actor_ganjali_khan a crm:E21_Person ;
+    rdfs:label "Ganj Ali Khan"@en ;
+    crm:P2_has_type persarch:role_patron .
+:evt_ganjali a crm:E12_Production ;
+    rdfs:label "Safavid construction of the Ganjali Khan caravanserai"@en ;
+    persarch:commissionedBy :actor_ganjali_khan ;
+    crm:P108_has_produced :ganjali_khan .
+
+#----- 7. Izadkhast (1668-031 / Q5873579) -----
+
+:izadkhast a persarch:FourIwanCaravanserai , persarch:Caravanserai ,
+        bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Izadkhast Caravanserai"@en , "کاروانسرای ایزدخواست"@fa ;
+    skos:exactMatch wd:Q5873579 ;
+    persarch:unescoComponentId "1668-031" ;
+    persarch:isUnescoComponent true ;
+    persarch:nationalHeritageNumber "1112" ;
+    persarch:province "Fars"@en ;
+    crm:P2_has_type persarch:style_safavid ;
+    crm:P45_consists_of persarch:mat_brick , persarch:mat_stone ;
+    geo:asWKT "POINT(52.133206 31.513364)"^^geo:wktLiteral ;
+    bot:hasStorey :izad_ground ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/izadkhast/manifest.json> ;
+    dcterms:description "Safavid caravanserai on a plateau overlooking a canyon; UNESCO hero image."@en .
+
+:izad_ground a bot:Storey ;
+    bot:hasSpace :izad_sahn , :izad_iwan , :izad_stables .
+:izad_sahn a persarch:Sahn , bot:Space ;
+    bot:adjacentZone :izad_iwan , :izad_stables .
+:izad_iwan a persarch:Iwan , bot:Space .
+:izad_stables a persarch:Stable , bot:Space .
+
+:evt_izad_safavid a crm:E12_Production ;
+    crm:P108_has_produced :izadkhast ;
+    crm:P2_has_type persarch:style_safavid .
+
+#----- 8. Parand / Robat Karim stone (1668-004 / Q42575545) -----
+
+:parand a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Parand Caravanserai"@en , "کاروانسرای سنگی رباط کریم"@fa ;
+    skos:altLabel "Robat Karim Stone Caravanserai"@en ;
+    skos:exactMatch wd:Q42575545 ;
+    persarch:unescoComponentId "1668-004" ;
+    persarch:isUnescoComponent true ;
+    persarch:nationalHeritageNumber "10822" ;
+    persarch:province "Tehran"@en ;
+    crm:P2_has_type persarch:type_ribat ;
+    crm:P45_consists_of persarch:mat_stone ;
+    geo:asWKT "POINT(50.974597 35.458228)"^^geo:wktLiteral ;
+    bot:hasStorey :parand_ground ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/parand/manifest.json> .
+
+:parand_ground a bot:Storey ;
+    bot:hasSpace :parand_sahn , :parand_stables .
+:parand_sahn a persarch:Sahn , bot:Space ;
+    bot:adjacentZone :parand_stables .
+:parand_stables a persarch:Stable , bot:Space .
+
+#----- 9. Qasr-e Bahram (1668-024 / Q5867812) -----
+
+:qasr_e_bahram a persarch:FourIwanCaravanserai , persarch:Caravanserai ,
+        bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Qasr-e Bahram"@en , "کاروانسرای قصر بهرام"@fa ;
+    skos:exactMatch wd:Q5867812 ;
+    persarch:unescoComponentId "1668-024" ;
+    persarch:isUnescoComponent true ;
+    persarch:nationalHeritageNumber "1059" ;
+    persarch:province "Semnan"@en ;
+    persarch:bufferAreaHectare "769.49"^^xsd:decimal ;
+    crm:P2_has_type persarch:style_safavid ;
+    crm:P45_consists_of persarch:mat_stone ;
+    geo:asWKT "POINT(52.177136 34.765281)"^^geo:wktLiteral ;
+    bot:hasStorey :qasr_ground ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/qasr-e-bahram/manifest.json> ;
+    dcterms:description "Well-preserved stone Safavid caravanserai in the Kavir; large UNESCO buffer."@en .
+
+:qasr_ground a bot:Storey ;
+    bot:hasSpace :qasr_sahn , :qasr_iwan_s , :qasr_cells , :qasr_stables .
+:qasr_sahn a persarch:Sahn , bot:Space ;
+    bot:adjacentZone :qasr_iwan_s , :qasr_cells , :qasr_stables ;
+    bot:containsElement :qasr_howz .
+:qasr_iwan_s a persarch:Iwan , bot:Space .
+:qasr_cells a persarch:Hujra , bot:Space .
+:qasr_stables a persarch:Stable , bot:Space .
+:qasr_howz a persarch:Howz , bot:Element .
+
+:evt_qasr_safavid a crm:E12_Production ;
+    crm:P108_has_produced :qasr_e_bahram ;
+    crm:P126_employed persarch:mat_stone .
+
+#----- 10. Miandasht (1668-027 / Q5705395) multi-court complex -----
+
+:miandasht a persarch:DualCourtCaravanserai , persarch:Caravanserai ,
+        bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Miandasht Caravanserai"@en , "کاروانسراهای میاندشت"@fa ;
+    skos:exactMatch wd:Q5705395 ;
+    persarch:unescoComponentId "1668-027" ;
+    persarch:isUnescoComponent true ;
+    persarch:nationalHeritageNumber "1439" ;
+    persarch:province "Semnan"@en ;
+    persarch:propertyAreaHectare "2.44"^^xsd:decimal ;
+    crm:P2_has_type persarch:style_safavid , persarch:style_qajar ;
+    crm:P45_consists_of persarch:mat_brick ;
+    geo:asWKT "POINT(56.060578 36.428131)"^^geo:wktLiteral ;
+    bot:hasStorey :miandasht_ground ;
+    bot:containsZone :miandasht_safavid_zone , :miandasht_qajar_zone ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/miandasht/manifest.json> ;
+    dcterms:description "Largest complex in the serial: Safavid western caravanserai plus two Qajar courtyards, cisterns and chapar-khaneh."@en .
+
+:miandasht_ground a bot:Storey ;
+    bot:hasSpace :miandasht_court_w , :miandasht_court_c , :miandasht_court_e .
+:miandasht_safavid_zone a persarch:PublicServiceZone , bot:Zone ;
+    rdfs:label "Safavid (western) court"@en ;
+    bot:containsZone :miandasht_court_w .
+:miandasht_qajar_zone a bot:Zone ;
+    rdfs:label "Qajar courts"@en ;
+    bot:containsZone :miandasht_court_c , :miandasht_court_e .
+:miandasht_court_w a persarch:Sahn , bot:Space ;
+    rdfs:label "Western (Safavid) courtyard"@en ;
+    bot:adjacentZone :miandasht_court_c .
+:miandasht_court_c a persarch:Sahn , bot:Space ;
+    rdfs:label "Central (Qajar) courtyard"@en ;
+    bot:adjacentZone :miandasht_court_w , :miandasht_court_e ;
+    bot:intersectsZone :miandasht_safavid_zone , :miandasht_qajar_zone .
+:miandasht_court_e a persarch:Sahn , bot:Space ;
+    rdfs:label "Eastern (Qajar) courtyard"@en ;
+    bot:adjacentZone :miandasht_court_c .
+
+:evt_miandasht_safavid a crm:E12_Production ;
+    rdfs:label "Safavid western caravanserai at Miandasht"@en ;
+    crm:P108_has_produced :miandasht ;
+    crm:P2_has_type persarch:style_safavid .
+:evt_miandasht_qajar a crm:E11_Modification ;
+    rdfs:label "Qajar extension of the Miandasht complex"@en ;
+    crm:P31_has_modified :miandasht ;
+    crm:P2_has_type persarch:style_qajar .

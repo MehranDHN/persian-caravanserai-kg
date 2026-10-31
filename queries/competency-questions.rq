@@ -1,0 +1,32 @@
+PREFIX persarch: <https://w3id.org/persian-architecture#>
+PREFIX bot: <https://w3id.org/bot#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <https://w3id.org/persian-caravanserai-kg#>
+
+# CQ1. UNESCO components vs non-inscribed Iranian caravanserais
+# SELECT ?c ?label ?unesco WHERE {
+#   ?c a persarch:Caravanserai ; rdfs:label ?label ; persarch:isUnescoComponent ?unesco .
+#   FILTER(LANG(?label) = "en")
+# }
+
+# CQ2. Dual-court buildings and the zones they contain
+# SELECT ?c ?zone ?zlabel WHERE {
+#   ?c a persarch:DualCourtCaravanserai ; bot:containsZone ?zone .
+#   ?zone rdfs:label ?zlabel .
+# }
+
+# CQ3. Spaces adjacent to a sahn
+# SELECT ?sahn ?space WHERE {
+#   ?sahn a persarch:Sahn ; bot:adjacentZone ?space .
+# }
+
+# CQ4. CRM production events with patrons
+# SELECT ?building ?patron ?when WHERE {
+#   ?evt a crm:E12_Production ; crm:P108_has_produced ?building ;
+#        persarch:commissionedBy ?patron ; crm:P4_has_time-span ?when .
+# }
+
+# CQ5. Records with an IIIF manifest
+# SELECT ?c ?m WHERE { ?c persarch:hasIiifManifest ?m . }

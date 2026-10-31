@@ -1,0 +1,783 @@
+@prefix : <https://w3id.org/persian-caravanserai-kg#> .
+@prefix persarch: <https://w3id.org/persian-architecture#> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmba: <http://www.cidoc-crm.org/extensions/crmba/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+# UNESCO World Heritage List 1668 — The Persian Caravanserai.
+# 54 components inscribed 17 September 2023, criteria (ii)(iii).
+# Source: https://whc.unesco.org/en/list/1668/maps/
+
+:unesco_persian_caravanserai a crm:E27_Site , bot:Site ;
+    rdfs:label "The Persian Caravanserai"@en ;
+    rdfs:label "کاروانسراهای ایرانی"@fa ;
+    skos:exactMatch wd:Q66030932 ;
+    persarch:unescoListId "1668" ;
+    dcterms:date "2023-09-17"^^xsd:date ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/> ;
+    dcterms:description "Serial World Heritage property of fifty-four caravanserais along historic roads of Iran."@en .
+
+:Harvest_UNESCO_1668 a prov:Activity ;
+    rdfs:label "UNESCO WHC 1668 component harvest"@en ;
+    prov:used <https://whc.unesco.org/en/list/1668/maps/> .
+
+:deyr_e_gachin a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Deyr-e Gachin"@en ;
+    persarch:unescoComponentId "1668-001" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Qom"@en ;
+    geo:asWKT "POINT(51.420136 35.058353)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "1.9"^^xsd:decimal ;
+    persarch:bufferAreaHectare "237.1"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :deyr_e_gachin .
+
+:noushirvan a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Noushirvan"@en ;
+    persarch:unescoComponentId "1668-002" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Semnan"@en ;
+    geo:asWKT "POINT(53.732372 35.770731)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.64"^^xsd:decimal ;
+    persarch:bufferAreaHectare "99.79"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :noushirvan .
+
+:ahovan a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Ahovan"@en ;
+    persarch:unescoComponentId "1668-003" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Semnan"@en ;
+    geo:asWKT "POINT(53.730144 35.770539)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.69"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :ahovan .
+
+:parand a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Parand"@en ;
+    persarch:unescoComponentId "1668-004" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Tehran"@en ;
+    geo:asWKT "POINT(50.974597 35.458228)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.4"^^xsd:decimal ;
+    persarch:bufferAreaHectare "45.09"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :parand .
+
+:robat_e_sharaf a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Robat-e Sharaf"@en ;
+    persarch:unescoComponentId "1668-005" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Razavi Khorasan"@en ;
+    geo:asWKT "POINT(60.655161 36.266569)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "1.12"^^xsd:decimal ;
+    persarch:bufferAreaHectare "82.16"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :robat_e_sharaf .
+
+:anjireh_ajori a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Anjireh Ajori"@en ;
+    persarch:unescoComponentId "1668-006" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Yazd"@en ;
+    geo:asWKT "POINT(54.477108 32.153244)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "1.76"^^xsd:decimal ;
+    persarch:bufferAreaHectare "275.74"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :anjireh_ajori .
+
+:anjireh_sangi a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Anjireh Sangi"@en ;
+    persarch:unescoComponentId "1668-007" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Yazd"@en ;
+    geo:asWKT "POINT(54.484039 32.162211)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.09"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :anjireh_sangi .
+
+:abbas_abad_taybad a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Abbas Abad Taybad"@en ;
+    persarch:unescoComponentId "1668-008" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Razavi Khorasan"@en ;
+    geo:asWKT "POINT(60.718367 34.995936)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.41"^^xsd:decimal ;
+    persarch:bufferAreaHectare "150.33"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :abbas_abad_taybad .
+
+:jamal_abad a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Jamal Abad"@en ;
+    persarch:unescoComponentId "1668-009" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "East Azerbaijan"@en ;
+    geo:asWKT "POINT(47.843100 37.271914)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.37"^^xsd:decimal ;
+    persarch:bufferAreaHectare "13.83"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :jamal_abad .
+
+:qelli a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Qelli"@en ;
+    persarch:unescoComponentId "1668-010" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "North Khorasan"@en ;
+    geo:asWKT "POINT(56.920742 37.153294)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.2"^^xsd:decimal ;
+    persarch:bufferAreaHectare "83.71"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :qelli .
+
+:fakhr_e_davud a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Fakhr-e Davud"@en ;
+    persarch:unescoComponentId "1668-011" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Razavi Khorasan"@en ;
+    geo:asWKT "POINT(59.313486 35.999886)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.16"^^xsd:decimal ;
+    persarch:bufferAreaHectare "10.09"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :fakhr_e_davud .
+
+:sheikhali_khan a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Sheikhali Khan"@en ;
+    persarch:unescoComponentId "1668-012" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Isfahan"@en ;
+    geo:asWKT "POINT(51.370403 32.868158)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.82"^^xsd:decimal ;
+    persarch:bufferAreaHectare "15.46"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :sheikhali_khan .
+
+:maranjab a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Maranjab"@en ;
+    persarch:unescoComponentId "1668-013" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Isfahan"@en ;
+    geo:asWKT "POINT(51.812386 34.299136)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.46"^^xsd:decimal ;
+    persarch:bufferAreaHectare "226.33"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :maranjab .
+
+:amin_abad a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Amin Abad"@en ;
+    persarch:unescoComponentId "1668-014" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Isfahan"@en ;
+    geo:asWKT "POINT(52.068447 31.672694)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.4"^^xsd:decimal ;
+    persarch:bufferAreaHectare "5.23"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :amin_abad .
+
+:gabr_abad a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Gabr Abad"@en ;
+    persarch:unescoComponentId "1668-015" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Isfahan"@en ;
+    geo:asWKT "POINT(51.489525 33.768600)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.44"^^xsd:decimal ;
+    persarch:bufferAreaHectare "71.13"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :gabr_abad .
+
+:mahyar a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Mahyar"@en ;
+    persarch:unescoComponentId "1668-016" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Isfahan"@en ;
+    geo:asWKT "POINT(51.809733 32.265017)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.92"^^xsd:decimal ;
+    persarch:bufferAreaHectare "76.45"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :mahyar .
+
+:gaz a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Gaz"@en ;
+    persarch:unescoComponentId "1668-017" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Isfahan"@en ;
+    geo:asWKT "POINT(51.609322 32.809358)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.9"^^xsd:decimal ;
+    persarch:bufferAreaHectare "20.36"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :gaz .
+
+:kuhpayeh a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Kuhpayeh"@en ;
+    persarch:unescoComponentId "1668-018" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Isfahan"@en ;
+    geo:asWKT "POINT(52.435786 32.713431)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.61"^^xsd:decimal ;
+    persarch:bufferAreaHectare "6.74"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :kuhpayeh .
+
+:mazinan a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Mazinan"@en ;
+    persarch:unescoComponentId "1668-019" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Razavi Khorasan"@en ;
+    geo:asWKT "POINT(56.806442 36.307878)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.47"^^xsd:decimal ;
+    persarch:bufferAreaHectare "22.21"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :mazinan .
+
+:mehr a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Mehr"@en ;
+    persarch:unescoComponentId "1668-020" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Razavi Khorasan"@en ;
+    geo:asWKT "POINT(57.143603 36.284592)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.57"^^xsd:decimal ;
+    persarch:bufferAreaHectare "67.05"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :mehr .
+
+:zaferaniyeh a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Zaferaniyeh"@en ;
+    persarch:unescoComponentId "1668-021" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Razavi Khorasan"@en ;
+    geo:asWKT "POINT(58.086231 36.165719)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.63"^^xsd:decimal ;
+    persarch:bufferAreaHectare "29.79"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :zaferaniyeh .
+
+:fakhr_abad a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Fakhr Abad"@en ;
+    persarch:unescoComponentId "1668-022" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Razavi Khorasan"@en ;
+    geo:asWKT "POINT(58.055386 34.744636)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.32"^^xsd:decimal ;
+    persarch:bufferAreaHectare "16.68"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :fakhr_abad .
+
+:sarayan a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Sarayan"@en ;
+    persarch:unescoComponentId "1668-023" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "South Khorasan"@en ;
+    geo:asWKT "POINT(58.518017 33.855286)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.19"^^xsd:decimal ;
+    persarch:bufferAreaHectare "3.61"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :sarayan .
+
+:qasr_e_bahram a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Qasr-e Bahram"@en ;
+    persarch:unescoComponentId "1668-024" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Semnan"@en ;
+    geo:asWKT "POINT(52.177136 34.765281)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.65"^^xsd:decimal ;
+    persarch:bufferAreaHectare "769.49"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :qasr_e_bahram .
+
+:mayamey a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Mayamey"@en ;
+    persarch:unescoComponentId "1668-025" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Semnan"@en ;
+    geo:asWKT "POINT(55.653300 36.409186)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.53"^^xsd:decimal ;
+    persarch:bufferAreaHectare "2.39"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :mayamey .
+
+:abbas_abad a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Abbas Abad"@en ;
+    persarch:unescoComponentId "1668-026" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Semnan"@en ;
+    geo:asWKT "POINT(56.387875 36.361219)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.86"^^xsd:decimal ;
+    persarch:bufferAreaHectare "30.63"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :abbas_abad .
+
+:miandasht a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Miandasht"@en ;
+    persarch:unescoComponentId "1668-027" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Semnan"@en ;
+    geo:asWKT "POINT(56.060578 36.428131)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "2.44"^^xsd:decimal ;
+    persarch:bufferAreaHectare "197.84"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :miandasht .
+
+:zeynoddin a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Zeynoddin"@en ;
+    persarch:unescoComponentId "1668-028" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Yazd"@en ;
+    geo:asWKT "POINT(54.706853 31.411858)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.41"^^xsd:decimal ;
+    persarch:bufferAreaHectare "269.93"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :zeynoddin .
+
+:meybod a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Meybod"@en ;
+    persarch:unescoComponentId "1668-029" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Yazd"@en ;
+    geo:asWKT "POINT(54.009194 32.227925)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.67"^^xsd:decimal ;
+    persarch:bufferAreaHectare "9.98"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :meybod .
+
+:farasfaj a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Farasfaj"@en ;
+    persarch:unescoComponentId "1668-030" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Hamedan"@en ;
+    geo:asWKT "POINT(48.282989 34.487967)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.46"^^xsd:decimal ;
+    persarch:bufferAreaHectare "12.56"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :farasfaj .
+
+:izadkhast a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Izadkhast"@en ;
+    persarch:unescoComponentId "1668-031" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Fars"@en ;
+    geo:asWKT "POINT(52.133206 31.513364)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.49"^^xsd:decimal ;
+    persarch:bufferAreaHectare "37.65"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :izadkhast .
+
+:bisotun a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Bisotun"@en ;
+    persarch:unescoComponentId "1668-032" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Kermanshah"@en ;
+    geo:asWKT "POINT(47.434933 34.384533)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.81"^^xsd:decimal ;
+    persarch:bufferAreaHectare "35.36"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :bisotun .
+
+:ganjali_khan a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Ganjali Khan"@en ;
+    persarch:unescoComponentId "1668-033" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Kerman"@en ;
+    geo:asWKT "POINT(57.078936 30.290956)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.38"^^xsd:decimal ;
+    persarch:bufferAreaHectare "7.27"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :ganjali_khan .
+
+:yengeh_emam a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Yengeh Emam"@en ;
+    persarch:unescoComponentId "1668-034" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Alborz"@en ;
+    geo:asWKT "POINT(50.719622 35.936286)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.49"^^xsd:decimal ;
+    persarch:bufferAreaHectare "12.29"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :yengeh_emam .
+
+:khajeh_nazar a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Khajeh Nazar"@en ;
+    persarch:unescoComponentId "1668-035" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "East Azerbaijan"@en ;
+    geo:asWKT "POINT(45.576972 38.977444)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.23"^^xsd:decimal ;
+    persarch:bufferAreaHectare "18.75"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :khajeh_nazar .
+
+:goujebel a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Goujebel"@en ;
+    persarch:unescoComponentId "1668-036" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "East Azerbaijan"@en ;
+    geo:asWKT "POINT(46.863350 38.343894)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.15"^^xsd:decimal ;
+    persarch:bufferAreaHectare "10.93"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :goujebel .
+
+:saeen a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Saeen"@en ;
+    persarch:unescoComponentId "1668-037" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Ardabil"@en ;
+    geo:asWKT "POINT(47.881586 38.001044)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.06"^^xsd:decimal ;
+    persarch:bufferAreaHectare "74.04"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :saeen .
+
+:titi a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Titi"@en ;
+    persarch:unescoComponentId "1668-038" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Gilan"@en ;
+    geo:asWKT "POINT(49.902236 37.044775)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.11"^^xsd:decimal ;
+    persarch:bufferAreaHectare "12.29"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :titi .
+
+:dehdasht a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Dehdasht"@en ;
+    persarch:unescoComponentId "1668-039" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Kohgiluyeh and Boyer-Ahmad"@en ;
+    geo:asWKT "POINT(50.561525 30.788203)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.16"^^xsd:decimal ;
+    persarch:bufferAreaHectare "4.51"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :dehdasht .
+
+:khoy a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Khoy"@en ;
+    persarch:unescoComponentId "1668-040" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "West Azerbaijan"@en ;
+    geo:asWKT "POINT(44.623528 38.466000)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.04"^^xsd:decimal ;
+    persarch:bufferAreaHectare "6.96"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :khoy .
+
+:bagh_e_sheikh a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Bagh-e Sheikh"@en ;
+    persarch:unescoComponentId "1668-041" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Markazi"@en ;
+    geo:asWKT "POINT(50.446956 34.990831)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.53"^^xsd:decimal ;
+    persarch:bufferAreaHectare "30.8"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :bagh_e_sheikh .
+
+:neyestanak a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Neyestanak"@en ;
+    persarch:unescoComponentId "1668-042" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Isfahan"@en ;
+    geo:asWKT "POINT(52.799364 32.971206)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.48"^^xsd:decimal ;
+    persarch:bufferAreaHectare "25.39"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :neyestanak .
+
+:chehel_payeh a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Chehel Payeh"@en ;
+    persarch:unescoComponentId "1668-043" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Kerman"@en ;
+    geo:asWKT "POINT(57.140408 31.940011)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.33"^^xsd:decimal ;
+    persarch:bufferAreaHectare "45.54"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :chehel_payeh .
+
+:khan a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Khan"@en ;
+    persarch:unescoComponentId "1668-044" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "South Khorasan"@en ;
+    geo:asWKT "POINT(56.070414 33.366381)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.34"^^xsd:decimal ;
+    persarch:bufferAreaHectare "8.67"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :khan .
+
+:deh_mohammad a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Deh Mohammad"@en ;
+    persarch:unescoComponentId "1668-045" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "South Khorasan"@en ;
+    geo:asWKT "POINT(56.979178 33.991561)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.25"^^xsd:decimal ;
+    persarch:bufferAreaHectare "10.68"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :deh_mohammad .
+
+:taj_abad a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Taj Abad"@en ;
+    persarch:unescoComponentId "1668-046" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Hamedan"@en ;
+    geo:asWKT "POINT(48.220728 34.876633)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.28"^^xsd:decimal ;
+    persarch:bufferAreaHectare "6.56"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :taj_abad .
+
+:chah_kuran a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Chah Kuran"@en ;
+    persarch:unescoComponentId "1668-047" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Kerman"@en ;
+    geo:asWKT "POINT(56.850169 31.569333)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.16"^^xsd:decimal ;
+    persarch:bufferAreaHectare "35.69"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :chah_kuran .
+
+:kharanaq a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Kharanaq"@en ;
+    persarch:unescoComponentId "1668-048" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Yazd"@en ;
+    geo:asWKT "POINT(54.667983 32.344947)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.28"^^xsd:decimal ;
+    persarch:bufferAreaHectare "17.34"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :kharanaq .
+
+:rashti a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Rashti"@en ;
+    persarch:unescoComponentId "1668-049" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Yazd"@en ;
+    geo:asWKT "POINT(53.631053 32.440722)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.5"^^xsd:decimal ;
+    persarch:bufferAreaHectare "9.54"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :rashti .
+
+:borazjan a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Borazjan"@en ;
+    persarch:unescoComponentId "1668-050" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Bushehr"@en ;
+    geo:asWKT "POINT(51.208258 29.267114)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.78"^^xsd:decimal ;
+    persarch:bufferAreaHectare "6.01"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :borazjan .
+
+:chameshk a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Chameshk"@en ;
+    persarch:unescoComponentId "1668-051" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Lorestan"@en ;
+    geo:asWKT "POINT(48.211336 33.237956)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.22"^^xsd:decimal ;
+    persarch:bufferAreaHectare "11.67"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :chameshk .
+
+:afzal a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Afzal"@en ;
+    persarch:unescoComponentId "1668-052" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Khuzestan"@en ;
+    geo:asWKT "POINT(48.852128 32.043961)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.1"^^xsd:decimal ;
+    persarch:bufferAreaHectare "1.42"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :afzal .
+
+:bastak a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Bastak"@en ;
+    persarch:unescoComponentId "1668-053" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Hormozgan"@en ;
+    geo:asWKT "POINT(54.375972 27.198500)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "0.1"^^xsd:decimal ;
+    persarch:bufferAreaHectare "2.24"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :bastak .
+
+:saadossaltaneh a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
+    rdfs:label "Saadossaltaneh"@en ;
+    persarch:unescoComponentId "1668-054" ;
+    persarch:isUnescoComponent true ;
+    crm:P46i_forms_part_of :unesco_persian_caravanserai ;
+    persarch:province "Qazvin"@en ;
+    geo:asWKT "POINT(50.000708 36.269294)"^^geo:wktLiteral ;
+    persarch:propertyAreaHectare "2.58"^^xsd:decimal ;
+    persarch:bufferAreaHectare "11.28"^^xsd:decimal ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    prov:wasGeneratedBy :Harvest_UNESCO_1668 .
+
+:unesco_persian_caravanserai bot:hasBuilding :saadossaltaneh .
