@@ -6,6 +6,8 @@ This project builds a FAIR/LOUD Linked Open Data graph of Persian caravanserais 
 
 **Status:** harvest and alignment layer in place. Named sources live in `data/sources.ttl`. MIFAO 81/82 names are an editor-controlled candidate list (`data/mifao-review-queue.csv`) with source and page/plate evidence. Only `review_status=accepted` rows are ingested. Wolfram is declared and not yet harvested.
 
+![Persian caravanserais Knowledge Graph](/images/Persian_Caravanserai_Knowledge_Graph_Infographic.jpg)
+
 ## Vision
 
 - Model each caravanserai as `persarch:Caravanserai` (subclass of `bot:Building` and `crmba:B1_Built_Work`).
