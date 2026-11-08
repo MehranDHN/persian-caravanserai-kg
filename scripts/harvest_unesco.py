@@ -111,6 +111,7 @@ def emit() -> str:
         "# UNESCO World Heritage List 1668 — The Persian Caravanserai.",
         "# 54 components inscribed 17 September 2023, criteria (ii)(iii).",
         "# Source: https://whc.unesco.org/en/list/1668/maps/",
+        "# Load with data/sources.ttl so :source_unesco is defined.",
         "",
         ":unesco_persian_caravanserai a crm:E27_Site , bot:Site ;",
         '    rdfs:label "The Persian Caravanserai"@en ;',
@@ -119,11 +120,12 @@ def emit() -> str:
         '    persarch:unescoListId "1668" ;',
         '    dcterms:date "2023-09-17"^^xsd:date ;',
         "    dcterms:source <https://whc.unesco.org/en/list/1668/> ;",
+        "    persarch:attestedBy :source_unesco ;",
         '    dcterms:description "Serial World Heritage property of fifty-four caravanserais along historic roads of Iran."@en .',
         "",
         ":Harvest_UNESCO_1668 a prov:Activity ;",
         '    rdfs:label "UNESCO WHC 1668 component harvest"@en ;',
-        "    prov:used <https://whc.unesco.org/en/list/1668/maps/> .",
+        "    prov:used <https://whc.unesco.org/en/list/1668/maps/> , :source_unesco .",
         "",
     ]
     for cid, name, province, lat_dms, lon_dms, prop, buf in COMPONENTS:
@@ -141,6 +143,9 @@ def emit() -> str:
         if buf is not None:
             lines.append(f'    persarch:bufferAreaHectare "{buf}"^^xsd:decimal ;')
         lines.append("    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;")
+        lines.append("    persarch:attestedBy :source_unesco ;")
+        lines.append('    persarch:sourceSet "unesco" ;')
+        lines.append('    persarch:sourceCount "1"^^xsd:integer ;')
         lines.append("    prov:wasGeneratedBy :Harvest_UNESCO_1668 .")
         lines.append("")
         lines.append(f":unesco_persian_caravanserai bot:hasBuilding :{local} .")

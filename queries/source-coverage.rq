@@ -1,0 +1,54 @@
+PREFIX persarch: <https://w3id.org/persian-architecture#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX :         <https://w3id.org/persian-caravanserai-kg#>
+
+# Named source catalog, including Wolfram while harvestStatus is not-included.
+# SELECT ?src ?label ?id ?status WHERE {
+#   ?src a persarch:DataSource ;
+#        rdfs:label ?label ;
+#        persarch:sourceId ?id ;
+#        persarch:harvestStatus ?status .
+#   FILTER(LANG(?label) = "en")
+# }
+# ORDER BY ?id
+
+# Buildings attested by more than one source (common records).
+# sourceCount / sourceSet are convenience literals; attestedBy is the graph form.
+# SELECT ?building ?label ?sourceSet ?sourceCount
+#        (GROUP_CONCAT(DISTINCT ?srcId; separator=" | ") AS ?sources)
+# WHERE {
+#   ?building persarch:attestedBy ?src ;
+#             persarch:sourceSet ?sourceSet ;
+#             persarch:sourceCount ?sourceCount ;
+#             rdfs:label ?label .
+#   FILTER(LANG(?label) = "en")
+#   ?src persarch:sourceId ?srcId .
+# }
+# GROUP BY ?building ?label ?sourceSet ?sourceCount
+# HAVING (COUNT(DISTINCT ?src) >= 2)
+# ORDER BY DESC(?sourceCount) ?label
+
+# Records common in every included source (UNESCO + Wikidata + MIFAO 81 + MIFAO 82).
+# Wolfram is excluded until harvestStatus becomes included.
+# SELECT ?building ?label ?sourceSet WHERE {
+#   ?building persarch:attestedBy :source_unesco ,
+#                                :source_wikidata ,
+#                                :source_mifao81 ,
+#                                :source_mifao82 ;
+#             rdfs:label ?label ;
+#             persarch:sourceSet ?sourceSet .
+#   FILTER(LANG(?label) = "en")
+#   FILTER NOT EXISTS { ?building persarch:attestedBy :source_wolfram }
+# }
+
+# Cover evidence for one building (page / figure / plate / map).
+# SELECT ?building ?label ?src ?kind ?locator ?ref WHERE {
+#   ?building persarch:hasAttestation ?att ;
+#             rdfs:label ?label .
+#   FILTER(LANG(?label) = "en")
+#   ?att persarch:attestationSource ?src ;
+#        persarch:locator ?locator .
+#   OPTIONAL { ?att persarch:evidenceKind ?kind }
+#   OPTIONAL { ?att persarch:mifaoReference ?ref }
+# }
+# ORDER BY ?building ?src ?locator

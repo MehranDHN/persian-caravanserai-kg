@@ -1,0 +1,540 @@
+@prefix :         <https://w3id.org/persian-caravanserai-kg#> .
+@prefix persarch: <https://w3id.org/persian-architecture#> .
+@prefix bot:      <https://w3id.org/bot#> .
+@prefix crm:      <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmba:    <http://www.cidoc-crm.org/extensions/crmba/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix geo:      <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix prov:     <http://www.w3.org/ns/prov#> .
+@prefix wd:       <http://www.wikidata.org/entity/> .
+
+# Topology and CIDOC CRM measuring of :wd_Q5959343 (Pasangan / Passencan)
+# from Pascal Coste's measured plan in Monuments modernes de la Perse (Morel, 1867).
+# Load with data/wikidata-iran-caravanserais.ttl. Do not hand-edit the harvest file.
+# Dimensions are estimates from the printed metric scale bars, not UNESCO hectares.
+#
+# Coste's printed LEGENDE has twelve numbered keys. Keys 1–10 are spaces
+# (or a space-plus-element pair at 10); 11–12 are fittings.
+# Instance grain: each closed room with a distinct neighbour set is its own
+# bot:Space. Coste 7 is sixteen rooms (four per range); Coste 6 is four
+# stable ranges. The old IRIs :wd_Q5959343_muleteer_platform and
+# :wd_Q5959343_stables are bare bot:Zone series that containsZone the
+# instances. Keys 4, 5, 8, 9, 11, 12 remain series until the same census.
+# Four corner towers are drawn and unnumbered.
+# Scan quality is poor; labels follow the printed legend, not OCR.
+# Coste 7 bay index: north and south ranges west→east; east and west
+# ranges north→south.
+
+:Reading_Coste_Passencan a prov:Activity ;
+    rdfs:label "Reading of Pascal Coste's Passencan plan (legend keys 1–12)"@en ;
+    prov:used :coste_1867_passencan ;
+    dcterms:source <https://upload.wikimedia.org/wikipedia/commons/3/37/Pasangan_caravanserai_by_Pascal_Coste.jpg> .
+
+:coste_1867_passencan a persarch:PlanImage , crm:E31_Document , crm:E73_Information_Object ;
+    rdfs:label "Caravanserail Passencan — Pascal Coste, 1867"@en ;
+    rdfs:label "Caravanserail Passencan sur la route de Téhéran à Ispahan"@fr ;
+    dcterms:title "Monuments modernes de la Perse mesurés, dessinés et décrits"@fr ;
+    dcterms:creator "Pascal Coste" ;
+    dcterms:date "1867"^^xsd:gYear ;
+    dcterms:identifier "Passencan" ;
+    foaf:page <https://commons.wikimedia.org/wiki/File:Pasangan_caravanserai_by_Pascal_Coste.jpg> ;
+    dcterms:source <https://upload.wikimedia.org/wikipedia/commons/3/37/Pasangan_caravanserai_by_Pascal_Coste.jpg> ;
+    rdfs:seeAlso wd:Q725892 ;
+    crm:P70_documents :wd_Q5959343 ;
+    rdfs:comment "Plate with vue extérieure, coupe A-B, coupe C-D, and plan. North at the top of the plan; entrance on the south. Graphic scale: 40 m on the plan, 20 m on the coupes."@en .
+
+:wd_Q5959343 a persarch:FourIwanCaravanserai ;
+    skos:altLabel "Passencan"@fr , "Passengân"@fr , "Passengan"@fr ;
+    crm:P2_has_type persarch:type_four_iwan_plan , persarch:style_safavid ;
+    bot:hasStorey :wd_Q5959343_ground , :wd_Q5959343_terrace ;
+    bot:containsZone :wd_Q5959343_sahn , :wd_Q5959343_stables , :wd_Q5959343_muleteer_platform ;
+    persarch:hasPlanPresentation :coste_1867_passencan ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/pasangan/manifest.json> ;
+    persarch:hasAttestation :att_coste_passencan ;
+    crm:P43_has_dimension :dim_wd_Q5959343_length_ew , :dim_wd_Q5959343_width_ns ,
+        :dim_wd_Q5959343_height , :dim_wd_Q5959343_area ;
+    dcterms:description "Square four-iwan roadside caravanserai on the Tehran–Isfahan (Qom–Kashan) road. Coste 1867 plan, sections, and exterior view. Entrance faces south."@en .
+
+:att_coste_passencan a persarch:SourceAttestation , crm:E73_Information_Object ;
+    rdfs:label "Coste 1867 Passencan plate, legend 1–12"@en ;
+    persarch:documentsBuilding :wd_Q5959343 ;
+    crm:P70_documents :wd_Q5959343 ;
+    persarch:evidenceKind persarch:evidence_figure ;
+    persarch:locator "légende 1–12; vue extérieure; coupe A-B; coupe C-D; plan" ;
+    dcterms:source :coste_1867_passencan ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+#################################################################
+# Storeys
+#################################################################
+
+:wd_Q5959343_ground a bot:Storey ;
+    rdfs:label "Ground storey – Pasangan"@en ;
+    rdfs:comment "Coste PLAN. Coupe A-B cuts east–west through the courtyard; coupe C-D cuts south–north through the entrance."@en ;
+    bot:hasSpace :wd_Q5959343_entrance , :wd_Q5959343_porch , :wd_Q5959343_sahn ,
+        :wd_Q5959343_hujra , :wd_Q5959343_traveller_platform ,
+        :wd_Q5959343_stables_n , :wd_Q5959343_stables_e ,
+        :wd_Q5959343_stables_s , :wd_Q5959343_stables_w ,
+        :wd_Q5959343_muleteer_platform_n_1 , :wd_Q5959343_muleteer_platform_n_2 ,
+        :wd_Q5959343_muleteer_platform_n_3 , :wd_Q5959343_muleteer_platform_n_4 ,
+        :wd_Q5959343_muleteer_platform_e_1 , :wd_Q5959343_muleteer_platform_e_2 ,
+        :wd_Q5959343_muleteer_platform_e_3 , :wd_Q5959343_muleteer_platform_e_4 ,
+        :wd_Q5959343_muleteer_platform_s_1 , :wd_Q5959343_muleteer_platform_s_2 ,
+        :wd_Q5959343_muleteer_platform_s_3 , :wd_Q5959343_muleteer_platform_s_4 ,
+        :wd_Q5959343_muleteer_platform_w_1 , :wd_Q5959343_muleteer_platform_w_2 ,
+        :wd_Q5959343_muleteer_platform_w_3 , :wd_Q5959343_muleteer_platform_w_4 ,
+        :wd_Q5959343_latrines , :wd_Q5959343_cistern ;
+    bot:containsZone :wd_Q5959343_stables , :wd_Q5959343_muleteer_platform ;
+    bot:containsElement :wd_Q5959343_stairs , :wd_Q5959343_prayer_platform ,
+        :wd_Q5959343_chimneys , :wd_Q5959343_niches ,
+        :wd_Q5959343_tower_sw , :wd_Q5959343_tower_se ,
+        :wd_Q5959343_tower_nw , :wd_Q5959343_tower_ne ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_terrace a bot:Storey ;
+    rdfs:label "Terrace storey – Pasangan"@en ;
+    rdfs:comment "Coste 8: escaliers des terrasses. Coupe C-D shows an upper row of cells over the south range. No separate terrace plan."@en ;
+    bot:adjacentElement :wd_Q5959343_stairs ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+#################################################################
+# Coste 1–10 spaces
+#################################################################
+
+:wd_Q5959343_entrance a persarch:PishtaqSpace , bot:Space ;
+    rdfs:label "Entrance of the caravanserai (Coste 1)"@en ;
+    rdfs:label "Entrée du Caravansérail"@fr ;
+    persarch:locator "1" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_porch ;
+    bot:adjacentElement :wd_Q5959343_tower_sw , :wd_Q5959343_tower_se ;
+    rdfs:comment "South gate, at the bottom of Coste's plan (north arrow at the top)."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_porch a persarch:Hashti , bot:Space ;
+    rdfs:label "Porch / vestibule (Coste 2)"@en ;
+    rdfs:label "Porche"@fr ;
+    persarch:locator "2" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_entrance , :wd_Q5959343_sahn , :wd_Q5959343_latrines ;
+    bot:adjacentElement :wd_Q5959343_stairs ;
+    crm:P43_has_dimension :dim_wd_Q5959343_porch_diameter ;
+    rdfs:comment "Hashti immediately inside the south gate, opening onto the courtyard. Functions as the south iwan of the four-iwan plan."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_sahn a persarch:Sahn , bot:Space ;
+    rdfs:label "Courtyard (Coste 3)"@en ;
+    rdfs:label "Cour"@fr ;
+    persarch:locator "3" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_porch , :wd_Q5959343_hujra ,
+        :wd_Q5959343_traveller_platform ;
+    bot:containsZone :wd_Q5959343_cistern ;
+    bot:containsElement :wd_Q5959343_prayer_platform ;
+    crm:P43_has_dimension :dim_wd_Q5959343_sahn_width , :dim_wd_Q5959343_sahn_area ;
+    rdfs:comment "Central court. Inner outline is chamfered (near-octagon) within a square envelope. Coste places the numeral 3 on both east and west sides of the court."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_hujra a persarch:Hujra , bot:Space ;
+    rdfs:label "Travellers' rooms (Coste 4)"@en ;
+    rdfs:label "Chambres des Voyageurs"@fr ;
+    persarch:locator "4" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_sahn , :wd_Q5959343_traveller_platform ;
+    bot:containsElement :wd_Q5959343_chimneys , :wd_Q5959343_niches ;
+    rdfs:comment "Representative of the lodging cells Coste numbers 4 around the inner ring of the court."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_traveller_platform a bot:Space ;
+    rdfs:label "Travellers' platforms (Coste 5)"@en ;
+    rdfs:label "Estrades des Voyageurs"@fr ;
+    persarch:locator "5" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_hujra , :wd_Q5959343_sahn ;
+    rdfs:comment "Raised platforms associated with the travellers' rooms. Coste repeats 5 along the inner court."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+# Coste 6 — four stable ranges (series Zone + instance Spaces)
+:wd_Q5959343_stables a bot:Zone ;
+    rdfs:label "Stables (Coste 6, series)"@en ;
+    rdfs:label "Écuries"@fr ;
+    rdfs:label "اصطبلها"@fa ;
+    persarch:locator "6" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:containsZone :wd_Q5959343_stables_n , :wd_Q5959343_stables_e ,
+        :wd_Q5959343_stables_s , :wd_Q5959343_stables_w ;
+    rdfs:comment "Outer-ring stables. One Space per side so each Coste 7 room has local adjacency. Stall bays inside a range stay unsplit."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_stables_n a persarch:Stable , bot:Space ;
+    rdfs:label "North stables (Coste 6)"@en ;
+    persarch:locator "6; N" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_muleteer_platform_n_1 , :wd_Q5959343_muleteer_platform_n_2 ,
+        :wd_Q5959343_muleteer_platform_n_3 , :wd_Q5959343_muleteer_platform_n_4 ,
+        :wd_Q5959343_hujra , :wd_Q5959343_traveller_platform ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_stables_e a persarch:Stable , bot:Space ;
+    rdfs:label "East stables (Coste 6)"@en ;
+    persarch:locator "6; E" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_muleteer_platform_e_1 , :wd_Q5959343_muleteer_platform_e_2 ,
+        :wd_Q5959343_muleteer_platform_e_3 , :wd_Q5959343_muleteer_platform_e_4 ,
+        :wd_Q5959343_hujra , :wd_Q5959343_traveller_platform ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_stables_s a persarch:Stable , bot:Space ;
+    rdfs:label "South stables (Coste 6)"@en ;
+    persarch:locator "6; S" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_muleteer_platform_s_1 , :wd_Q5959343_muleteer_platform_s_2 ,
+        :wd_Q5959343_muleteer_platform_s_3 , :wd_Q5959343_muleteer_platform_s_4 ,
+        :wd_Q5959343_hujra ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_stables_w a persarch:Stable , bot:Space ;
+    rdfs:label "West stables (Coste 6)"@en ;
+    persarch:locator "6; W" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_muleteer_platform_w_1 , :wd_Q5959343_muleteer_platform_w_2 ,
+        :wd_Q5959343_muleteer_platform_w_3 , :wd_Q5959343_muleteer_platform_w_4 ,
+        :wd_Q5959343_hujra , :wd_Q5959343_traveller_platform ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+# Coste 7 — sixteen muleteer rooms (series Zone + instance Spaces)
+:wd_Q5959343_muleteer_platform a bot:Zone ;
+    rdfs:label "Muleteer platforms (Coste 7, series)"@en ;
+    rdfs:label "Estrades pour les Muletiers, dépôt des harnais et des ballots"@fr ;
+    rdfs:label "سکوهای چارواداران"@fa ;
+    persarch:locator "7" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:containsZone
+        :wd_Q5959343_muleteer_platform_n_1 , :wd_Q5959343_muleteer_platform_n_2 ,
+        :wd_Q5959343_muleteer_platform_n_3 , :wd_Q5959343_muleteer_platform_n_4 ,
+        :wd_Q5959343_muleteer_platform_e_1 , :wd_Q5959343_muleteer_platform_e_2 ,
+        :wd_Q5959343_muleteer_platform_e_3 , :wd_Q5959343_muleteer_platform_e_4 ,
+        :wd_Q5959343_muleteer_platform_s_1 , :wd_Q5959343_muleteer_platform_s_2 ,
+        :wd_Q5959343_muleteer_platform_s_3 , :wd_Q5959343_muleteer_platform_s_4 ,
+        :wd_Q5959343_muleteer_platform_w_1 , :wd_Q5959343_muleteer_platform_w_2 ,
+        :wd_Q5959343_muleteer_platform_w_3 , :wd_Q5959343_muleteer_platform_w_4 ;
+    rdfs:comment "Sixteen closed rooms labelled 7 on Coste's plan: four on each outer range, including a pair flanking each corner tower. Bay index: N/S west→east; E/W north→south."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_n_1 a bot:Space ;
+    rdfs:label "Muleteer platform, north range bay 1 (west, at NW tower)"@en ;
+    persarch:locator "7; N; bay 1 west to east" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_n , :wd_Q5959343_muleteer_platform_w_1 , :wd_Q5959343_latrines ;
+    bot:adjacentElement :wd_Q5959343_tower_nw ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_n_2 a bot:Space ;
+    rdfs:label "Muleteer platform, north range bay 2 (west of north iwan)"@en ;
+    persarch:locator "7; N; bay 2 west to east" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_n , :wd_Q5959343_traveller_platform , :wd_Q5959343_hujra , :wd_Q5959343_latrines ;
+    bot:adjacentElement :wd_Q5959343_stairs ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_n_3 a bot:Space ;
+    rdfs:label "Muleteer platform, north range bay 3 (east of north iwan)"@en ;
+    persarch:locator "7; N; bay 3 west to east" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_n , :wd_Q5959343_traveller_platform , :wd_Q5959343_hujra , :wd_Q5959343_latrines ;
+    bot:adjacentElement :wd_Q5959343_stairs ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_n_4 a bot:Space ;
+    rdfs:label "Muleteer platform, north range bay 4 (east, at NE tower)"@en ;
+    persarch:locator "7; N; bay 4 west to east" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_n , :wd_Q5959343_muleteer_platform_e_1 , :wd_Q5959343_latrines ;
+    bot:adjacentElement :wd_Q5959343_tower_ne ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_e_1 a bot:Space ;
+    rdfs:label "Muleteer platform, east range bay 1 (north, at NE tower)"@en ;
+    persarch:locator "7; E; bay 1 north to south" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_e , :wd_Q5959343_muleteer_platform_n_4 , :wd_Q5959343_latrines ;
+    bot:adjacentElement :wd_Q5959343_tower_ne ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_e_2 a bot:Space ;
+    rdfs:label "Muleteer platform, east range bay 2 (north of east iwan)"@en ;
+    persarch:locator "7; E; bay 2 north to south" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_e , :wd_Q5959343_traveller_platform , :wd_Q5959343_hujra ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_e_3 a bot:Space ;
+    rdfs:label "Muleteer platform, east range bay 3 (south of east iwan)"@en ;
+    persarch:locator "7; E; bay 3 north to south" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_e , :wd_Q5959343_traveller_platform , :wd_Q5959343_hujra ;
+    bot:adjacentElement :wd_Q5959343_stairs ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_e_4 a bot:Space ;
+    rdfs:label "Muleteer platform, east range bay 4 (south, at SE tower)"@en ;
+    persarch:locator "7; E; bay 4 north to south" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_e , :wd_Q5959343_muleteer_platform_s_4 , :wd_Q5959343_latrines ;
+    bot:adjacentElement :wd_Q5959343_tower_se ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_s_1 a bot:Space ;
+    rdfs:label "Muleteer platform, south range bay 1 (west, at SW tower)"@en ;
+    persarch:locator "7; S; bay 1 west to east" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_s , :wd_Q5959343_muleteer_platform_w_4 , :wd_Q5959343_latrines ;
+    bot:adjacentElement :wd_Q5959343_tower_sw ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_s_2 a bot:Space ;
+    rdfs:label "Muleteer platform, south range bay 2 (west of porch)"@en ;
+    persarch:locator "7; S; bay 2 west to east" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_s , :wd_Q5959343_hujra , :wd_Q5959343_latrines ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_s_3 a bot:Space ;
+    rdfs:label "Muleteer platform, south range bay 3 (east of porch)"@en ;
+    persarch:locator "7; S; bay 3 west to east" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_s , :wd_Q5959343_hujra , :wd_Q5959343_latrines ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_s_4 a bot:Space ;
+    rdfs:label "Muleteer platform, south range bay 4 (east, at SE tower)"@en ;
+    persarch:locator "7; S; bay 4 west to east" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_s , :wd_Q5959343_muleteer_platform_e_4 , :wd_Q5959343_latrines ;
+    bot:adjacentElement :wd_Q5959343_tower_se ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_w_1 a bot:Space ;
+    rdfs:label "Muleteer platform, west range bay 1 (north, at NW tower)"@en ;
+    persarch:locator "7; W; bay 1 north to south" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_w , :wd_Q5959343_muleteer_platform_n_1 , :wd_Q5959343_latrines ;
+    bot:adjacentElement :wd_Q5959343_tower_nw ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_w_2 a bot:Space ;
+    rdfs:label "Muleteer platform, west range bay 2 (north of west iwan)"@en ;
+    persarch:locator "7; W; bay 2 north to south" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_w , :wd_Q5959343_traveller_platform , :wd_Q5959343_hujra ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_w_3 a bot:Space ;
+    rdfs:label "Muleteer platform, west range bay 3 (south of west iwan)"@en ;
+    persarch:locator "7; W; bay 3 north to south" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_w , :wd_Q5959343_traveller_platform , :wd_Q5959343_hujra ;
+    bot:adjacentElement :wd_Q5959343_stairs ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_muleteer_platform_w_4 a bot:Space ;
+    rdfs:label "Muleteer platform, west range bay 4 (south, at SW tower)"@en ;
+    persarch:locator "7; W; bay 4 north to south" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_stables_w , :wd_Q5959343_muleteer_platform_s_1 , :wd_Q5959343_latrines ;
+    bot:adjacentElement :wd_Q5959343_tower_sw ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_latrines a bot:Space ;
+    rdfs:label "Latrines (Coste 9)"@en ;
+    rdfs:label "Latrines"@fr ;
+    persarch:locator "9" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_porch ;
+    rdfs:comment "Small rooms; one pair flanks the south porch on the plan."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_cistern a persarch:AbAnbarSpace , bot:Space ;
+    rdfs:label "Cistern beneath the prayer platform (Coste 10)"@en ;
+    rdfs:label "Citerne"@fr ;
+    persarch:locator "10" ;
+    dcterms:source :coste_1867_passencan ;
+    bot:adjacentZone :wd_Q5959343_sahn ;
+    bot:adjacentElement :wd_Q5959343_prayer_platform ;
+    crm:P43_has_dimension :dim_wd_Q5959343_cistern_side , :dim_wd_Q5959343_cistern_area ;
+    rdfs:comment "Coste: « Estrade pour la prière, audessous Citerne ». Square in the centre of the courtyard."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+#################################################################
+# Coste 8, 10 (upper), 11–12 elements, plus unnumbered towers
+#################################################################
+
+:wd_Q5959343_stairs a bot:Element ;
+    rdfs:label "Terrace stairs (Coste 8)"@en ;
+    rdfs:label "Escaliers des Terrasses"@fr ;
+    persarch:locator "8" ;
+    dcterms:source :coste_1867_passencan ;
+    rdfs:comment "Stairs from the ground storey to the terraces. Coste repeats 8; one flight flanks the porch."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_prayer_platform a bot:Element ;
+    rdfs:label "Prayer platform (Coste 10)"@en ;
+    rdfs:label "Estrade pour la prière"@fr ;
+    persarch:locator "10" ;
+    dcterms:source :coste_1867_passencan ;
+    rdfs:comment "Raised prayer platform in the courtyard; cistern underneath (same Coste number 10)."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_chimneys a bot:Element ;
+    rdfs:label "Chimneys (Coste 11)"@en ;
+    rdfs:label "Cheminées"@fr ;
+    persarch:locator "11" ;
+    dcterms:source :coste_1867_passencan ;
+    rdfs:comment "Fittings inside travellers' rooms and corner chambers. Representative of repeated key 11."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_niches a bot:Element ;
+    rdfs:label "Niches (Coste 12)"@en ;
+    rdfs:label "Niches"@fr ;
+    persarch:locator "12" ;
+    dcterms:source :coste_1867_passencan ;
+    rdfs:comment "Wall niches. Representative of repeated key 12."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_tower_sw a persarch:CornerTower , bot:Element ;
+    rdfs:label "South-west corner tower"@en ;
+    dcterms:source :coste_1867_passencan ;
+    rdfs:comment "Unnumbered on Coste's legend; solid circular tower at the south-west angle of the plan."@en ;
+    crm:P43_has_dimension :dim_wd_Q5959343_tower_diameter ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_tower_se a persarch:CornerTower , bot:Element ;
+    rdfs:label "South-east corner tower"@en ;
+    dcterms:source :coste_1867_passencan ;
+    rdfs:comment "Unnumbered on Coste's legend; solid circular tower at the south-east angle of the plan."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_tower_nw a persarch:CornerTower , bot:Element ;
+    rdfs:label "North-west corner tower"@en ;
+    dcterms:source :coste_1867_passencan ;
+    rdfs:comment "Unnumbered on Coste's legend; solid circular tower at the north-west angle of the plan."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:wd_Q5959343_tower_ne a persarch:CornerTower , bot:Element ;
+    rdfs:label "North-east corner tower"@en ;
+    dcterms:source :coste_1867_passencan ;
+    rdfs:comment "Unnumbered on Coste's legend; solid circular tower at the north-east angle of the plan."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+#################################################################
+# CIDOC CRM measuring (E16 / E54) from Coste scale bars
+# Commons JPEG 1707×2514. Plan 0–40 m = 750 px → 18.75 px/m.
+# Coupes 0–20 m share that graphic length → 37.5 px/m.
+# Envelope ±1 m; interiors ±0.5 m. Printed metres, not raw pixels.
+#################################################################
+
+:Measurement_Coste_Passencan_scale a crm:E16_Measurement ;
+    rdfs:label "Scale-bar measurement of Pasangan from Coste 1867 plate"@en ;
+    crm:P39_measured :wd_Q5959343 ;
+    crm:P40_observed_dimension :dim_wd_Q5959343_length_ew , :dim_wd_Q5959343_width_ns ,
+        :dim_wd_Q5959343_height , :dim_wd_Q5959343_area ,
+        :dim_wd_Q5959343_sahn_width , :dim_wd_Q5959343_sahn_area ,
+        :dim_wd_Q5959343_porch_diameter ,
+        :dim_wd_Q5959343_cistern_side , :dim_wd_Q5959343_cistern_area ,
+        :dim_wd_Q5959343_tower_diameter ;
+    crm:P2_has_type persarch:method_scale_bar ;
+    persarch:locator "échelles: 40 m du plan; 20 m des coupes" ;
+    dcterms:source :coste_1867_passencan ;
+    rdfs:comment "Pixel run on the Wikimedia scan of Coste's plate. East–west including tower noses is 752 px ≈ 40 m and matches the printed 40 m bar. North–south is 715 px ≈ 38 m; Coste drew a square, so the N–S figure may include scan anamorphism. Height is merlon-to-ground on coupe C–D. Building area is 40 × 38 m, distinct from later 50 × 50 m / 2500 m² site figures."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Passencan .
+
+:dim_wd_Q5959343_length_ew a crm:E54_Dimension ;
+    rdfs:label "Pasangan east–west length including towers"@en ;
+    crm:P2_has_type persarch:dimtype_length ;
+    crm:P90_has_value "40"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_metre ;
+    persarch:uncertaintyMetre "1.0"^^xsd:decimal ;
+    rdfs:comment "Outer envelope including circular tower noses; 752 px on the plan scale (750 px = 40 m)."@en ;
+    dcterms:source :coste_1867_passencan .
+
+:dim_wd_Q5959343_width_ns a crm:E54_Dimension ;
+    rdfs:label "Pasangan north–south width including towers"@en ;
+    crm:P2_has_type persarch:dimtype_width ;
+    crm:P90_has_value "38"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_metre ;
+    persarch:uncertaintyMetre "1.0"^^xsd:decimal ;
+    rdfs:comment "Outer envelope including tower noses; 715 px. Horizontal scale is trusted more than this N–S figure."@en ;
+    dcterms:source :coste_1867_passencan .
+
+:dim_wd_Q5959343_height a crm:E54_Dimension ;
+    rdfs:label "Pasangan height to merlons"@en ;
+    crm:P2_has_type persarch:dimtype_height ;
+    crm:P90_has_value "6"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_metre ;
+    persarch:uncertaintyMetre "0.5"^^xsd:decimal ;
+    rdfs:comment "Ground to merlons on coupe C–D; 222 px on the 20 m section scale (750 px = 20 m)."@en ;
+    dcterms:source :coste_1867_passencan .
+
+:dim_wd_Q5959343_area a crm:E54_Dimension ;
+    rdfs:label "Pasangan footprint area (Coste envelope)"@en ;
+    crm:P2_has_type persarch:dimtype_area ;
+    crm:P90_has_value "1520"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_square_metre ;
+    rdfs:comment "Derived 40 × 38 m including towers. Not a UNESCO property area and not the later 50 × 50 m / 2500 m² site figure."@en ;
+    dcterms:source :coste_1867_passencan .
+
+:dim_wd_Q5959343_sahn_width a crm:E54_Dimension ;
+    rdfs:label "Pasangan courtyard east–west width"@en ;
+    crm:P2_has_type persarch:dimtype_width ;
+    crm:P90_has_value "22.5"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_metre ;
+    persarch:uncertaintyMetre "0.5"^^xsd:decimal ;
+    rdfs:comment "Maximum court E–W; 422 px. Inner outline is chamfered."@en ;
+    dcterms:source :coste_1867_passencan .
+
+:dim_wd_Q5959343_sahn_area a crm:E54_Dimension ;
+    rdfs:label "Pasangan courtyard area (rectangle equivalent)"@en ;
+    crm:P2_has_type persarch:dimtype_area ;
+    crm:P90_has_value "510"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_square_metre ;
+    rdfs:comment "Rectangle-equivalent of the chamfered court at 22.5 m E–W."@en ;
+    dcterms:source :coste_1867_passencan .
+
+:dim_wd_Q5959343_porch_diameter a crm:E54_Dimension ;
+    rdfs:label "Pasangan porch (hashti) diameter"@en ;
+    crm:P2_has_type persarch:dimtype_diameter ;
+    crm:P90_has_value "5.5"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_metre ;
+    persarch:uncertaintyMetre "0.5"^^xsd:decimal ;
+    rdfs:comment "Coste 2 circular porch; 100 px on the plan scale."@en ;
+    dcterms:source :coste_1867_passencan .
+
+:dim_wd_Q5959343_cistern_side a crm:E54_Dimension ;
+    rdfs:label "Pasangan cistern side"@en ;
+    crm:P2_has_type persarch:dimtype_length ;
+    crm:P90_has_value "5.5"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_metre ;
+    persarch:uncertaintyMetre "0.5"^^xsd:decimal ;
+    rdfs:comment "Square cistern (Coste 10) in the courtyard; 100 px."@en ;
+    dcterms:source :coste_1867_passencan .
+
+:dim_wd_Q5959343_cistern_area a crm:E54_Dimension ;
+    rdfs:label "Pasangan cistern area"@en ;
+    crm:P2_has_type persarch:dimtype_area ;
+    crm:P90_has_value "30"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_square_metre ;
+    rdfs:comment "Derived 5.5 × 5.5 m, rounded."@en ;
+    dcterms:source :coste_1867_passencan .
+
+:dim_wd_Q5959343_tower_diameter a crm:E54_Dimension ;
+    rdfs:label "Pasangan south-west tower diameter"@en ;
+    crm:P2_has_type persarch:dimtype_diameter ;
+    crm:P90_has_value "5"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_metre ;
+    persarch:uncertaintyMetre "0.5"^^xsd:decimal ;
+    rdfs:comment "Exemplar for the four unnumbered circular corner towers; 90 px on the south-west tower."@en ;
+    dcterms:source :coste_1867_passencan .

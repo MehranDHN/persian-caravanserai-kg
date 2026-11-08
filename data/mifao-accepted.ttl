@@ -1,0 +1,24 @@
+@prefix :         <https://w3id.org/persian-caravanserai-kg#> .
+@prefix persarch: <https://w3id.org/persian-architecture#> .
+@prefix bot:      <https://w3id.org/bot#> .
+@prefix crm:      <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmba:    <http://www.cidoc-crm.org/extensions/crmba/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix prov:     <http://www.w3.org/ns/prov#> .
+@prefix wd:       <http://www.wikidata.org/entity/> .
+
+# Idempotent ingest of review_status=accepted rows from
+# data/mifao-review-queue.csv. Do not hand-edit; re-run the script.
+# Load with data/sources.ttl. Common records reuse UNESCO or Wikidata IRIs
+# and list every source on persarch:attestedBy / persarch:sourceSet.
+
+:Ingest_MIFAO_accepted a prov:Activity ;
+    rdfs:label "Ingest of accepted MIFAO review-queue rows"@en ;
+    prov:used :source_mifao81 , :source_mifao82 ;
+    dcterms:description "0 accepted buildings."@en .
+
+# No accepted rows. Set review_status=accepted, fill unesco_id/wikidata if known, re-run.

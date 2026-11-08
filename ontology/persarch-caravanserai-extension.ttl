@@ -13,6 +13,7 @@
 @prefix wd:       <http://www.wikidata.org/entity/> .
 @prefix aat:      <http://vocab.getty.edu/aat/> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix prov:     <http://www.w3.org/ns/prov#> .
 
 #################################################################
 # Persian Caravanserai ontology module
@@ -29,7 +30,7 @@ pckg: a owl:Ontology ;
     dcterms:title "Persian Caravanserai — BOT extension and CRM overlay"@en ;
     dcterms:creator "MehranDHN" ;
     dcterms:license <https://www.gnu.org/licenses/gpl-3.0> ;
-    owl:versionInfo "0.2.0" ;
+    owl:versionInfo "0.3.1" ;
     dcterms:source <https://github.com/MehranDHN/persarch> ;
     rdfs:seeAlso <https://w3c-lbd-cg.github.io/bot/> ,
                  <https://cidoc-crm.org/> ,
@@ -202,6 +203,11 @@ persarch:PlanImage a owl:Class ;
     rdfs:label "Plan image"@en ;
     rdfs:subClassOf persarch:PresentationResource .
 
+persarch:MapImage a owl:Class ;
+    rdfs:label "Map image"@en ;
+    rdfs:subClassOf persarch:PresentationResource ;
+    rdfs:comment "Itinerary map, survey map, or other cartographic canvas in a IIIF manifest."@en .
+
 persarch:IiifManifest a owl:Class ;
     rdfs:label "IIIF Presentation API 3 Manifest"@en ;
     rdfs:subClassOf persarch:PresentationResource ;
@@ -216,6 +222,16 @@ persarch:hasPlanPresentation a owl:ObjectProperty ;
     rdfs:label "has plan presentation"@en ;
     rdfs:subPropertyOf persarch:hasPresentation ;
     rdfs:range persarch:PlanImage .
+
+persarch:hasPhotographPresentation a owl:ObjectProperty ;
+    rdfs:label "has photograph presentation"@en ;
+    rdfs:subPropertyOf persarch:hasPresentation ;
+    rdfs:range persarch:Photograph .
+
+persarch:hasMapPresentation a owl:ObjectProperty ;
+    rdfs:label "has map presentation"@en ;
+    rdfs:subPropertyOf persarch:hasPresentation ;
+    rdfs:range persarch:MapImage .
 
 persarch:hasIiifManifest a owl:ObjectProperty ;
     rdfs:label "has IIIF Manifest"@en ;
@@ -297,6 +313,76 @@ persarch:reviewStatus a owl:DatatypeProperty ;
     rdfs:label "human review status"@en ;
     rdfs:comment "candidate | in-review | accepted | rejected. Required for unstructured-source records (MIFAO 81/82)."@en ;
     rdfs:range xsd:string .
+
+persarch:workingId a owl:DatatypeProperty ;
+    rdfs:label "working identifier"@en ;
+    rdfs:comment "Stable editor key from data/mifao-review-queue.csv."@en ;
+    rdfs:range xsd:string .
+
+persarch:locator a owl:DatatypeProperty ;
+    rdfs:label "source locator"@en ;
+    rdfs:comment "Page, figure, plate, or other citation fragment within a source."@en ;
+    rdfs:range xsd:string .
+
+persarch:sourceId a owl:DatatypeProperty ;
+    rdfs:label "source identifier"@en ;
+    rdfs:comment "Controlled id: wikidata | unesco | mifao81 | mifao82 | wolfram."@en ;
+    rdfs:range xsd:string .
+
+persarch:harvestStatus a owl:DatatypeProperty ;
+    rdfs:label "harvest status"@en ;
+    rdfs:comment "included | not-included. Wolfram is declared as a source before any harvest exists."@en ;
+    rdfs:range xsd:string .
+
+persarch:sourceSet a owl:DatatypeProperty ;
+    rdfs:label "source set"@en ;
+    rdfs:comment "Pipe-separated list of source ids that attest this building, e.g. unesco|wikidata|mifao81."@en ;
+    rdfs:range xsd:string .
+
+persarch:sourceCount a owl:DatatypeProperty ;
+    rdfs:label "source count"@en ;
+    rdfs:range xsd:integer .
+
+#################################################################
+# Sources and attestations — one building, many documented origins
+#################################################################
+
+persarch:DataSource a owl:Class ;
+    rdfs:label "data source"@en ;
+    rdfs:subClassOf crm:E31_Document ;
+    rdfs:comment "A named dataset or publication from which caravanserai records are harvested: Wikidata, UNESCO 1668, MIFAO 81, MIFAO 82, Wolfram."@en .
+
+persarch:SourceAttestation a owl:Class ;
+    rdfs:label "source attestation"@en ;
+    rdfs:subClassOf crm:E73_Information_Object ;
+    rdfs:comment "One source's covering evidence for one building (page, figure, plate, UNESCO id, QID). Does not merge the sources."@en .
+
+persarch:attestedBy a owl:ObjectProperty ;
+    rdfs:label "attested by"@en ;
+    rdfs:domain bot:Building ;
+    rdfs:range persarch:DataSource ;
+    rdfs:comment "The building is documented in this source. Repeat the property once per source. Common records carry several attestedBy statements."@en .
+
+persarch:hasAttestation a owl:ObjectProperty ;
+    rdfs:label "has attestation"@en ;
+    rdfs:domain bot:Building ;
+    rdfs:range persarch:SourceAttestation .
+
+persarch:attestationSource a owl:ObjectProperty ;
+    rdfs:label "attestation source"@en ;
+    rdfs:domain persarch:SourceAttestation ;
+    rdfs:range persarch:DataSource .
+
+persarch:documentsBuilding a owl:ObjectProperty ;
+    rdfs:label "documents building"@en ;
+    rdfs:subPropertyOf crm:P70_documents ;
+    rdfs:domain persarch:SourceAttestation ;
+    rdfs:range bot:Building .
+
+persarch:evidenceKind a owl:ObjectProperty ;
+    rdfs:label "evidence kind"@en ;
+    rdfs:domain persarch:SourceAttestation ;
+    rdfs:range crm:E55_Type .
 
 #################################################################
 # Shared vocabulary individuals (E55 / E57) — skos:exactMatch only
@@ -380,3 +466,60 @@ persarch:role_workshop a crm:E55_Type ;
 
 persarch:role_calligrapher a crm:E55_Type ;
     rdfs:label "calligrapher"@en .
+
+persarch:evidence_page a crm:E55_Type ;
+    rdfs:label "page"@en .
+
+persarch:evidence_figure a crm:E55_Type ;
+    rdfs:label "figure (plan)"@en .
+
+persarch:evidence_plate a crm:E55_Type ;
+    rdfs:label "photographic plate"@en .
+
+persarch:evidence_index a crm:E55_Type ;
+    rdfs:label "index entry"@en .
+
+persarch:evidence_itinerary a crm:E55_Type ;
+    rdfs:label "itinerary mention"@en .
+
+persarch:evidence_map a crm:E55_Type ;
+    rdfs:label "map"@en .
+
+#################################################################
+# Measurement (CIDOC CRM E54 / E16 / E58)
+#################################################################
+
+persarch:unit_metre a crm:E58_Measurement_Unit ;
+    rdfs:label "metre"@en ;
+    skos:exactMatch wd:Q11573 .
+
+persarch:unit_square_metre a crm:E58_Measurement_Unit ;
+    rdfs:label "square metre"@en ;
+    skos:exactMatch wd:Q25343 .
+
+persarch:dimtype_length a crm:E55_Type ;
+    rdfs:label "length"@en .
+
+persarch:dimtype_width a crm:E55_Type ;
+    rdfs:label "width"@en .
+
+persarch:dimtype_height a crm:E55_Type ;
+    rdfs:label "height"@en .
+
+persarch:dimtype_area a crm:E55_Type ;
+    rdfs:label "area"@en .
+
+persarch:dimtype_diameter a crm:E55_Type ;
+    rdfs:label "diameter"@en .
+
+persarch:dimtype_depth a crm:E55_Type ;
+    rdfs:label "depth"@en .
+
+persarch:method_scale_bar a crm:E55_Type ;
+    rdfs:label "graphic scale bar"@en ;
+    rdfs:comment "Dimension taken from a printed metric scale on a plan or section. Treat as an estimate."@en .
+
+persarch:uncertaintyMetre a owl:DatatypeProperty ;
+    rdfs:label "uncertainty in metres"@en ;
+    rdfs:domain crm:E54_Dimension ;
+    rdfs:range xsd:decimal .

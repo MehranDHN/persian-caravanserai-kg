@@ -1,0 +1,445 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Pasangan Caravanserai — Pascal Coste, 1867"
+    ],
+    "fa": [
+      "کاروانسرای پاسنگان — پاسکال کوست"
+    ],
+    "fr": [
+      "Caravanserail Passencan — Pascal Coste, 1867"
+    ]
+  },
+  "summary": {
+    "en": [
+      "Measured plan, sections A-B and C-D, and exterior view of Pasangan (Passencan) on the Tehran–Isfahan road. Printed legend keys 1–12 define storeys, spaces, and elements linked from :wd_Q5959343."
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Wikidata"
+        ]
+      },
+      "value": {
+        "en": [
+          "Q5959343"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Author"
+        ]
+      },
+      "value": {
+        "en": [
+          "Pascal Coste"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Source"
+        ]
+      },
+      "value": {
+        "en": [
+          "Monuments modernes de la Perse, Morel, 1867"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Legend"
+        ]
+      },
+      "value": {
+        "en": [
+          "1 Entrée du Caravansérail; 2 Porche; 3 Cour; 4 Chambres des Voyageurs; 5 Estrades des Voyageurs; 6 Ecuries; 7 Estrades pour les Muletiers; 8 Escaliers des Terrasses; 9 Latrines; 10 Estrade pour la prière, audessous Citerne; 11 Cheminées; 12 Niches"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Rights"
+        ]
+      },
+      "value": {
+        "en": [
+          "Public domain"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Plan, sections and exterior view"
+        ]
+      },
+      "height": 2514,
+      "width": 1707,
+      "items": [
+        {
+          "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/page/painting",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/painting",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1",
+              "body": {
+                "id": "https://upload.wikimedia.org/wikipedia/commons/3/37/Pasangan_caravanserai_by_Pascal_Coste.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 1707,
+                "height": 2514
+              }
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/page/classifying",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/1",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_entrance",
+                "type": "TextualBody",
+                "value": "Coste 1 — Entrée du Caravansérail"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/2",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_porch",
+                "type": "TextualBody",
+                "value": "Coste 2 — Porche"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/3",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_sahn",
+                "type": "TextualBody",
+                "value": "Coste 3 — Cour"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/4",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_hujra",
+                "type": "TextualBody",
+                "value": "Coste 4 — Chambres des Voyageurs"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/5",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_traveller_platform",
+                "type": "TextualBody",
+                "value": "Coste 5 — Estrades des Voyageurs"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/6",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_stables",
+                "type": "TextualBody",
+                "value": "Coste 6 — Ecuries (series; ranges N E S W)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform",
+                "type": "TextualBody",
+                "value": "Coste 7 — Estrades pour les Muletiers (series; 16 bays)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-n_1",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_n_1",
+                "type": "TextualBody",
+                "value": "Coste 7 — north bay 1 (west, NW tower)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-n_2",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_n_2",
+                "type": "TextualBody",
+                "value": "Coste 7 — north bay 2 (west of north iwan)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-n_3",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_n_3",
+                "type": "TextualBody",
+                "value": "Coste 7 — north bay 3 (east of north iwan)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-n_4",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_n_4",
+                "type": "TextualBody",
+                "value": "Coste 7 — north bay 4 (east, NE tower)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-e_1",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_e_1",
+                "type": "TextualBody",
+                "value": "Coste 7 — east bay 1 (north, NE tower)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-e_2",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_e_2",
+                "type": "TextualBody",
+                "value": "Coste 7 — east bay 2 (north of east iwan)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-e_3",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_e_3",
+                "type": "TextualBody",
+                "value": "Coste 7 — east bay 3 (south of east iwan)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-e_4",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_e_4",
+                "type": "TextualBody",
+                "value": "Coste 7 — east bay 4 (south, SE tower)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-s_1",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_s_1",
+                "type": "TextualBody",
+                "value": "Coste 7 — south bay 1 (west, SW tower)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-s_2",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_s_2",
+                "type": "TextualBody",
+                "value": "Coste 7 — south bay 2 (west of porch)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-s_3",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_s_3",
+                "type": "TextualBody",
+                "value": "Coste 7 — south bay 3 (east of porch)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-s_4",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_s_4",
+                "type": "TextualBody",
+                "value": "Coste 7 — south bay 4 (east, SE tower)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-w_1",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_w_1",
+                "type": "TextualBody",
+                "value": "Coste 7 — west bay 1 (north, NW tower)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-w_2",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_w_2",
+                "type": "TextualBody",
+                "value": "Coste 7 — west bay 2 (north of west iwan)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-w_3",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_w_3",
+                "type": "TextualBody",
+                "value": "Coste 7 — west bay 3 (south of west iwan)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/7-w_4",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_muleteer_platform_w_4",
+                "type": "TextualBody",
+                "value": "Coste 7 — west bay 4 (south, SW tower)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/8",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_stairs",
+                "type": "TextualBody",
+                "value": "Coste 8 — Escaliers des Terrasses"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/9",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_latrines",
+                "type": "TextualBody",
+                "value": "Coste 9 — Latrines"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/10",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_prayer_platform",
+                "type": "TextualBody",
+                "value": "Coste 10 — Estrade pour la prière, audessous Citerne"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/11",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_chimneys",
+                "type": "TextualBody",
+                "value": "Coste 11 — Cheminées"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/anno/12",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343_niches",
+                "type": "TextualBody",
+                "value": "Coste 12 — Niches"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/pasangan/canvas/1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5959343",
+      "type": "Dataset",
+      "format": "text/turtle",
+      "label": {
+        "en": [
+          "RDF record :wd_Q5959343 (harvest + Coste topology)"
+        ]
+      }
+    }
+  ]
+}

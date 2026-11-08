@@ -30,3 +30,26 @@ PREFIX : <https://w3id.org/persian-caravanserai-kg#>
 
 # CQ5. Records with an IIIF manifest
 # SELECT ?c ?m WHERE { ?c persarch:hasIiifManifest ?m . }
+
+# CQ6. Source distinction and overlap — see queries/source-coverage.rq
+# SELECT ?c ?label ?sourceSet ?sourceCount WHERE {
+#   ?c a persarch:Caravanserai ; rdfs:label ?label ;
+#      persarch:sourceSet ?sourceSet ; persarch:sourceCount ?sourceCount .
+#   FILTER(LANG(?label) = "en")
+#   FILTER(?sourceCount >= 2)
+# }
+
+# CQ7. Scale-bar dimensions on Pasangan (Coste 1867)
+# SELECT ?thing ?dim ?type ?value ?unit WHERE {
+#   :Measurement_Coste_Passencan_scale crm:P40_observed_dimension ?dim .
+#   ?thing crm:P43_has_dimension ?dim .
+#   ?dim crm:P2_has_type ?type ; crm:P90_has_value ?value ; crm:P91_has_unit ?unit .
+# }
+
+# CQ8. Instance-level muleteer rooms (Coste 7) and local adjacency
+# SELECT ?room ?loc ?nbr WHERE {
+#   :wd_Q5959343_muleteer_platform bot:containsZone ?room .
+#   ?room persarch:locator ?loc .
+#   OPTIONAL { ?room bot:adjacentZone|bot:adjacentElement ?nbr }
+# }
+# ORDER BY ?loc

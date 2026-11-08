@@ -191,10 +191,11 @@ def emit_turtle(records: dict) -> str:
         "",
         "# Auto-generated from Wikidata SPARQL. Do not hand-edit;",
         "# refine instances in data/case-studies/ and re-harvest to refresh this file.",
+        "# Load with data/sources.ttl so :source_wikidata is defined.",
         "",
         f":Harvest_Wikidata_Iran_Caravanserais a prov:Activity ;",
         f'    rdfs:label "Wikidata harvest of Iranian caravanserais"@en ;',
-        f"    prov:used <https://query.wikidata.org/> ;",
+        f"    prov:used <https://query.wikidata.org/> , :source_wikidata ;",
         f"    dcterms:source wd:Q186347 , wd:Q66030932 .",
         "",
     ]
@@ -240,6 +241,9 @@ def emit_turtle(records: dict) -> str:
         if rec["commons"]:
             commons_uri = "https://commons.wikimedia.org/wiki/Category:" + rec["commons"].replace(" ", "_")
             stmts.append(f"    dcterms:isPartOf <{commons_uri}> ;")
+        stmts.append("    persarch:attestedBy :source_wikidata ;")
+        stmts.append('    persarch:sourceSet "wikidata" ;')
+        stmts.append('    persarch:sourceCount "1"^^xsd:integer ;')
         stmts.append("    prov:wasGeneratedBy :Harvest_Wikidata_Iran_Caravanserais .")
         lines.append("\n".join(stmts))
         lines.append("")

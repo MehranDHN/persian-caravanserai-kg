@@ -1,0 +1,11 @@
+{
+    "mentor.sparql.connections": [
+        {
+            "id": "0bba01c9-5a1c-46eb-be31-0264760b9dc1",
+            "endpointUrl": "http://localhost:7200/repositories/IIIFDexir_10_10_2026",
+            "storeType": "sparql",
+            "autoLoadGraphs": true,
+            "graphReloadIntervalSeconds": 86400
+        }
+    ]
+}

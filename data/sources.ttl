@@ -1,0 +1,62 @@
+@prefix :         <https://w3id.org/persian-caravanserai-kg#> .
+@prefix persarch: <https://w3id.org/persian-architecture#> .
+@prefix crm:      <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix wd:       <http://www.wikidata.org/entity/> .
+
+# Named sources for this graph. Load with every harvest.
+# Buildings point here with persarch:attestedBy. Repeat that property
+# once per source; a common record carries several attestations.
+
+:source_wikidata a persarch:DataSource , crm:E31_Document ;
+    rdfs:label "Wikidata"@en ;
+    persarch:sourceId "wikidata" ;
+    persarch:harvestStatus "included" ;
+    dcterms:identifier "wikidata" ;
+    foaf:homepage <https://www.wikidata.org/> ;
+    dcterms:source wd:Q186347 , wd:Q66030932 ;
+    rdfs:comment "SPARQL harvest of caravanserais in Iran (Q186347, P17=Q794) and parts of UNESCO serial Q66030932."@en .
+
+:source_unesco a persarch:DataSource , crm:E31_Document ;
+    rdfs:label "UNESCO World Heritage List 1668"@en ;
+    persarch:sourceId "unesco" ;
+    persarch:harvestStatus "included" ;
+    dcterms:identifier "unesco" ;
+    dcterms:identifier "1668" ;
+    foaf:homepage <https://whc.unesco.org/en/list/1668/> ;
+    dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    rdfs:comment "The Persian Caravanserai: 54 inscribed components. Coordinates and areas from the WHC maps table."@en .
+
+:source_mifao81 a persarch:DataSource , crm:E31_Document ;
+    rdfs:label "MIFAO 81 (Siroux 1949)"@en ;
+    persarch:sourceId "mifao81" ;
+    persarch:harvestStatus "included" ;
+    dcterms:identifier "MIFAO81" ;
+    dcterms:creator "Maxime Siroux" ;
+    dcterms:title "Caravansérails d'Iran et petites constructions routières"@fr ;
+    dcterms:date "1949"^^xsd:gYear ;
+    dcterms:publisher "Institut français d'archéologie orientale" ;
+    foaf:homepage <https://archive.org/details/MIFAO81> ;
+    rdfs:comment "National survey of roadside inns and minor road buildings. Plans and plates are complementary documents; OCR is a finding aid only. Ingest only review_status=accepted rows."@en .
+
+:source_mifao82 a persarch:DataSource , crm:E31_Document ;
+    rdfs:label "MIFAO 82 (Siroux 1971)"@en ;
+    persarch:sourceId "mifao82" ;
+    persarch:harvestStatus "included" ;
+    dcterms:identifier "MIFAO82" ;
+    dcterms:creator "Maxime Siroux" ;
+    dcterms:title "Anciennes voies et monuments routiers de la région d'Ispahân"@fr ;
+    dcterms:date "1971"^^xsd:gYear ;
+    dcterms:publisher "Institut français d'archéologie orientale" ;
+    foaf:homepage <https://archive.org/details/MIFAO82> ;
+    rdfs:comment "Isfahan-region roads: about 60 caravanserais, 98 plans, 170 photographs. Completes and updates MIFAO 81 for that region."@en .
+
+:source_wolfram a persarch:DataSource , crm:E31_Document ;
+    rdfs:label "Wolfram"@en ;
+    persarch:sourceId "wolfram" ;
+    persarch:harvestStatus "not-included" ;
+    dcterms:identifier "wolfram" ;
+    rdfs:comment "Reserved source. No harvest yet. Buildings must not carry persarch:attestedBy :source_wolfram until a Wolfram extract is reviewed."@en .

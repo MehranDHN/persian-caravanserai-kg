@@ -14,6 +14,7 @@
 # UNESCO World Heritage List 1668 — The Persian Caravanserai.
 # 54 components inscribed 17 September 2023, criteria (ii)(iii).
 # Source: https://whc.unesco.org/en/list/1668/maps/
+# Load with data/sources.ttl so :source_unesco is defined.
 
 :unesco_persian_caravanserai a crm:E27_Site , bot:Site ;
     rdfs:label "The Persian Caravanserai"@en ;
@@ -22,11 +23,12 @@
     persarch:unescoListId "1668" ;
     dcterms:date "2023-09-17"^^xsd:date ;
     dcterms:source <https://whc.unesco.org/en/list/1668/> ;
+    persarch:attestedBy :source_unesco ;
     dcterms:description "Serial World Heritage property of fifty-four caravanserais along historic roads of Iran."@en .
 
 :Harvest_UNESCO_1668 a prov:Activity ;
     rdfs:label "UNESCO WHC 1668 component harvest"@en ;
-    prov:used <https://whc.unesco.org/en/list/1668/maps/> .
+    prov:used <https://whc.unesco.org/en/list/1668/maps/> , :source_unesco .
 
 :deyr_e_gachin a persarch:Caravanserai , bot:Building , crmba:B1_Built_Work ;
     rdfs:label "Deyr-e Gachin"@en ;
@@ -38,6 +40,9 @@
     persarch:propertyAreaHectare "1.9"^^xsd:decimal ;
     persarch:bufferAreaHectare "237.1"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :deyr_e_gachin .
@@ -52,6 +57,9 @@
     persarch:propertyAreaHectare "0.64"^^xsd:decimal ;
     persarch:bufferAreaHectare "99.79"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :noushirvan .
@@ -65,6 +73,9 @@
     geo:asWKT "POINT(53.730144 35.770539)"^^geo:wktLiteral ;
     persarch:propertyAreaHectare "0.69"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :ahovan .
@@ -79,6 +90,9 @@
     persarch:propertyAreaHectare "0.4"^^xsd:decimal ;
     persarch:bufferAreaHectare "45.09"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :parand .
@@ -93,6 +107,9 @@
     persarch:propertyAreaHectare "1.12"^^xsd:decimal ;
     persarch:bufferAreaHectare "82.16"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :robat_e_sharaf .
@@ -107,6 +124,9 @@
     persarch:propertyAreaHectare "1.76"^^xsd:decimal ;
     persarch:bufferAreaHectare "275.74"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :anjireh_ajori .
@@ -120,6 +140,9 @@
     geo:asWKT "POINT(54.484039 32.162211)"^^geo:wktLiteral ;
     persarch:propertyAreaHectare "0.09"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :anjireh_sangi .
@@ -134,6 +157,9 @@
     persarch:propertyAreaHectare "0.41"^^xsd:decimal ;
     persarch:bufferAreaHectare "150.33"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :abbas_abad_taybad .
@@ -148,6 +174,9 @@
     persarch:propertyAreaHectare "0.37"^^xsd:decimal ;
     persarch:bufferAreaHectare "13.83"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :jamal_abad .
@@ -162,6 +191,9 @@
     persarch:propertyAreaHectare "0.2"^^xsd:decimal ;
     persarch:bufferAreaHectare "83.71"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :qelli .
@@ -176,6 +208,9 @@
     persarch:propertyAreaHectare "0.16"^^xsd:decimal ;
     persarch:bufferAreaHectare "10.09"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :fakhr_e_davud .
@@ -190,6 +225,9 @@
     persarch:propertyAreaHectare "0.82"^^xsd:decimal ;
     persarch:bufferAreaHectare "15.46"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :sheikhali_khan .
@@ -204,6 +242,9 @@
     persarch:propertyAreaHectare "0.46"^^xsd:decimal ;
     persarch:bufferAreaHectare "226.33"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :maranjab .
@@ -218,6 +259,9 @@
     persarch:propertyAreaHectare "0.4"^^xsd:decimal ;
     persarch:bufferAreaHectare "5.23"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :amin_abad .
@@ -232,6 +276,9 @@
     persarch:propertyAreaHectare "0.44"^^xsd:decimal ;
     persarch:bufferAreaHectare "71.13"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :gabr_abad .
@@ -246,6 +293,9 @@
     persarch:propertyAreaHectare "0.92"^^xsd:decimal ;
     persarch:bufferAreaHectare "76.45"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :mahyar .
@@ -260,6 +310,9 @@
     persarch:propertyAreaHectare "0.9"^^xsd:decimal ;
     persarch:bufferAreaHectare "20.36"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :gaz .
@@ -274,6 +327,9 @@
     persarch:propertyAreaHectare "0.61"^^xsd:decimal ;
     persarch:bufferAreaHectare "6.74"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :kuhpayeh .
@@ -288,6 +344,9 @@
     persarch:propertyAreaHectare "0.47"^^xsd:decimal ;
     persarch:bufferAreaHectare "22.21"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :mazinan .
@@ -302,6 +361,9 @@
     persarch:propertyAreaHectare "0.57"^^xsd:decimal ;
     persarch:bufferAreaHectare "67.05"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :mehr .
@@ -316,6 +378,9 @@
     persarch:propertyAreaHectare "0.63"^^xsd:decimal ;
     persarch:bufferAreaHectare "29.79"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :zaferaniyeh .
@@ -330,6 +395,9 @@
     persarch:propertyAreaHectare "0.32"^^xsd:decimal ;
     persarch:bufferAreaHectare "16.68"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :fakhr_abad .
@@ -344,6 +412,9 @@
     persarch:propertyAreaHectare "0.19"^^xsd:decimal ;
     persarch:bufferAreaHectare "3.61"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :sarayan .
@@ -358,6 +429,9 @@
     persarch:propertyAreaHectare "0.65"^^xsd:decimal ;
     persarch:bufferAreaHectare "769.49"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :qasr_e_bahram .
@@ -372,6 +446,9 @@
     persarch:propertyAreaHectare "0.53"^^xsd:decimal ;
     persarch:bufferAreaHectare "2.39"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :mayamey .
@@ -386,6 +463,9 @@
     persarch:propertyAreaHectare "0.86"^^xsd:decimal ;
     persarch:bufferAreaHectare "30.63"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :abbas_abad .
@@ -400,6 +480,9 @@
     persarch:propertyAreaHectare "2.44"^^xsd:decimal ;
     persarch:bufferAreaHectare "197.84"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :miandasht .
@@ -414,6 +497,9 @@
     persarch:propertyAreaHectare "0.41"^^xsd:decimal ;
     persarch:bufferAreaHectare "269.93"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :zeynoddin .
@@ -428,6 +514,9 @@
     persarch:propertyAreaHectare "0.67"^^xsd:decimal ;
     persarch:bufferAreaHectare "9.98"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :meybod .
@@ -442,6 +531,9 @@
     persarch:propertyAreaHectare "0.46"^^xsd:decimal ;
     persarch:bufferAreaHectare "12.56"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :farasfaj .
@@ -456,6 +548,9 @@
     persarch:propertyAreaHectare "0.49"^^xsd:decimal ;
     persarch:bufferAreaHectare "37.65"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :izadkhast .
@@ -470,6 +565,9 @@
     persarch:propertyAreaHectare "0.81"^^xsd:decimal ;
     persarch:bufferAreaHectare "35.36"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :bisotun .
@@ -484,6 +582,9 @@
     persarch:propertyAreaHectare "0.38"^^xsd:decimal ;
     persarch:bufferAreaHectare "7.27"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :ganjali_khan .
@@ -498,6 +599,9 @@
     persarch:propertyAreaHectare "0.49"^^xsd:decimal ;
     persarch:bufferAreaHectare "12.29"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :yengeh_emam .
@@ -512,6 +616,9 @@
     persarch:propertyAreaHectare "0.23"^^xsd:decimal ;
     persarch:bufferAreaHectare "18.75"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :khajeh_nazar .
@@ -526,6 +633,9 @@
     persarch:propertyAreaHectare "0.15"^^xsd:decimal ;
     persarch:bufferAreaHectare "10.93"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :goujebel .
@@ -540,6 +650,9 @@
     persarch:propertyAreaHectare "0.06"^^xsd:decimal ;
     persarch:bufferAreaHectare "74.04"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :saeen .
@@ -554,6 +667,9 @@
     persarch:propertyAreaHectare "0.11"^^xsd:decimal ;
     persarch:bufferAreaHectare "12.29"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :titi .
@@ -568,6 +684,9 @@
     persarch:propertyAreaHectare "0.16"^^xsd:decimal ;
     persarch:bufferAreaHectare "4.51"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :dehdasht .
@@ -582,6 +701,9 @@
     persarch:propertyAreaHectare "0.04"^^xsd:decimal ;
     persarch:bufferAreaHectare "6.96"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :khoy .
@@ -596,6 +718,9 @@
     persarch:propertyAreaHectare "0.53"^^xsd:decimal ;
     persarch:bufferAreaHectare "30.8"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :bagh_e_sheikh .
@@ -610,6 +735,9 @@
     persarch:propertyAreaHectare "0.48"^^xsd:decimal ;
     persarch:bufferAreaHectare "25.39"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :neyestanak .
@@ -624,6 +752,9 @@
     persarch:propertyAreaHectare "0.33"^^xsd:decimal ;
     persarch:bufferAreaHectare "45.54"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :chehel_payeh .
@@ -638,6 +769,9 @@
     persarch:propertyAreaHectare "0.34"^^xsd:decimal ;
     persarch:bufferAreaHectare "8.67"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :khan .
@@ -652,6 +786,9 @@
     persarch:propertyAreaHectare "0.25"^^xsd:decimal ;
     persarch:bufferAreaHectare "10.68"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :deh_mohammad .
@@ -666,6 +803,9 @@
     persarch:propertyAreaHectare "0.28"^^xsd:decimal ;
     persarch:bufferAreaHectare "6.56"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :taj_abad .
@@ -680,6 +820,9 @@
     persarch:propertyAreaHectare "0.16"^^xsd:decimal ;
     persarch:bufferAreaHectare "35.69"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :chah_kuran .
@@ -694,6 +837,9 @@
     persarch:propertyAreaHectare "0.28"^^xsd:decimal ;
     persarch:bufferAreaHectare "17.34"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :kharanaq .
@@ -708,6 +854,9 @@
     persarch:propertyAreaHectare "0.5"^^xsd:decimal ;
     persarch:bufferAreaHectare "9.54"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :rashti .
@@ -722,6 +871,9 @@
     persarch:propertyAreaHectare "0.78"^^xsd:decimal ;
     persarch:bufferAreaHectare "6.01"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :borazjan .
@@ -736,6 +888,9 @@
     persarch:propertyAreaHectare "0.22"^^xsd:decimal ;
     persarch:bufferAreaHectare "11.67"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :chameshk .
@@ -750,6 +905,9 @@
     persarch:propertyAreaHectare "0.1"^^xsd:decimal ;
     persarch:bufferAreaHectare "1.42"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :afzal .
@@ -764,6 +922,9 @@
     persarch:propertyAreaHectare "0.1"^^xsd:decimal ;
     persarch:bufferAreaHectare "2.24"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :bastak .
@@ -778,6 +939,9 @@
     persarch:propertyAreaHectare "2.58"^^xsd:decimal ;
     persarch:bufferAreaHectare "11.28"^^xsd:decimal ;
     dcterms:source <https://whc.unesco.org/en/list/1668/maps/> ;
+    persarch:attestedBy :source_unesco ;
+    persarch:sourceSet "unesco" ;
+    persarch:sourceCount "1"^^xsd:integer ;
     prov:wasGeneratedBy :Harvest_UNESCO_1668 .
 
 :unesco_persian_caravanserai bot:hasBuilding :saadossaltaneh .

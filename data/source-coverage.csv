@@ -1,0 +1,467 @@
+record_key,canonical_iri,label,unesco_id,wikidata,mifao_working_id,in_unesco,in_wikidata,in_mifao81,in_mifao82,in_wolfram,source_count,sources,overlap_note
+unesco:1668-001,https://w3id.org/persian-caravanserai-kg#deyr_e_gachin,Deyr-e Gachin,1668-001,Q6394061,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-002,https://w3id.org/persian-caravanserai-kg#noushirvan,Noushirvan,1668-002,Q5873186,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-003,https://w3id.org/persian-caravanserai-kg#ahovan,Ahovan,1668-003,Q5891443,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-004,https://w3id.org/persian-caravanserai-kg#parand,Parand,1668-004,Q42575545,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-005,https://w3id.org/persian-caravanserai-kg#robat_e_sharaf,Robat-e Sharaf,1668-005,Q2577338,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-006,https://w3id.org/persian-caravanserai-kg#anjireh_ajori,Anjireh Ajori,1668-006,Q122706913,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-007,https://w3id.org/persian-caravanserai-kg#anjireh_sangi,Anjireh Sangi,1668-007,Q5911963,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-008,https://w3id.org/persian-caravanserai-kg#abbas_abad_taybad,Abbas Abad Taybad,1668-008,Q109340152,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-009,https://w3id.org/persian-caravanserai-kg#jamal_abad,Jamal Abad,1668-009,Q5907713,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-010,https://w3id.org/persian-caravanserai-kg#qelli,Qelli,1668-010,Q6537569,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-011,https://w3id.org/persian-caravanserai-kg#fakhr_e_davud,Fakhr-e Davud,1668-011,Q5813213,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-012,https://w3id.org/persian-caravanserai-kg#sheikhali_khan,Sheikhali Khan,1668-012,Q5905596,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-013,https://w3id.org/persian-caravanserai-kg#maranjab,Maranjab,1668-013,Q5730585,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-014,https://w3id.org/persian-caravanserai-kg#amin_abad,Amin Abad,1668-014,Q5907540,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-015,https://w3id.org/persian-caravanserai-kg#gabr_abad,Gabr Abad,1668-015,Q5873197,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-016,https://w3id.org/persian-caravanserai-kg#mahyar,Mahyar,1668-016,Q5904114,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-017,https://w3id.org/persian-caravanserai-kg#gaz,Gaz,1668-017,Q5871566,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-018,https://w3id.org/persian-caravanserai-kg#kuhpayeh,Kuhpayeh,1668-018,Q5906011,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-019,https://w3id.org/persian-caravanserai-kg#mazinan,Mazinan,1668-019,Q5904562,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-020,https://w3id.org/persian-caravanserai-kg#mehr,Mehr,1668-020,Q5900091,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-021,https://w3id.org/persian-caravanserai-kg#zaferaniyeh,Zaferaniyeh,1668-021,Q5923727,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-022,https://w3id.org/persian-caravanserai-kg#fakhr_abad,Fakhr Abad,1668-022,Q5913234,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-023,https://w3id.org/persian-caravanserai-kg#sarayan,Sarayan,1668-023,Q5893109,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-024,https://w3id.org/persian-caravanserai-kg#qasr_e_bahram,Qasr-e Bahram,1668-024,Q5867812,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-025,https://w3id.org/persian-caravanserai-kg#mayamey,Mayamey,1668-025,Q5892124,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-026,https://w3id.org/persian-caravanserai-kg#abbas_abad,Abbas Abad,1668-026,Q5915113,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-027,https://w3id.org/persian-caravanserai-kg#miandasht,Miandasht,1668-027,Q5705395,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-028,https://w3id.org/persian-caravanserai-kg#zeynoddin,Zeynoddin,1668-028,Q15068974,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-029,https://w3id.org/persian-caravanserai-kg#meybod,Meybod,1668-029,Q5887312,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-030,https://w3id.org/persian-caravanserai-kg#farasfaj,Farasfaj,1668-030,Q5907778,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-031,https://w3id.org/persian-caravanserai-kg#izadkhast,Izadkhast,1668-031,Q5873579,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-032,https://w3id.org/persian-caravanserai-kg#bisotun,Bisotun,1668-032,Q5908224,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-033,https://w3id.org/persian-caravanserai-kg#ganjali_khan,Ganjali Khan,1668-033,Q5905314,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-034,https://w3id.org/persian-caravanserai-kg#yengeh_emam,Yengeh Emam,1668-034,Q5902267,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-035,https://w3id.org/persian-caravanserai-kg#khajeh_nazar,Khajeh Nazar,1668-035,Q6558875,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-036,https://w3id.org/persian-caravanserai-kg#goujebel,Goujebel,1668-036,Q5907181,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-037,https://w3id.org/persian-caravanserai-kg#saeen,Saeen,1668-037,Q5928207,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-038,https://w3id.org/persian-caravanserai-kg#titi,Titi,1668-038,Q5888547,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-039,https://w3id.org/persian-caravanserai-kg#dehdasht,Dehdasht,1668-039,Q5899756,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-040,https://w3id.org/persian-caravanserai-kg#khoy,Khoy,1668-040,Q42708726,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-041,https://w3id.org/persian-caravanserai-kg#bagh_e_sheikh,Bagh-e Sheikh,1668-041,Q5917647,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-042,https://w3id.org/persian-caravanserai-kg#neyestanak,Neyestanak,1668-042,Q5904265,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-043,https://w3id.org/persian-caravanserai-kg#chehel_payeh,Chehel Payeh,1668-043,Q5945649,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-044,https://w3id.org/persian-caravanserai-kg#khan,Khan,1668-044,Q138647472,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-045,https://w3id.org/persian-caravanserai-kg#deh_mohammad,Deh Mohammad,1668-045,Q5868984,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-046,https://w3id.org/persian-caravanserai-kg#taj_abad,Taj Abad,1668-046,Q5904949,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-047,https://w3id.org/persian-caravanserai-kg#chah_kuran,Chah Kuran,1668-047,Q5910864,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-048,https://w3id.org/persian-caravanserai-kg#kharanaq,Kharanaq,1668-048,Q5887896,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-049,https://w3id.org/persian-caravanserai-kg#rashti,Rashti,1668-049,Q5905602,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-050,https://w3id.org/persian-caravanserai-kg#borazjan,Borazjan,1668-050,Q5894632,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-051,https://w3id.org/persian-caravanserai-kg#chameshk,Chameshk,1668-051,Q5677204,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-052,https://w3id.org/persian-caravanserai-kg#afzal,Afzal,1668-052,Q5895519,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-053,https://w3id.org/persian-caravanserai-kg#bastak,Bastak,1668-053,Q6394073,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+unesco:1668-054,https://w3id.org/persian-caravanserai-kg#saadossaltaneh,Saadossaltaneh,1668-054,Q1484050,,yes,yes,no,no,no,2,UNESCO|Wikidata,common in UNESCO + Wikidata
+wd:Q100233325,https://w3id.org/persian-caravanserai-kg#wd_Q100233325,Bakhshi Caravanserai,,Q100233325,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q103843211,https://w3id.org/persian-caravanserai-kg#wd_Q103843211,Sabzeh Square Caravanserai,,Q103843211,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q105982775,https://w3id.org/persian-caravanserai-kg#wd_Q105982775,Tajavanchi Caravanserai,,Q105982775,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q106631353,https://w3id.org/persian-caravanserai-kg#wd_Q106631353,Sarutaqi Caravanserai,,Q106631353,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q106644612,https://w3id.org/persian-caravanserai-kg#wd_Q106644612,Abdolabad Castle,,Q106644612,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q107075932,https://w3id.org/persian-caravanserai-kg#wd_Q107075932,Haj Kazem Modarresi Caravanserai,,Q107075932,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q109341180,https://w3id.org/persian-caravanserai-kg#wd_Q109341180,Sharifabad Courtyard Caravanserai,,Q109341180,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q109551342,https://w3id.org/persian-caravanserai-kg#wd_Q109551342,Gahkom Caravanserai,,Q109551342,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q110276369,https://w3id.org/persian-caravanserai-kg#wd_Q110276369,Haj Mehdi Caravanserai (Naraq),,Q110276369,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q111996808,https://w3id.org/persian-caravanserai-kg#wd_Q111996808,Moshir Bridge Caravanserai,,Q111996808,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q112149320,https://w3id.org/persian-caravanserai-kg#wd_Q112149320,Lar Old Caravanserai,,Q112149320,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q11228706,https://w3id.org/persian-caravanserai-kg#wd_Q11228706,Khargushi Caravanserai,,Q11228706,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q11251967,https://w3id.org/persian-caravanserai-kg#wd_Q11251967,Mehran Caravanserai,,Q11251967,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q113939102,https://w3id.org/persian-caravanserai-kg#wd_Q113939102,Hojjatabad Vazir Caravanserai,,Q113939102,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q12177392,https://w3id.org/persian-caravanserai-kg#wd_Q12177392,Muzaffarid Caravanserai,,Q12177392,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q127843417,https://w3id.org/persian-caravanserai-kg#wd_Q127843417,Imamzadeh Hashem Caravanserai,,Q127843417,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647441,https://w3id.org/persian-caravanserai-kg#wd_Q138647441,Q138647441,,Q138647441,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647444,https://w3id.org/persian-caravanserai-kg#wd_Q138647444,Q138647444,,Q138647444,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647445,https://w3id.org/persian-caravanserai-kg#wd_Q138647445,Q138647445,,Q138647445,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647446,https://w3id.org/persian-caravanserai-kg#wd_Q138647446,Q138647446,,Q138647446,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647448,https://w3id.org/persian-caravanserai-kg#wd_Q138647448,کاروانسرای ایری,,Q138647448,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647449,https://w3id.org/persian-caravanserai-kg#wd_Q138647449,Q138647449,,Q138647449,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647450,https://w3id.org/persian-caravanserai-kg#wd_Q138647450,Piragaj Caravanserai,,Q138647450,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647452,https://w3id.org/persian-caravanserai-kg#wd_Q138647452,Q138647452,,Q138647452,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647453,https://w3id.org/persian-caravanserai-kg#wd_Q138647453,Q138647453,,Q138647453,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647454,https://w3id.org/persian-caravanserai-kg#wd_Q138647454,Q138647454,,Q138647454,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647455,https://w3id.org/persian-caravanserai-kg#wd_Q138647455,Q138647455,,Q138647455,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647456,https://w3id.org/persian-caravanserai-kg#wd_Q138647456,Q138647456,,Q138647456,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647457,https://w3id.org/persian-caravanserai-kg#wd_Q138647457,Q138647457,,Q138647457,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647458,https://w3id.org/persian-caravanserai-kg#wd_Q138647458,Q138647458,,Q138647458,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647459,https://w3id.org/persian-caravanserai-kg#wd_Q138647459,Q138647459,,Q138647459,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647460,https://w3id.org/persian-caravanserai-kg#wd_Q138647460,Q138647460,,Q138647460,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647461,https://w3id.org/persian-caravanserai-kg#wd_Q138647461,Q138647461,,Q138647461,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647462,https://w3id.org/persian-caravanserai-kg#wd_Q138647462,Q138647462,,Q138647462,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647463,https://w3id.org/persian-caravanserai-kg#wd_Q138647463,Q138647463,,Q138647463,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647464,https://w3id.org/persian-caravanserai-kg#wd_Q138647464,Q138647464,,Q138647464,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647465,https://w3id.org/persian-caravanserai-kg#wd_Q138647465,Q138647465,,Q138647465,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647466,https://w3id.org/persian-caravanserai-kg#wd_Q138647466,Q138647466,,Q138647466,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647467,https://w3id.org/persian-caravanserai-kg#wd_Q138647467,Mokhak Caravansarai,,Q138647467,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647468,https://w3id.org/persian-caravanserai-kg#wd_Q138647468,Konartakhteh Caravanserai,,Q138647468,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647470,https://w3id.org/persian-caravanserai-kg#wd_Q138647470,Q138647470,,Q138647470,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647471,https://w3id.org/persian-caravanserai-kg#wd_Q138647471,Q138647471,,Q138647471,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647473,https://w3id.org/persian-caravanserai-kg#wd_Q138647473,Q138647473,,Q138647473,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647474,https://w3id.org/persian-caravanserai-kg#wd_Q138647474,Q138647474,,Q138647474,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647475,https://w3id.org/persian-caravanserai-kg#wd_Q138647475,Q138647475,,Q138647475,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647476,https://w3id.org/persian-caravanserai-kg#wd_Q138647476,Q138647476,,Q138647476,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647477,https://w3id.org/persian-caravanserai-kg#wd_Q138647477,Q138647477,,Q138647477,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647478,https://w3id.org/persian-caravanserai-kg#wd_Q138647478,Q138647478,,Q138647478,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647479,https://w3id.org/persian-caravanserai-kg#wd_Q138647479,Q138647479,,Q138647479,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647480,https://w3id.org/persian-caravanserai-kg#wd_Q138647480,Asef Caravanserai,,Q138647480,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647481,https://w3id.org/persian-caravanserai-kg#wd_Q138647481,Q138647481,,Q138647481,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647482,https://w3id.org/persian-caravanserai-kg#wd_Q138647482,Q138647482,,Q138647482,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647483,https://w3id.org/persian-caravanserai-kg#wd_Q138647483,Q138647483,,Q138647483,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647484,https://w3id.org/persian-caravanserai-kg#wd_Q138647484,Q138647484,,Q138647484,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647486,https://w3id.org/persian-caravanserai-kg#wd_Q138647486,Q138647486,,Q138647486,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647487,https://w3id.org/persian-caravanserai-kg#wd_Q138647487,Q138647487,,Q138647487,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647488,https://w3id.org/persian-caravanserai-kg#wd_Q138647488,Q138647488,,Q138647488,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647489,https://w3id.org/persian-caravanserai-kg#wd_Q138647489,Q138647489,,Q138647489,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647490,https://w3id.org/persian-caravanserai-kg#wd_Q138647490,Q138647490,,Q138647490,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647492,https://w3id.org/persian-caravanserai-kg#wd_Q138647492,Q138647492,,Q138647492,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647493,https://w3id.org/persian-caravanserai-kg#wd_Q138647493,Q138647493,,Q138647493,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647494,https://w3id.org/persian-caravanserai-kg#wd_Q138647494,Haji Reza Caravanserai,,Q138647494,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647496,https://w3id.org/persian-caravanserai-kg#wd_Q138647496,Q138647496,,Q138647496,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647501,https://w3id.org/persian-caravanserai-kg#wd_Q138647501,Q138647501,,Q138647501,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647502,https://w3id.org/persian-caravanserai-kg#wd_Q138647502,Q138647502,,Q138647502,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647505,https://w3id.org/persian-caravanserai-kg#wd_Q138647505,"Ribat-i Mahi Caravanserai, Mashhad",,Q138647505,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647506,https://w3id.org/persian-caravanserai-kg#wd_Q138647506,Q138647506,,Q138647506,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647507,https://w3id.org/persian-caravanserai-kg#wd_Q138647507,Robat-e Shur Caravanserai,,Q138647507,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647509,https://w3id.org/persian-caravanserai-kg#wd_Q138647509,Q138647509,,Q138647509,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647515,https://w3id.org/persian-caravanserai-kg#wd_Q138647515,Q138647515,,Q138647515,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647516,https://w3id.org/persian-caravanserai-kg#wd_Q138647516,Q138647516,,Q138647516,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647517,https://w3id.org/persian-caravanserai-kg#wd_Q138647517,Feyzabad Caravanserai,,Q138647517,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647518,https://w3id.org/persian-caravanserai-kg#wd_Q138647518,Q138647518,,Q138647518,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647519,https://w3id.org/persian-caravanserai-kg#wd_Q138647519,Q138647519,,Q138647519,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647520,https://w3id.org/persian-caravanserai-kg#wd_Q138647520,Q138647520,,Q138647520,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647521,https://w3id.org/persian-caravanserai-kg#wd_Q138647521,Q138647521,,Q138647521,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q138647522,https://w3id.org/persian-caravanserai-kg#wd_Q138647522,Q138647522,,Q138647522,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q140068780,https://w3id.org/persian-caravanserai-kg#wd_Q140068780,Old Darband Caravanserai,,Q140068780,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q140349126,https://w3id.org/persian-caravanserai-kg#wd_Q140349126,Haj Agha Ali Caravanserai,,Q140349126,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q140387845,https://w3id.org/persian-caravanserai-kg#wd_Q140387845,Qusheh Caravanserai,,Q140387845,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q140387935,https://w3id.org/persian-caravanserai-kg#wd_Q140387935,Shafiabad Caravanserai,,Q140387935,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q141548726,https://w3id.org/persian-caravanserai-kg#wd_Q141548726,Sin Caravanserai,,Q141548726,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q20110880,https://w3id.org/persian-caravanserai-kg#wd_Q20110880,کاروانسرای دوقلو,,Q20110880,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q20110881,https://w3id.org/persian-caravanserai-kg#wd_Q20110881,Sadri Caravanserai,,Q20110881,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q306000,https://w3id.org/persian-caravanserai-kg#wd_Q306000,Abbasi Hotel,,Q306000,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42627405,https://w3id.org/persian-caravanserai-kg#wd_Q42627405,Madarshah Caravanserai,,Q42627405,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42647074,https://w3id.org/persian-caravanserai-kg#wd_Q42647074,Bagheri Caravanserai,,Q42647074,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42708457,https://w3id.org/persian-caravanserai-kg#wd_Q42708457,Toroq Caravanserai,,Q42708457,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42709431,https://w3id.org/persian-caravanserai-kg#wd_Q42709431,Asfak Caravanserai,,Q42709431,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42739279,https://w3id.org/persian-caravanserai-kg#wd_Q42739279,Malek Caravanserai,,Q42739279,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42748124,https://w3id.org/persian-caravanserai-kg#wd_Q42748124,Shah Abbasi Caravanserai of Abuzeydabad,,Q42748124,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42748625,https://w3id.org/persian-caravanserai-kg#wd_Q42748625,Golshan Caravanserai,,Q42748625,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42788658,https://w3id.org/persian-caravanserai-kg#wd_Q42788658,Aliabad Caravanserai (Mahan),,Q42788658,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42840272,https://w3id.org/persian-caravanserai-kg#wd_Q42840272,Golshan Caravanserai,,Q42840272,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42861715,https://w3id.org/persian-caravanserai-kg#wd_Q42861715,Malek Caravanserai (Isfahan),,Q42861715,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42866350,https://w3id.org/persian-caravanserai-kg#wd_Q42866350,Shah Abbasi Caravanserai of Sharifabad,,Q42866350,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42867565,https://w3id.org/persian-caravanserai-kg#wd_Q42867565,Shah Abbasi Caravanserai of Lasjerd,,Q42867565,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q42880732,https://w3id.org/persian-caravanserai-kg#wd_Q42880732,Kashan New Caravanserai,,Q42880732,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q4880922,https://w3id.org/persian-caravanserai-kg#wd_Q4880922,Bisotun Old Caravanserai,,Q4880922,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q49004078,https://w3id.org/persian-caravanserai-kg#wd_Q49004078,Soh Caravanserai,,Q49004078,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q49004079,https://w3id.org/persian-caravanserai-kg#wd_Q49004079,کاروانسرای شاه عباسی,,Q49004079,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q49004080,https://w3id.org/persian-caravanserai-kg#wd_Q49004080,Hoca Kasım Natanz Caravanserai,,Q49004080,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5600033,https://w3id.org/persian-caravanserai-kg#wd_Q5600033,Shahanshan Caravanserai,,Q5600033,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5666831,https://w3id.org/persian-caravanserai-kg#wd_Q5666831,کارونسراهای خوی,,Q5666831,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5679544,https://w3id.org/persian-caravanserai-kg#wd_Q5679544,Komaraj Caravanserai,,Q5679544,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5698829,https://w3id.org/persian-caravanserai-kg#wd_Q5698829,کاروانسرای لات رشت,,Q5698829,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5702875,https://w3id.org/persian-caravanserai-kg#wd_Q5702875,کاروانسرای پاریز,,Q5702875,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5703040,https://w3id.org/persian-caravanserai-kg#wd_Q5703040,Zakikhani Caravanserai,,Q5703040,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5705250,https://w3id.org/persian-caravanserai-kg#wd_Q5705250,Guged Caravanserai,,Q5705250,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5713895,https://w3id.org/persian-caravanserai-kg#wd_Q5713895,Kabutarkhan Caravanserai,,Q5713895,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5714603,https://w3id.org/persian-caravanserai-kg#wd_Q5714603,Zanjan Stone Caravanserai,,Q5714603,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5720916,https://w3id.org/persian-caravanserai-kg#wd_Q5720916,کاروانسرای بنارویه,,Q5720916,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5724466,https://w3id.org/persian-caravanserai-kg#wd_Q5724466,Khanat Caravanserai,,Q5724466,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5726029,https://w3id.org/persian-caravanserai-kg#wd_Q5726029,کاروانسرای سهنخود,,Q5726029,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5730932,https://w3id.org/persian-caravanserai-kg#wd_Q5730932,Mian Katal Caravanserai,,Q5730932,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5731808,https://w3id.org/persian-caravanserai-kg#wd_Q5731808,Shah Abbasi Caravanserai of Ray,,Q5731808,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5734683,https://w3id.org/persian-caravanserai-kg#wd_Q5734683,Gagalki Caravanserai,,Q5734683,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5765193,https://w3id.org/persian-caravanserai-kg#wd_Q5765193,کاروانسرای حیدرآبادی,,Q5765193,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5766394,https://w3id.org/persian-caravanserai-kg#wd_Q5766394,Ibrahim Caravanserai (Sirjan),,Q5766394,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5769024,https://w3id.org/persian-caravanserai-kg#wd_Q5769024,Kenargerd Caravanserai,,Q5769024,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5778929,https://w3id.org/persian-caravanserai-kg#wd_Q5778929,Do Dehak Caravanserai,,Q5778929,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5782222,https://w3id.org/persian-caravanserai-kg#wd_Q5782222,Gaduk Caravanserai,,Q5782222,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5868101,https://w3id.org/persian-caravanserai-kg#wd_Q5868101,Manzariyeh Caravanserai,,Q5868101,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5871483,https://w3id.org/persian-caravanserai-kg#wd_Q5871483,Bedasht Caravanserai,,Q5871483,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5871485,https://w3id.org/persian-caravanserai-kg#wd_Q5871485,کاروانسرای اللهآباد ساغند,,Q5871485,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5871488,https://w3id.org/persian-caravanserai-kg#wd_Q5871488,کاروانسرای وزیر,,Q5871488,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5871879,https://w3id.org/persian-caravanserai-kg#wd_Q5871879,Lasjerd Caravanserai,,Q5871879,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5872712,https://w3id.org/persian-caravanserai-kg#wd_Q5872712,Golshan Caravanserai,,Q5872712,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5872801,https://w3id.org/persian-caravanserai-kg#wd_Q5872801,Mahak Caravanserai,,Q5872801,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5872840,https://w3id.org/persian-caravanserai-kg#wd_Q5872840,کاروانسرای خان پنج,,Q5872840,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5873094,https://w3id.org/persian-caravanserai-kg#wd_Q5873094,کاروانسرای امیری,,Q5873094,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5873095,https://w3id.org/persian-caravanserai-kg#wd_Q5873095,Sarpush Caravanserai,,Q5873095,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5873442,https://w3id.org/persian-caravanserai-kg#wd_Q5873442,کاروانسرای بست فاریاب,,Q5873442,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5873590,https://w3id.org/persian-caravanserai-kg#wd_Q5873590,Darband Caravanserai,,Q5873590,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5873644,https://w3id.org/persian-caravanserai-kg#wd_Q5873644,کاروانسرای غرب اوز (سیفا),,Q5873644,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5873986,https://w3id.org/persian-caravanserai-kg#wd_Q5873986,Amin al-Dawla Caravanserai,,Q5873986,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5875161,https://w3id.org/persian-caravanserai-kg#wd_Q5875161,Fath-Ali Shah Caravanserai,,Q5875161,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5875435,https://w3id.org/persian-caravanserai-kg#wd_Q5875435,Aliabad Caravanserai (Mehriz),,Q5875435,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5875627,https://w3id.org/persian-caravanserai-kg#wd_Q5875627,Khargur Caravanserai,,Q5875627,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5875663,https://w3id.org/persian-caravanserai-kg#wd_Q5875663,کاروانسرای عبد کثیر,,Q5875663,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5875981,https://w3id.org/persian-caravanserai-kg#wd_Q5875981,Ein al-Rashid Caravanserai,,Q5875981,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5876392,https://w3id.org/persian-caravanserai-kg#wd_Q5876392,Khaneh Sorkh Caravanserai,,Q5876392,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5876644,https://w3id.org/persian-caravanserai-kg#wd_Q5876644,Shah Abbasi Caravanserai of Sabzevar,,Q5876644,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5876752,https://w3id.org/persian-caravanserai-kg#wd_Q5876752,Qaleh Nasir Caravanserai,,Q5876752,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5877305,https://w3id.org/persian-caravanserai-kg#wd_Q5877305,Galu Sefteh Caravanserai,,Q5877305,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5877674,https://w3id.org/persian-caravanserai-kg#wd_Q5877674,Sang Bast Caravanserai,,Q5877674,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5878348,https://w3id.org/persian-caravanserai-kg#wd_Q5878348,کاروانسرای دشت نیمه,,Q5878348,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5880101,https://w3id.org/persian-caravanserai-kg#wd_Q5880101,کاروانسرای پشته سنگر,,Q5880101,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5880136,https://w3id.org/persian-caravanserai-kg#wd_Q5880136,Feyzabad Caravanserai,,Q5880136,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5880443,https://w3id.org/persian-caravanserai-kg#wd_Q5880443,Ab Bid Caravanserai,,Q5880443,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5880774,https://w3id.org/persian-caravanserai-kg#wd_Q5880774,Jarchi Caravanserai,,Q5880774,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5881686,https://w3id.org/persian-caravanserai-kg#wd_Q5881686,کاروانسرای سپهسالار امیرآباد,,Q5881686,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5881705,https://w3id.org/persian-caravanserai-kg#wd_Q5881705,کاروانسرای میرزا,,Q5881705,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5884035,https://w3id.org/persian-caravanserai-kg#wd_Q5884035,Ravniz Caravanserai,,Q5884035,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5884375,https://w3id.org/persian-caravanserai-kg#wd_Q5884375,کاروانسرای سگزی,,Q5884375,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5885361,https://w3id.org/persian-caravanserai-kg#wd_Q5885361,Sardar Caravanserai,,Q5885361,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5886525,https://w3id.org/persian-caravanserai-kg#wd_Q5886525,Jahangiri Caravanserai,,Q5886525,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5886883,https://w3id.org/persian-caravanserai-kg#wd_Q5886883,کاروانسرای کرمانشاهان,,Q5886883,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5887782,https://w3id.org/persian-caravanserai-kg#wd_Q5887782,Memarzadeh Caravanserai,,Q5887782,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5887840,https://w3id.org/persian-caravanserai-kg#wd_Q5887840,کاروانسرای گورچو,,Q5887840,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5888139,https://w3id.org/persian-caravanserai-kg#wd_Q5888139,Abgarm Caravanserai,,Q5888139,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5889269,https://w3id.org/persian-caravanserai-kg#wd_Q5889269,Kheyrabad Caravanserai,,Q5889269,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5889539,https://w3id.org/persian-caravanserai-kg#wd_Q5889539,Beremir Caravanserai,,Q5889539,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5889556,https://w3id.org/persian-caravanserai-kg#wd_Q5889556,Lari Caravanserai,,Q5889556,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5889903,https://w3id.org/persian-caravanserai-kg#wd_Q5889903,Sang-e Kelidar Caravanserai,,Q5889903,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5890108,https://w3id.org/persian-caravanserai-kg#wd_Q5890108,Kuhab Caravanserai,,Q5890108,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5890988,https://w3id.org/persian-caravanserai-kg#wd_Q5890988,Malek Caravanserai (Rasht),,Q5890988,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5891345,https://w3id.org/persian-caravanserai-kg#wd_Q5891345,کاروانسرای قندی,,Q5891345,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5891668,https://w3id.org/persian-caravanserai-kg#wd_Q5891668,Tabasi Caravanserai,,Q5891668,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5891753,https://w3id.org/persian-caravanserai-kg#wd_Q5891753,کاروانسرای دوکوهک,,Q5891753,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5891890,https://w3id.org/persian-caravanserai-kg#wd_Q5891890,کاروانسرای کرمانی,,Q5891890,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5892374,https://w3id.org/persian-caravanserai-kg#wd_Q5892374,Moshir Caravanserai,,Q5892374,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5892609,https://w3id.org/persian-caravanserai-kg#wd_Q5892609,Jar Caravanserai,,Q5892609,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5892869,https://w3id.org/persian-caravanserai-kg#wd_Q5892869,Deh Bid Caravanserai,,Q5892869,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5892875,https://w3id.org/persian-caravanserai-kg#wd_Q5892875,Dokhan Caravanserai,,Q5892875,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5892896,https://w3id.org/persian-caravanserai-kg#wd_Q5892896,کاروانسرای قاجاری,,Q5892896,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5893476,https://w3id.org/persian-caravanserai-kg#wd_Q5893476,Khajeh Abu al-Hassan Caravanserai,,Q5893476,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5893700,https://w3id.org/persian-caravanserai-kg#wd_Q5893700,Saryazd Old Caravanserai,,Q5893700,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5893853,https://w3id.org/persian-caravanserai-kg#wd_Q5893853,Haj Mehdi Caravanserai (Kerman),,Q5893853,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5894296,https://w3id.org/persian-caravanserai-kg#wd_Q5894296,Lab-e Khandaq Caravanserai,,Q5894296,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5894405,https://w3id.org/persian-caravanserai-kg#wd_Q5894405,کاروانسرای میر پنج,,Q5894405,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5894793,https://w3id.org/persian-caravanserai-kg#wd_Q5894793,Balaabad Caravanserai,,Q5894793,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5894959,https://w3id.org/persian-caravanserai-kg#wd_Q5894959,Naseriyeh Caravanserai,,Q5894959,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5894996,https://w3id.org/persian-caravanserai-kg#wd_Q5894996,Abol-Qasem Caravanserai,,Q5894996,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5895035,https://w3id.org/persian-caravanserai-kg#wd_Q5895035,کاروانسرای اعلایی,,Q5895035,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5895390,https://w3id.org/persian-caravanserai-kg#wd_Q5895390,Zarnukh Caravanserai,,Q5895390,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5895503,https://w3id.org/persian-caravanserai-kg#wd_Q5895503,Chenar Rahdar Caravanserai,,Q5895503,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5895631,https://w3id.org/persian-caravanserai-kg#wd_Q5895631,کاروانسرای جهانبانی,,Q5895631,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5895664,https://w3id.org/persian-caravanserai-kg#wd_Q5895664,Nusret Abad Caravanserai,,Q5895664,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5895786,https://w3id.org/persian-caravanserai-kg#wd_Q5895786,Kuzeh Garan Caravanserai,,Q5895786,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5896108,https://w3id.org/persian-caravanserai-kg#wd_Q5896108,Reza Qoli Khan Caravanserai,,Q5896108,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5896488,https://w3id.org/persian-caravanserai-kg#wd_Q5896488,Sefidab Caravanserai,,Q5896488,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5896697,https://w3id.org/persian-caravanserai-kg#wd_Q5896697,Amin al-Tojar Caravanserai,,Q5896697,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5896889,https://w3id.org/persian-caravanserai-kg#wd_Q5896889,Chahak Caravanserai,,Q5896889,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5897195,https://w3id.org/persian-caravanserai-kg#wd_Q5897195,Ahang Caravanserai,,Q5897195,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5897428,https://w3id.org/persian-caravanserai-kg#wd_Q5897428,Sharifiyeh Caravanserai,,Q5897428,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5897440,https://w3id.org/persian-caravanserai-kg#wd_Q5897440,کاروانسرای چهار سوق,,Q5897440,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5897577,https://w3id.org/persian-caravanserai-kg#wd_Q5897577,کاروانسرای قوژد,,Q5897577,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5897774,https://w3id.org/persian-caravanserai-kg#wd_Q5897774,Malek Caravanserai (Kashan),,Q5897774,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5897997,https://w3id.org/persian-caravanserai-kg#wd_Q5897997,Qasemabad Caravanserai,,Q5897997,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5898116,https://w3id.org/persian-caravanserai-kg#wd_Q5898116,کاروانسرای بهشتی,,Q5898116,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5898156,https://w3id.org/persian-caravanserai-kg#wd_Q5898156,Damghan Caravanserai,,Q5898156,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5898174,https://w3id.org/persian-caravanserai-kg#wd_Q5898174,Anar Caravanserai,,Q5898174,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5898194,https://w3id.org/persian-caravanserai-kg#wd_Q5898194,Qadamgah Caravanserai,,Q5898194,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5898574,https://w3id.org/persian-caravanserai-kg#wd_Q5898574,Hoseynkhani Caravansarai,,Q5898574,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899043,https://w3id.org/persian-caravanserai-kg#wd_Q5899043,Haj Agha Ali Caravanserai,,Q5899043,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899105,https://w3id.org/persian-caravanserai-kg#wd_Q5899105,کاروانسرای اللهوردیخان,,Q5899105,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899198,https://w3id.org/persian-caravanserai-kg#wd_Q5899198,Zoghalha Caravanserai (Hamadan),,Q5899198,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899205,https://w3id.org/persian-caravanserai-kg#wd_Q5899205,Shah Mansouri Caravanserai,,Q5899205,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899300,https://w3id.org/persian-caravanserai-kg#wd_Q5899300,Aveh Caravanserai,,Q5899300,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899350,https://w3id.org/persian-caravanserai-kg#wd_Q5899350,Anarak Caravanserai,,Q5899350,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899417,https://w3id.org/persian-caravanserai-kg#wd_Q5899417,Dalaki Caravanserai,,Q5899417,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899421,https://w3id.org/persian-caravanserai-kg#wd_Q5899421,Mirza Kazem Caravanserai,,Q5899421,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899456,https://w3id.org/persian-caravanserai-kg#wd_Q5899456,کاروانسرای ابریشم گران,,Q5899456,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899468,https://w3id.org/persian-caravanserai-kg#wd_Q5899468,کاروانسرای منوچهر خان موصلو,,Q5899468,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899576,https://w3id.org/persian-caravanserai-kg#wd_Q5899576,Lat Caravanserai,,Q5899576,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899748,https://w3id.org/persian-caravanserai-kg#wd_Q5899748,Dehshir Caravanserai,,Q5899748,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5899840,https://w3id.org/persian-caravanserai-kg#wd_Q5899840,کاروانسرای صمدیه,,Q5899840,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5900182,https://w3id.org/persian-caravanserai-kg#wd_Q5900182,کاروانسرای شاه قدم,,Q5900182,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5900223,https://w3id.org/persian-caravanserai-kg#wd_Q5900223,Hindu Caravanserai,,Q5900223,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5900497,https://w3id.org/persian-caravanserai-kg#wd_Q5900497,Alborz Caravanserai,,Q5900497,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5900918,https://w3id.org/persian-caravanserai-kg#wd_Q5900918,Marandiz Caravanserai,,Q5900918,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5900928,https://w3id.org/persian-caravanserai-kg#wd_Q5900928,Wahabzadeh Caravanserai,,Q5900928,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5901152,https://w3id.org/persian-caravanserai-kg#wd_Q5901152,رباط علیا,,Q5901152,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5901157,https://w3id.org/persian-caravanserai-kg#wd_Q5901157,کاروانسرای بزرگ بریز,,Q5901157,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5901385,https://w3id.org/persian-caravanserai-kg#wd_Q5901385,کاروانسرای جنب میدان خان,,Q5901385,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5901504,https://w3id.org/persian-caravanserai-kg#wd_Q5901504,Shotorkhaneh Caravanserai (Juyom),,Q5901504,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5901706,https://w3id.org/persian-caravanserai-kg#wd_Q5901706,کاروانسرای گراش,,Q5901706,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5901746,https://w3id.org/persian-caravanserai-kg#wd_Q5901746,کاروانسرای طرازآباد,,Q5901746,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5901892,https://w3id.org/persian-caravanserai-kg#wd_Q5901892,کاروانسرای صید رضا,,Q5901892,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5902361,https://w3id.org/persian-caravanserai-kg#wd_Q5902361,کاروانسرای برد,,Q5902361,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5902580,https://w3id.org/persian-caravanserai-kg#wd_Q5902580,Lar New Caravanserai,,Q5902580,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5903347,https://w3id.org/persian-caravanserai-kg#wd_Q5903347,کاروانسرای قبله,,Q5903347,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5903513,https://w3id.org/persian-caravanserai-kg#wd_Q5903513,Mirza Hoseyn Khan Caravanserai,,Q5903513,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5903705,https://w3id.org/persian-caravanserai-kg#wd_Q5903705,کاروانسرای خان خوره,,Q5903705,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5903752,https://w3id.org/persian-caravanserai-kg#wd_Q5903752,کاروانسرای بازار,,Q5903752,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904056,https://w3id.org/persian-caravanserai-kg#wd_Q5904056,Asemanjerd Caravanserai,,Q5904056,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904217,https://w3id.org/persian-caravanserai-kg#wd_Q5904217,Bersian Caravanserai,,Q5904217,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904288,https://w3id.org/persian-caravanserai-kg#wd_Q5904288,کاروانسرای ریزو,,Q5904288,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904559,https://w3id.org/persian-caravanserai-kg#wd_Q5904559,Rivand Caravanserai,,Q5904559,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904568,https://w3id.org/persian-caravanserai-kg#wd_Q5904568,Qozloq Caravanserai,,Q5904568,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904642,https://w3id.org/persian-caravanserai-kg#wd_Q5904642,Baba Qodrat Caravanserai,,Q5904642,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904653,https://w3id.org/persian-caravanserai-kg#wd_Q5904653,Baqerabad Caravanserai,,Q5904653,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904733,https://w3id.org/persian-caravanserai-kg#wd_Q5904733,Safi Qoli Caravanserai,,Q5904733,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904788,https://w3id.org/persian-caravanserai-kg#wd_Q5904788,کاروانسرای گودرزی,,Q5904788,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904847,https://w3id.org/persian-caravanserai-kg#wd_Q5904847,کاروانسرای چنگی,,Q5904847,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904855,https://w3id.org/persian-caravanserai-kg#wd_Q5904855,کاروانسرای کیشی دری,,Q5904855,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904882,https://w3id.org/persian-caravanserai-kg#wd_Q5904882,کاروانسرای سفید,,Q5904882,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5904907,https://w3id.org/persian-caravanserai-kg#wd_Q5904907,کاروانسرای کلمرز جدید,,Q5904907,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905025,https://w3id.org/persian-caravanserai-kg#wd_Q5905025,کاروانسرای خرزان,,Q5905025,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905137,https://w3id.org/persian-caravanserai-kg#wd_Q5905137,Nikpey Caravanserai,,Q5905137,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905251,https://w3id.org/persian-caravanserai-kg#wd_Q5905251,Khan Caravanserai,,Q5905251,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905259,https://w3id.org/persian-caravanserai-kg#wd_Q5905259,کاروانسرای دیمهلو,,Q5905259,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905317,https://w3id.org/persian-caravanserai-kg#wd_Q5905317,Mahidasht Caravanserai,,Q5905317,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905605,https://w3id.org/persian-caravanserai-kg#wd_Q5905605,کاروانسرای تقی خانی,,Q5905605,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905676,https://w3id.org/persian-caravanserai-kg#wd_Q5905676,کاروانسرای خانک,,Q5905676,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905715,https://w3id.org/persian-caravanserai-kg#wd_Q5905715,کاروانسرای مشهد میقان,,Q5905715,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905721,https://w3id.org/persian-caravanserai-kg#wd_Q5905721,کاروانسرای باجگاه,,Q5905721,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905859,https://w3id.org/persian-caravanserai-kg#wd_Q5905859,کاروانسرای شاه,,Q5905859,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905861,https://w3id.org/persian-caravanserai-kg#wd_Q5905861,کاروانسرای سه,,Q5905861,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905927,https://w3id.org/persian-caravanserai-kg#wd_Q5905927,کاروانسرای کهورستان,,Q5905927,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5905930,https://w3id.org/persian-caravanserai-kg#wd_Q5905930,کاروانسرای میشوند,,Q5905930,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906031,https://w3id.org/persian-caravanserai-kg#wd_Q5906031,Majd al-Mamalek Caravanserai,,Q5906031,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906035,https://w3id.org/persian-caravanserai-kg#wd_Q5906035,کاروانسرای شاتور,,Q5906035,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906094,https://w3id.org/persian-caravanserai-kg#wd_Q5906094,کاروانسرای یعقوب یاری,,Q5906094,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906100,https://w3id.org/persian-caravanserai-kg#wd_Q5906100,Omrani Caravanserai,,Q5906100,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906277,https://w3id.org/persian-caravanserai-kg#wd_Q5906277,کاروانسرای منصوریه,,Q5906277,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906380,https://w3id.org/persian-caravanserai-kg#wd_Q5906380,کاروانسرای شعبه,,Q5906380,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906389,https://w3id.org/persian-caravanserai-kg#wd_Q5906389,کاروانسرای کریمی,,Q5906389,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906396,https://w3id.org/persian-caravanserai-kg#wd_Q5906396,کاروانسرای دهدز,,Q5906396,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906509,https://w3id.org/persian-caravanserai-kg#wd_Q5906509,کاروانسرای بشیم ین,,Q5906509,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906523,https://w3id.org/persian-caravanserai-kg#wd_Q5906523,کاروانسرای فرنگی,,Q5906523,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906526,https://w3id.org/persian-caravanserai-kg#wd_Q5906526,Bayaz Caravanserai,,Q5906526,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906535,https://w3id.org/persian-caravanserai-kg#wd_Q5906535,Kamboj Caravanserai,,Q5906535,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906573,https://w3id.org/persian-caravanserai-kg#wd_Q5906573,Khoshkeh Rud Caravanserai,,Q5906573,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906584,https://w3id.org/persian-caravanserai-kg#wd_Q5906584,کاروانسرای بقم,,Q5906584,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906614,https://w3id.org/persian-caravanserai-kg#wd_Q5906614,Anushirvan Caravanserai,,Q5906614,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906678,https://w3id.org/persian-caravanserai-kg#wd_Q5906678,Jelogir Caravanserai,,Q5906678,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906707,https://w3id.org/persian-caravanserai-kg#wd_Q5906707,کاروانسرای نو,,Q5906707,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906793,https://w3id.org/persian-caravanserai-kg#wd_Q5906793,کاروانسرای گچین,,Q5906793,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906818,https://w3id.org/persian-caravanserai-kg#wd_Q5906818,Tur Caravanserai,,Q5906818,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5906880,https://w3id.org/persian-caravanserai-kg#wd_Q5906880,Saadatabad Caravanserai,,Q5906880,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907000,https://w3id.org/persian-caravanserai-kg#wd_Q5907000,Hosnijeh Caravanserai,,Q5907000,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907148,https://w3id.org/persian-caravanserai-kg#wd_Q5907148,کاروانسرای توت,,Q5907148,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907183,https://w3id.org/persian-caravanserai-kg#wd_Q5907183,کاروانسرای کبوتر خان,,Q5907183,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907254,https://w3id.org/persian-caravanserai-kg#wd_Q5907254,کاروانسرای صالحآباد,,Q5907254,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907433,https://w3id.org/persian-caravanserai-kg#wd_Q5907433,کاروانسرای مسکون,,Q5907433,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907470,https://w3id.org/persian-caravanserai-kg#wd_Q5907470,Farhang Caravanserai,,Q5907470,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907475,https://w3id.org/persian-caravanserai-kg#wd_Q5907475,کاروانسرا و قلعه قالوده,,Q5907475,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907514,https://w3id.org/persian-caravanserai-kg#wd_Q5907514,Razi Caravanserai,,Q5907514,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907617,https://w3id.org/persian-caravanserai-kg#wd_Q5907617,Golshan Caravanserai (Kerman),,Q5907617,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907659,https://w3id.org/persian-caravanserai-kg#wd_Q5907659,کاروانسرای ظفر قند,,Q5907659,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907733,https://w3id.org/persian-caravanserai-kg#wd_Q5907733,کاروانسرای کلمرز قدیم,,Q5907733,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907772,https://w3id.org/persian-caravanserai-kg#wd_Q5907772,Dehmolla Caravanserai,,Q5907772,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5907837,https://w3id.org/persian-caravanserai-kg#wd_Q5907837,کاروانسرای دو در,,Q5907837,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908077,https://w3id.org/persian-caravanserai-kg#wd_Q5908077,کاروانسرای قوامآباد,,Q5908077,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908186,https://w3id.org/persian-caravanserai-kg#wd_Q5908186,کاروانسرای هروز,,Q5908186,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908303,https://w3id.org/persian-caravanserai-kg#wd_Q5908303,Aminzadeh Caravanserai,,Q5908303,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908344,https://w3id.org/persian-caravanserai-kg#wd_Q5908344,کاروانسرای گانو,,Q5908344,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908357,https://w3id.org/persian-caravanserai-kg#wd_Q5908357,کاروانسرای قراقی,,Q5908357,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908469,https://w3id.org/persian-caravanserai-kg#wd_Q5908469,Kazemabad Caravanserai,,Q5908469,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908486,https://w3id.org/persian-caravanserai-kg#wd_Q5908486,کاروانسرای هرجند,,Q5908486,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908538,https://w3id.org/persian-caravanserai-kg#wd_Q5908538,کاروانسرای سهرج,,Q5908538,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908574,https://w3id.org/persian-caravanserai-kg#wd_Q5908574,Sharifabad Stone Caravanserai,,Q5908574,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908584,https://w3id.org/persian-caravanserai-kg#wd_Q5908584,کاروانسرای خاتونآباد,,Q5908584,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908600,https://w3id.org/persian-caravanserai-kg#wd_Q5908600,کاروانسرای میان جنگل,,Q5908600,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908631,https://w3id.org/persian-caravanserai-kg#wd_Q5908631,کاروانسرای بید زرد,,Q5908631,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908781,https://w3id.org/persian-caravanserai-kg#wd_Q5908781,Picheh Bon Caravanserai,,Q5908781,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5908926,https://w3id.org/persian-caravanserai-kg#wd_Q5908926,کاروانسرای بابانجم,,Q5908926,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5909282,https://w3id.org/persian-caravanserai-kg#wd_Q5909282,Abdul Ghaffar Khan Caravanserai (Majidabad),,Q5909282,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5909432,https://w3id.org/persian-caravanserai-kg#wd_Q5909432,کاروانسرای سرخحصار,,Q5909432,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5909590,https://w3id.org/persian-caravanserai-kg#wd_Q5909590,Mahi Caravanserai,,Q5909590,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5909914,https://w3id.org/persian-caravanserai-kg#wd_Q5909914,کاروانسرای خان عوض B,,Q5909914,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5909916,https://w3id.org/persian-caravanserai-kg#wd_Q5909916,کاروانسرای خان عوض A,,Q5909916,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5909957,https://w3id.org/persian-caravanserai-kg#wd_Q5909957,کاروانسرای روستای سرخ حصار,,Q5909957,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5910034,https://w3id.org/persian-caravanserai-kg#wd_Q5910034,کاروانسرای خرند,,Q5910034,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5910184,https://w3id.org/persian-caravanserai-kg#wd_Q5910184,کاروانسرای برد شیراز,,Q5910184,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5910476,https://w3id.org/persian-caravanserai-kg#wd_Q5910476,کاروانسرای لرد باجوردی,,Q5910476,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5910718,https://w3id.org/persian-caravanserai-kg#wd_Q5910718,Malekabad Brick Caravanserai,,Q5910718,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5911028,https://w3id.org/persian-caravanserai-kg#wd_Q5911028,Qasr-e Shirin Caravanserai,,Q5911028,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5911046,https://w3id.org/persian-caravanserai-kg#wd_Q5911046,کاروانسرای کمانج علیا,,Q5911046,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5911084,https://w3id.org/persian-caravanserai-kg#wd_Q5911084,کاروانسرای تنگاب,,Q5911084,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5911104,https://w3id.org/persian-caravanserai-kg#wd_Q5911104,Tikmehdash Caravanserai,,Q5911104,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5911442,https://w3id.org/persian-caravanserai-kg#wd_Q5911442,Dehnamak Caravanserai,,Q5911442,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5911648,https://w3id.org/persian-caravanserai-kg#wd_Q5911648,کاروانسرای شاهعباسی,,Q5911648,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5911815,https://w3id.org/persian-caravanserai-kg#wd_Q5911815,Saryazd New Caravanserai,,Q5911815,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5911970,https://w3id.org/persian-caravanserai-kg#wd_Q5911970,Zeynabad Caravanserai,,Q5911970,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5912233,https://w3id.org/persian-caravanserai-kg#wd_Q5912233,کاروانسرای برکه سلطان,,Q5912233,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5912375,https://w3id.org/persian-caravanserai-kg#wd_Q5912375,کاروانسرای الهآباد,,Q5912375,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5912413,https://w3id.org/persian-caravanserai-kg#wd_Q5912413,Hajjiabad Caravanserai (Shahin Shahr),,Q5912413,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5912435,https://w3id.org/persian-caravanserai-kg#wd_Q5912435,Qaleh-ye Shur Caravanserai,,Q5912435,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5912459,https://w3id.org/persian-caravanserai-kg#wd_Q5912459,کاروانسرای سرآسیاب شش,,Q5912459,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5912725,https://w3id.org/persian-caravanserai-kg#wd_Q5912725,Qayelublagh Caravanserai,,Q5912725,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5912740,https://w3id.org/persian-caravanserai-kg#wd_Q5912740,کاروانسرای لرد میری,,Q5912740,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5912823,https://w3id.org/persian-caravanserai-kg#wd_Q5912823,کاروانسرای لاله بجان,,Q5912823,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5912892,https://w3id.org/persian-caravanserai-kg#wd_Q5912892,کاروانسرای خانه زینان,,Q5912892,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5913158,https://w3id.org/persian-caravanserai-kg#wd_Q5913158,کاروانسرای قلعه عسگر,,Q5913158,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5913231,https://w3id.org/persian-caravanserai-kg#wd_Q5913231,کاروانسرای شاهعباسی,,Q5913231,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5913313,https://w3id.org/persian-caravanserai-kg#wd_Q5913313,Shah Abbasi Caravanserai of Eyvanki,,Q5913313,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5913421,https://w3id.org/persian-caravanserai-kg#wd_Q5913421,کاروانسرای ساغند,,Q5913421,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5913631,https://w3id.org/persian-caravanserai-kg#wd_Q5913631,کاروانسرای شهیدآباد,,Q5913631,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5913773,https://w3id.org/persian-caravanserai-kg#wd_Q5913773,کاروانسرای میدان,,Q5913773,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5914202,https://w3id.org/persian-caravanserai-kg#wd_Q5914202,Now Gonbad Caravanserai,,Q5914202,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5914613,https://w3id.org/persian-caravanserai-kg#wd_Q5914613,کاروانسرای محمدآباد پل ابریشم,,Q5914613,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5914654,https://w3id.org/persian-caravanserai-kg#wd_Q5914654,کاروانسرای رضا خان,,Q5914654,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5915268,https://w3id.org/persian-caravanserai-kg#wd_Q5915268,کاروانسرای نیگنان,,Q5915268,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5916030,https://w3id.org/persian-caravanserai-kg#wd_Q5916030,کاروانسرای حاج حیدر جانی,,Q5916030,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5916350,https://w3id.org/persian-caravanserai-kg#wd_Q5916350,کاروانسرای برکه سفید (برکه نو),,Q5916350,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5918783,https://w3id.org/persian-caravanserai-kg#wd_Q5918783,Khushab Caravanserai,,Q5918783,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5919716,https://w3id.org/persian-caravanserai-kg#wd_Q5919716,کاروانسرای چشمه دو برار,,Q5919716,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5920085,https://w3id.org/persian-caravanserai-kg#wd_Q5920085,کاروانسرای خانه کت,,Q5920085,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5920140,https://w3id.org/persian-caravanserai-kg#wd_Q5920140,محوطه کاروانسرا قرا طوره,,Q5920140,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5920805,https://w3id.org/persian-caravanserai-kg#wd_Q5920805,کاروانسرای تل گندم کش محمدآباد,,Q5920805,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5922695,https://w3id.org/persian-caravanserai-kg#wd_Q5922695,Three Farsakhs Caravanserai,,Q5922695,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5923063,https://w3id.org/persian-caravanserai-kg#wd_Q5923063,کاروانسرای شرکت نفت,,Q5923063,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5924521,https://w3id.org/persian-caravanserai-kg#wd_Q5924521,محوطه کاروانسرا,,Q5924521,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5925304,https://w3id.org/persian-caravanserai-kg#wd_Q5925304,کاروانسرای شاهعباسی,,Q5925304,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5925437,https://w3id.org/persian-caravanserai-kg#wd_Q5925437,کاروانسرای رباط پشت بادام,,Q5925437,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5925770,https://w3id.org/persian-caravanserai-kg#wd_Q5925770,Abol-Fath Khan Caravanserai,,Q5925770,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5926185,https://w3id.org/persian-caravanserai-kg#wd_Q5926185,کاروانسرای برازین,,Q5926185,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5926340,https://w3id.org/persian-caravanserai-kg#wd_Q5926340,Char Gonbad Caravanserai,,Q5926340,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5926762,https://w3id.org/persian-caravanserai-kg#wd_Q5926762,کاروانسرای چاه ریگ,,Q5926762,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5926901,https://w3id.org/persian-caravanserai-kg#wd_Q5926901,کاروانسرای چاه خاور,,Q5926901,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5927002,https://w3id.org/persian-caravanserai-kg#wd_Q5927002,Qaleh Madreseh Caravanserai,,Q5927002,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5928724,https://w3id.org/persian-caravanserai-kg#wd_Q5928724,کاروانسرای دیو دان,,Q5928724,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5928780,https://w3id.org/persian-caravanserai-kg#wd_Q5928780,کاروانسرای روستای کبود گنبد,,Q5928780,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5929044,https://w3id.org/persian-caravanserai-kg#wd_Q5929044,کاروانسرای مخک ۲,,Q5929044,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5930326,https://w3id.org/persian-caravanserai-kg#wd_Q5930326,Al-Fath Khan Caravanserai,,Q5930326,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5930363,https://w3id.org/persian-caravanserai-kg#wd_Q5930363,کاروانسرای هلایجان,,Q5930363,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5930569,https://w3id.org/persian-caravanserai-kg#wd_Q5930569,کاروانسرای زنجیران,,Q5930569,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5930751,https://w3id.org/persian-caravanserai-kg#wd_Q5930751,Imam Jomeh Caravanserai,,Q5930751,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5930795,https://w3id.org/persian-caravanserai-kg#wd_Q5930795,کاروانسرای مال سعیدی,,Q5930795,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5932437,https://w3id.org/persian-caravanserai-kg#wd_Q5932437,کاروانسرایتپهسی,,Q5932437,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5933173,https://w3id.org/persian-caravanserai-kg#wd_Q5933173,کاروانسرای آقا جمالی,,Q5933173,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5933197,https://w3id.org/persian-caravanserai-kg#wd_Q5933197,Motamed Caravanserai,,Q5933197,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5933992,https://w3id.org/persian-caravanserai-kg#wd_Q5933992,کاروانسرای نیمه,,Q5933992,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5935438,https://w3id.org/persian-caravanserai-kg#wd_Q5935438,کاروانسرای لرد محیا,,Q5935438,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5935751,https://w3id.org/persian-caravanserai-kg#wd_Q5935751,Shah Abbas Caravanserai (Shorgol),,Q5935751,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5936656,https://w3id.org/persian-caravanserai-kg#wd_Q5936656,Kabudan Caravanserai,,Q5936656,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5937729,https://w3id.org/persian-caravanserai-kg#wd_Q5937729,کاروانسرای کمبرده,,Q5937729,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5938912,https://w3id.org/persian-caravanserai-kg#wd_Q5938912,کاروانسرای بون کوه,,Q5938912,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5939038,https://w3id.org/persian-caravanserai-kg#wd_Q5939038,کاروانسرای ارجنان,,Q5939038,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5942388,https://w3id.org/persian-caravanserai-kg#wd_Q5942388,Shah Abbasi Caravanserai of Nishapur,,Q5942388,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5942549,https://w3id.org/persian-caravanserai-kg#wd_Q5942549,Faramarz Khan Caravanserai,,Q5942549,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5948151,https://w3id.org/persian-caravanserai-kg#wd_Q5948151,Moin al-Tojar Caravanserai,,Q5948151,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5950591,https://w3id.org/persian-caravanserai-kg#wd_Q5950591,Ow Shirino Caravanserai,,Q5950591,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5953860,https://w3id.org/persian-caravanserai-kg#wd_Q5953860,Bahr-e Tork Caravanserai,,Q5953860,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5954843,https://w3id.org/persian-caravanserai-kg#wd_Q5954843,Baladang Caravanserai,,Q5954843,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5956008,https://w3id.org/persian-caravanserai-kg#wd_Q5956008,Shah Abbasi Caravanserai of Karaj,,Q5956008,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5956390,https://w3id.org/persian-caravanserai-kg#wd_Q5956390,Zerdan Caravanserai,,Q5956390,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5956521,https://w3id.org/persian-caravanserai-kg#wd_Q5956521,Hajib Caravanserai,,Q5956521,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q5959343,https://w3id.org/persian-caravanserai-kg#wd_Q5959343,Pasangan Caravanserai,,Q5959343,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q60372364,https://w3id.org/persian-caravanserai-kg#wd_Q60372364,Russian Caravanserai,,Q60372364,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6394038,https://w3id.org/persian-caravanserai-kg#wd_Q6394038,Kordan Caravanserai,,Q6394038,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6394044,https://w3id.org/persian-caravanserai-kg#wd_Q6394044,Mohammadabad Stone Caravanserai,,Q6394044,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6394051,https://w3id.org/persian-caravanserai-kg#wd_Q6394051,Aliabad Stone Caravanserai,,Q6394051,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6394087,https://w3id.org/persian-caravanserai-kg#wd_Q6394087,Caravanserais of Hormozgan,,Q6394087,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6448583,https://w3id.org/persian-caravanserai-kg#wd_Q6448583,Vakil Caravanserai,,Q6448583,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6538778,https://w3id.org/persian-caravanserai-kg#wd_Q6538778,کاروانسرای براشلو,,Q6538778,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6540119,https://w3id.org/persian-caravanserai-kg#wd_Q6540119,کاروانسرای خراسانی,,Q6540119,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6540157,https://w3id.org/persian-caravanserai-kg#wd_Q6540157,کاروانسرای حضرت,,Q6540157,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6543530,https://w3id.org/persian-caravanserai-kg#wd_Q6543530,Hoz-e Panj Caravanserai,,Q6543530,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6543556,https://w3id.org/persian-caravanserai-kg#wd_Q6543556,کاروانسرای بانک,,Q6543556,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6543629,https://w3id.org/persian-caravanserai-kg#wd_Q6543629,کاروانسرای روحیه,,Q6543629,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6543923,https://w3id.org/persian-caravanserai-kg#wd_Q6543923,Tarlab Caravanserai,,Q6543923,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6544298,https://w3id.org/persian-caravanserai-kg#wd_Q6544298,کاروانسرای جهانآباد (سپنج),,Q6544298,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6544319,https://w3id.org/persian-caravanserai-kg#wd_Q6544319,Sahlabad Caravanserai,,Q6544319,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6550775,https://w3id.org/persian-caravanserai-kg#wd_Q6550775,Afshar Caravanserai,,Q6550775,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q6551811,https://w3id.org/persian-caravanserai-kg#wd_Q6551811,کاروانسرای آبگرم کوار,,Q6551811,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q88250934,https://w3id.org/persian-caravanserai-kg#wd_Q88250934,Shah Abbasi Caravanserai of Mahidasht,,Q88250934,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q88376918,https://w3id.org/persian-caravanserai-kg#wd_Q88376918,Kermanshah New Caravanserai,,Q88376918,,no,yes,no,no,no,1,Wikidata,single source
+wd:Q97233791,https://w3id.org/persian-caravanserai-kg#wd_Q97233791,Shah Abbasi Caravanserai of Payam,,Q97233791,,no,yes,no,no,no,1,Wikidata,single source

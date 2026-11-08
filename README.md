@@ -4,7 +4,7 @@
 
 This project builds a FAIR/LOUD Linked Open Data graph of Persian caravanserais (کاروانسراهای ایرانی). It integrates Wikidata, UNESCO World Heritage List **1668**, and unstructured scholarly reports (MIFAO 81 and 82) into one model that **extends BOT** and overlays CIDOC CRM / CRMba exactly as specified in persarch.
 
-**Status:** harvest and alignment layer in place. MIFAO 81/82 names are extracted as an editor-controlled candidate list (`data/mifao-review-queue.csv`) with source and page/plate evidence. They require human review before they become Wikidata candidates or RDF.
+**Status:** harvest and alignment layer in place. Named sources live in `data/sources.ttl`. MIFAO 81/82 names are an editor-controlled candidate list (`data/mifao-review-queue.csv`) with source and page/plate evidence. Only `review_status=accepted` rows are ingested. Wolfram is declared and not yet harvested.
 
 ## Vision
 
@@ -13,6 +13,7 @@ This project builds a FAIR/LOUD Linked Open Data graph of Persian caravanserais 
 - Capture historical layers with CIDOC CRM events (`crm:E12_Production`, `crm:E11_Modification`), agents, materials, and time-spans.
 - Reconcile external concepts with `skos:exactMatch` (Getty AAT, Wikidata). Do not use `owl:sameAs` for AAT or Wikidata types.
 - Enrich records with IIIF Presentation API 3.0 manifests for plans, photographs, and historical documents.
+- Read legend-bearing plans into BOT topology (storeys, spaces, elements, adjacency) on the harvest IRI.
 - Maintain a living Wikidata contribution queue against the quality bar of [Q42627405](https://www.wikidata.org/wiki/Q42627405) and [Q5905596](https://www.wikidata.org/wiki/Q5905596).
 - Export at least ten detailed records into [MehranDHN/persarch](https://github.com/MehranDHN/persarch) as proof that the persarch approach aligns with real instances.
 
@@ -34,14 +35,30 @@ See `ontology/persarch-caravanserai-extension.ttl`.
 
 ## Data sources
 
-| Source | Type | Coverage | Harvesting |
-| --- | --- | --- | --- |
-| **Wikidata** | SPARQL | Instances of [Q186347](https://www.wikidata.org/wiki/Q186347) in Iran (P17 = Q794), plus parts of [Q66030932](https://www.wikidata.org/wiki/Q66030932). **466 items** in the current harvest; most are **not** UNESCO components. | Automatable. `scripts/harvest_wikidata.py` |
-| **UNESCO WHC 1668** | Semi-structured | The **54** inscribed Persian Caravanserais ([whc.unesco.org/en/list/1668](https://whc.unesco.org/en/list/1668/)): official names, coordinates, property/buffer areas. | Automatable from the maps table. `scripts/harvest_unesco.py` |
-| **MIFAO 81** | Unstructured | Maxime Siroux, *Caravansérails d'Iran et petites constructions routières* (IFAO, 1949). [Internet Archive](https://archive.org/details/MIFAO81). | TOC / index / plate list → `data/mifao-review-queue.csv` + **human-in-the-loop**. |
-| **MIFAO 82** | Unstructured | Maxime Siroux, *Anciennes voies et monuments routiers de la région d'Ispahân* (IFAO, 1971). [Internet Archive](https://archive.org/details/MIFAO82). ~60 caravanserais around Isfahan; 98 plans, 170 photographs. | Same queue; evidence rows keep volume + page/figure/plate. |
+| Source | Catalog IRI | Status | Coverage | Harvesting |
+| --- | --- | --- | --- | --- |
+| **Wikidata** | `:source_wikidata` | included | Instances of [Q186347](https://www.wikidata.org/wiki/Q186347) in Iran (P17 = Q794), plus parts of [Q66030932](https://www.wikidata.org/wiki/Q66030932). **466 items** in the current harvest; most are **not** UNESCO components. | Automatable. `scripts/harvest_wikidata.py` |
+| **UNESCO WHC 1668** | `:source_unesco` | included | The **54** inscribed Persian Caravanserais ([whc.unesco.org/en/list/1668](https://whc.unesco.org/en/list/1668/)): official names, coordinates, property/buffer areas. | Automatable from the maps table. `scripts/harvest_unesco.py` |
+| **MIFAO 81** | `:source_mifao81` | included (candidates until accepted) | Maxime Siroux, *Caravansérails d'Iran et petites constructions routières* (IFAO, 1949). [Internet Archive](https://archive.org/details/MIFAO81). | TOC / index / plate list → `data/mifao-review-queue.csv` + **human-in-the-loop**. |
+| **MIFAO 82** | `:source_mifao82` | included (candidates until accepted) | Maxime Siroux, *Anciennes voies et monuments routiers de la région d'Ispahân* (IFAO, 1971). [Internet Archive](https://archive.org/details/MIFAO82). ~60 caravanserais around Isfahan; 98 plans, 170 photographs. | Same queue; evidence rows keep volume + page/figure/plate. |
+| **Wolfram** | `:source_wolfram` | **not-included** | Reserved. No extract yet. | Buildings must not carry `persarch:attestedBy :source_wolfram` until a reviewed harvest exists. |
 
 Human review is a first-class requirement for MIFAO. Automated extraction produces *candidates*; only accepted rows are ingested or proposed to Wikidata.
+
+### Distinguishing sources and common records
+
+One building is one IRI. Each origin is a `persarch:DataSource` in [`data/sources.ttl`](data/sources.ttl). Repeat `persarch:attestedBy` once per source. A record that is common across sources carries several of those statements plus `persarch:sourceSet` / `persarch:sourceCount`. Cover evidence (page, figure, plate, map) is a `persarch:SourceAttestation` with `persarch:locator`.
+
+UNESCO harvest IRIs (`:parand`) and Wikidata harvest IRIs (`:wd_Q42575545`) stay distinct and are joined with `skos:exactMatch`. When an accepted MIFAO row has `unesco_id` or `wikidata` filled, ingest **reuses** that IRI so the extra sources land on the same individual.
+
+The overlap table is [`data/source-coverage.csv`](data/source-coverage.csv), rebuilt by `python scripts/ingest_mifao_accepted.py`. Rows with two or more sources have `overlap_note` of the form `common in UNESCO + Wikidata`. SPARQL: [`queries/source-coverage.rq`](queries/source-coverage.rq).
+
+Ingest is idempotent: same accepted CSV → same `data/mifao-accepted.ttl` and the same IIIF stubs. Candidate rows never mint buildings.
+
+```powershell
+python scripts/ingest_mifao_accepted.py
+python scripts/ingest_mifao_accepted.py --dry-run
+```
 
 ## UNESCO 1668 ↔ Wikidata one-to-one comparison
 
@@ -187,11 +204,22 @@ The living MIFAO list is [`data/mifao-review-queue.csv`](data/mifao-review-queue
 
 Every harvested caravanserai can link to an IIIF Presentation API 3.0 Manifest (`persarch:hasIiifManifest`) packing:
 
-- architectural plans (MIFAO, Kleiss, new surveys)
-- historical and contemporary photographs
+- architectural plans (`persarch:PlanImage` / `hasPlanPresentation`)
+- photographs (`persarch:Photograph` / `hasPhotographPresentation`)
+- maps and itineraries (`persarch:MapImage` / `hasMapPresentation`)
 - inscriptions and archival documents
 
-Example manifests: `iiif/`. Pattern: `persarch:hasPresentation` / `persarch:PlanImage` / `persarch:Photograph`.
+Example manifests: `iiif/` (UNESCO case studies) and `iiif/mifao/` (stubs written on accepted ingest). Canvases are added after visual review of the plates.
+
+## From a Coste plan to BOT topology
+
+A measured plan with a printed legend is the shortest path from a drawing to BOT triples. Each closed room with its own neighbours is a `bot:Space`; fittings are `bot:Element`; levels are `bot:Storey`; shared openings are `bot:adjacentZone`. A Coste number is a type key: a series `bot:Zone` groups the instances. Persian types (`Sahn`, `Hashti`, `Hujra`, `Stable`) sit on those individuals. The harvest IRI stays the same.
+
+Pasangan (`:wd_Q5959343`, Coste’s *Passencan*, 1867) is the working example. Sixteen Coste-7 muleteer rooms, four Coste-6 stable ranges, remaining legend keys, and CIDOC CRM scale-bar dimensions (`E16` / `E54`, method `persarch:method_scale_bar`) are in [`data/pasangan-coste.ttl`](data/pasangan-coste.ttl). The Wikidata harvest file is not edited. IIIF: [`iiif/pasangan.manifest.json`](iiif/pasangan.manifest.json).
+
+![From Coste plan to BOT topology](docs/infographics/coste-plan-to-bot.png)
+
+Walkthrough: [`docs/coste-plan-to-bot.md`](docs/coste-plan-to-bot.md). Figure source: [`docs/infographics/coste-plan-to-bot.html`](docs/infographics/coste-plan-to-bot.html).
 
 ## Case studies for persarch import
 
@@ -218,11 +246,11 @@ See `case-studies/`.
 persian-caravanserai-kg/
 ├── README.md
 ├── ontology/          # BOT + CRM extension (persarch namespace)
-├── data/              # UNESCO 1668, Wikidata harvest, links, MIFAO queue + evidence
-├── queries/           # Harvest, gap detection, competency questions
-├── docs/              # Blueprint, UNESCO↔Wikidata join, candidates, MIFAO notes
-├── iiif/              # IIIF Manifests
-├── scripts/           # harvest_wikidata.py, harvest_unesco.py, compare_unesco_wikidata.py
+├── data/              # sources.ttl, UNESCO 1668, Wikidata harvest, MIFAO queue/evidence/accepted, coverage
+├── queries/           # Harvest, gap detection, competency questions, source coverage
+├── docs/              # Blueprint, UNESCO↔Wikidata join, candidates, MIFAO notes, thesaurus, Coste→BOT infographic
+├── iiif/              # IIIF Manifests (case studies + mifao stubs)
+├── scripts/           # harvest, compare, seed queue, ingest_mifao_accepted.py
 └── case-studies/      # Ten persarch import records
 ```
 
@@ -234,9 +262,10 @@ python scripts/harvest_unesco.py
 python scripts/harvest_wikidata.py
 python scripts/compare_unesco_wikidata.py
 python scripts/seed_mifao_review_queue.py   # once; do not re-run after editorial CSV edits
+python scripts/ingest_mifao_accepted.py     # accepted rows only; rebuilds coverage
 ```
 
-Load `ontology/persarch-caravanserai-extension.ttl`, `data/unesco-1668.ttl`, `data/unesco-wikidata-links.ttl`, `data/wikidata-iran-caravanserais.ttl`, and `case-studies/*.ttl` into a triple store that supports BOT transitive `containsZone` and CRM.
+Load `ontology/persarch-caravanserai-extension.ttl`, `data/sources.ttl`, `data/unesco-1668.ttl`, `data/unesco-wikidata-links.ttl`, `data/wikidata-iran-caravanserais.ttl`, `data/pasangan-coste.ttl`, `data/mifao-accepted.ttl`, and `case-studies/*.ttl` into a triple store that supports BOT transitive `containsZone` and CRM.
 
 ## License
 
