@@ -90,6 +90,15 @@ def qid(uri: str) -> str:
     return uri.rsplit("/", 1)[-1]
 
 
+def turtle_iri(uri: str) -> str:
+    wikidata_entity_namespace = "http://www.wikidata.org/entity/"
+    if uri.startswith(wikidata_entity_namespace):
+        entity_id = uri[len(wikidata_entity_namespace) :]
+        if re.fullmatch(r"Q\d+", entity_id):
+            return f"wd:{entity_id}"
+    return f"<{uri}>"
+
+
 def slug(label: str, fallback: str) -> str:
     text = (label or fallback).strip().lower()
     text = re.sub(r"[^a-z0-9]+", "_", text)
@@ -254,13 +263,13 @@ def emit_turtle(records: dict) -> str:
             lines.append(f'    geo:asWKT "POINT({lon} {lat})"^^geo:wktLiteral .')
             lines.append("")
         for admin in sorted(rec["admins"]):
-            lines.append(f":{local} crm:P89_falls_within <{admin}> .")
+            lines.append(f":{local} crm:P89_falls_within {turtle_iri(admin)} .")
         for h in sorted(rec["heritages"]):
-            lines.append(f":{local} crm:P2_has_type <{h}> .")
+            lines.append(f":{local} crm:P2_has_type {turtle_iri(h)} .")
         for m in sorted(rec["materials"]):
-            lines.append(f":{local} crm:P45_consists_of <{m}> .")
+            lines.append(f":{local} crm:P45_consists_of {turtle_iri(m)} .")
         for s in sorted(rec["styles"]):
-            lines.append(f":{local} crm:P2_has_type <{s}> .")
+            lines.append(f":{local} crm:P2_has_type {turtle_iri(s)} .")
         if rec["admins"] or rec["heritages"] or rec["materials"] or rec["styles"]:
             lines.append("")
 

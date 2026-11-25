@@ -217,7 +217,9 @@ Example manifests: `iiif/` (UNESCO case studies) and `iiif/mifao/` (stubs writte
 
 A measured plan with a printed legend is the shortest path from a drawing to BOT triples. Each closed room with its own neighbours is a `bot:Space`; fittings are `bot:Element`; levels are `bot:Storey`; shared openings are `bot:adjacentZone`. A Coste number is a type key: a series `bot:Zone` groups the instances. Persian types (`Sahn`, `Hashti`, `Hujra`, `Stable`) sit on those individuals. The harvest IRI stays the same.
 
-Pasangan (`:wd_Q5959343`, Coste’s *Passencan*, 1867) is the working example. Sixteen Coste-7 muleteer rooms, four Coste-6 stable ranges, remaining legend keys, and CIDOC CRM scale-bar dimensions (`E16` / `E54`, method `persarch:method_scale_bar`) are in [`data/pasangan-coste.ttl`](data/pasangan-coste.ttl). The Wikidata harvest file is not edited. IIIF: [`iiif/pasangan.manifest.json`](iiif/pasangan.manifest.json).
+Pasangan (`:wd_Q5959343`, Coste’s *Passencan*, 1867) is the square four-iwan example. Sixteen Coste-7 muleteer rooms, four Coste-6 stable ranges, remaining legend keys, and CIDOC CRM scale-bar dimensions (`E16` / `E54`, method `persarch:method_scale_bar`) are in [`data/pasangan-coste.ttl`](data/pasangan-coste.ttl). IIIF: [`iiif/pasangan.manifest.json`](iiif/pasangan.manifest.json). Instance SVG (each minted room is its IRI; hatched series and dashed census cells mark misses): [`docs/infographics/pasangan-instances.svg`](docs/infographics/pasangan-instances.svg) / [HTML](docs/infographics/pasangan-instances.html).
+
+Amin-Abad (`:wd_Q5907540`, UNESCO 1668-014, Coste PL. LXVI) is the octagonal example at the same instance grain. Raster [`images/plans/amin_abad.png`](images/plans/amin_abad.png); RDF [`data/amin-abad-coste.ttl`](data/amin-abad-coste.ttl); IIIF [`iiif/amin-abad.manifest.json`](iiif/amin-abad.manifest.json). Instance SVG (each room is its IRI): [`docs/infographics/amin-abad-instances.svg`](docs/infographics/amin-abad-instances.svg) / [HTML](docs/infographics/amin-abad-instances.html). Walkthrough: [`docs/amin-abad-coste-plan-to-bot.md`](docs/amin-abad-coste-plan-to-bot.md). Accuracy target: redraw the plate from the RDF at more than 90% agreement (inventory, topology, then layout). Harvest TTL is not edited.
 
 ![From Coste plan to BOT topology](docs/infographics/coste-plan-to-bot.png)
 
@@ -267,7 +269,7 @@ python scripts/seed_mifao_review_queue.py   # once; do not re-run after editoria
 python scripts/ingest_mifao_accepted.py     # accepted rows only; rebuilds coverage
 ```
 
-Load `ontology/persarch-caravanserai-extension.ttl`, `data/sources.ttl`, `data/unesco-1668.ttl`, `data/unesco-wikidata-links.ttl`, `data/wikidata-iran-caravanserais.ttl`, `data/pasangan-coste.ttl`, `data/mifao-accepted.ttl`, and `case-studies/*.ttl` into a triple store that supports BOT transitive `containsZone` and CRM.
+Load `ontology/persarch-caravanserai-extension.ttl`, `data/sources.ttl`, `data/unesco-1668.ttl`, `data/unesco-wikidata-links.ttl`, `data/wikidata-iran-caravanserais.ttl`, `data/pasangan-coste.ttl`, `data/amin-abad-coste.ttl`, `data/mifao-accepted.ttl`, and `case-studies/*.ttl` into a triple store that supports BOT transitive `containsZone` and CRM. Topology checks: `queries/validate-topology.rq`.
 
 ## License
 

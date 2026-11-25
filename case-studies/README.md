@@ -20,3 +20,10 @@ Ribat-e Sharaf already exists in persarch (`data/ribat-i-sharaf.ttl`) under `htt
 | 10 | `:miandasht` | Miandasht | 1668-027 | Q5705395 | Multi-court Safavid + Qajar complex |
 
 Import into persarch by copying this Turtle (or per-building subsets) into `persarch/data/` and keeping the `persarch:` class IRIs unchanged.
+
+
+# Source Plans
+
+- https://iiif.archive.org/image/iiif/3/monumentsmodern00cost%2Fmonumentsmodern00cost_jp2.zip%2Fmonumentsmodern00cost_jp2%2Fmonumentsmodern00cost_0185.jp2/full/4088,/0/default.jpg
+
+- https://iiif.archive.org/image/iiif/3/monumentsmodern00cost%2Fmonumentsmodern00cost_jp2.zip%2Fmonumentsmodern00cost_jp2%2Fmonumentsmodern00cost_0187.jp2/full/4088,/0/default.jpg

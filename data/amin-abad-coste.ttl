@@ -1,0 +1,653 @@
+@prefix :         <https://w3id.org/persian-caravanserai-kg#> .
+@prefix persarch: <https://w3id.org/persian-architecture#> .
+@prefix bot:      <https://w3id.org/bot#> .
+@prefix crm:      <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmba:    <http://www.cidoc-crm.org/extensions/crmba/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix geo:      <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix prov:     <http://www.w3.org/ns/prov#> .
+@prefix wd:       <http://www.wikidata.org/entity/> .
+
+# Topology and CIDOC CRM measuring of :wd_Q5907540 (Amin-Abad / Aminabad)
+# from Pascal Coste's PL. LXVI in Monuments modernes de la Perse (Morel, 1867).
+# Raster: images/plans/amin_abad.png (mid-resolution colour plate).
+# Load with data/wikidata-iran-caravanserais.ttl and data/unesco-1668.ttl.
+# UNESCO :amin_abad stays the harvest stub; skos:exactMatch wd:Q5907540.
+# Do not hand-edit the harvest files. Do not reuse UNESCO propertyAreaHectare.
+#
+# Legend keys 1–11. Instance grain: each closed room with a distinct neighbour
+# set is its own bot:Space. Repeated keys use a series bot:Zone that
+# containsZone the instances. North at the top (B); entrance on the south.
+# Octagon is flat-topped: cardinal faces N E S W; diagonal faces NE SE SW NW.
+# Hujra (7) index: cardinal faces N/S west→east, E/W north→south; NW diagonal
+# inner rooms north-east→south-west. Coste labels 7 on the NW diagonal inner
+# ring; NE/SE/SW diagonals show stable stalls there and are not minted as 7.
+# Coste 9 is minted only where the numeral is printed (west and north).
+# Coste 10 is minted only on towers that carry the numeral (west half).
+
+:Reading_Coste_Aminabad a prov:Activity ;
+    rdfs:label "Reading of Pascal Coste's Amin-Abad plan (legend keys 1–11)"@en ;
+    prov:used :coste_1867_aminabad ;
+    dcterms:source <https://w3id.org/persian-caravanserai-kg/images/plans/amin_abad.png> .
+
+:coste_1867_aminabad a persarch:PlanImage , crm:E31_Document , crm:E73_Information_Object ;
+    rdfs:label "Caravanserail Amin-Abad — Pascal Coste, 1867, PL. LXVI"@en ;
+    rdfs:label "Caravanserail Amin-Abad sur la route d'Ispahan à Schiraz"@fr ;
+    dcterms:title "Monuments modernes de la Perse mesurés, dessinés et décrits"@fr ;
+    dcterms:creator "Pascal Coste" ;
+    dcterms:contributor "Jules Penel" ;
+    dcterms:date "1867"^^xsd:gYear ;
+    dcterms:identifier "PL. LXVI" ;
+    foaf:page <https://commons.wikimedia.org/wiki/File:Amin_Abad_caravanserai_by_Pascal_Coste.jpg> ;
+    dcterms:source <https://w3id.org/persian-caravanserai-kg/images/plans/amin_abad.png> ;
+    rdfs:seeAlso wd:Q725892 ;
+    crm:P70_documents :wd_Q5907540 ;
+    rdfs:seeAlso <https://w3id.org/persian-caravanserai-kg/docs/infographics/amin-abad-instances.svg> ;
+    rdfs:comment "Plate with vue extérieure, coupe A-B, coupe C-D, and octagonal plan. Graphic scale: 40 m on the plan, 20 m on the coupes. Raster in images/plans/amin_abad.png (4088×5437). Instance SVG fragment ids equal RDF local names (e.g. #wd_Q5907540_hujra_nw_2)."@en .
+
+:wd_Q5907540 a persarch:OctagonalCaravanserai ;
+    skos:altLabel "Amin-Abad"@en , "Amin-âbâd"@fr , "Amir-âbâd"@fr ;
+    crm:P2_has_type persarch:style_safavid ;
+    bot:hasStorey :wd_Q5907540_ground , :wd_Q5907540_first , :wd_Q5907540_terrace ;
+    bot:containsZone :wd_Q5907540_sahn , :wd_Q5907540_stables ,
+        :wd_Q5907540_hujra , :wd_Q5907540_muleteer_platform , :wd_Q5907540_latrines ;
+    bot:adjacentZone :wd_Q5907540_basin ;
+    persarch:hasPlanPresentation :coste_1867_aminabad ;
+    persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/manifest.json> ;
+    rdfs:seeAlso <https://w3id.org/persian-caravanserai-kg/docs/infographics/amin-abad-instances.svg> ;
+    persarch:hasAttestation :att_coste_aminabad ;
+    crm:P43_has_dimension :dim_wd_Q5907540_length_ew , :dim_wd_Q5907540_width_ns ,
+        :dim_wd_Q5907540_area ;
+    dcterms:description "Octagonal Safavid roadside caravanserai on the Isfahan–Shiraz road (Shahreza County). UNESCO 1668-014. Coste 1867 PL. LXVI plan, sections, and exterior view. Entrance faces south."@en .
+
+:att_coste_aminabad a persarch:SourceAttestation , crm:E73_Information_Object ;
+    rdfs:label "Coste 1867 Amin-Abad plate, legend 1–11"@en ;
+    persarch:documentsBuilding :wd_Q5907540 ;
+    crm:P70_documents :wd_Q5907540 ;
+    persarch:evidenceKind persarch:evidence_figure ;
+    persarch:locator "PL. LXVI; légende 1–11; vue extérieure; coupe A-B; coupe C-D; plan" ;
+    dcterms:source :coste_1867_aminabad ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+#################################################################
+# Storeys
+#################################################################
+
+:wd_Q5907540_ground a bot:Storey ;
+    rdfs:label "Ground storey – Amin-Abad"@en ;
+    rdfs:comment "Coste PLAN. Coupe A-B cuts the two-storey south entrance mass and the courtyard; coupe C-D cuts the north-east diagonal (stables)."@en ;
+    bot:hasSpace :wd_Q5907540_entrance , :wd_Q5907540_porch , :wd_Q5907540_sahn ,
+        :wd_Q5907540_concierge_w , :wd_Q5907540_concierge_e ,
+        :wd_Q5907540_stables_nw , :wd_Q5907540_stables_ne ,
+        :wd_Q5907540_stables_se , :wd_Q5907540_stables_sw ,
+        :wd_Q5907540_hujra_n_1 , :wd_Q5907540_hujra_n_2 , :wd_Q5907540_hujra_n_3 , :wd_Q5907540_hujra_n_dome ,
+        :wd_Q5907540_hujra_e_1 , :wd_Q5907540_hujra_e_2 , :wd_Q5907540_hujra_e_3 , :wd_Q5907540_hujra_e_dome ,
+        :wd_Q5907540_hujra_w_1 , :wd_Q5907540_hujra_w_2 , :wd_Q5907540_hujra_w_3 , :wd_Q5907540_hujra_w_dome ,
+        :wd_Q5907540_hujra_s_w , :wd_Q5907540_hujra_s_e ,
+        :wd_Q5907540_hujra_nw_n , :wd_Q5907540_hujra_nw_1 , :wd_Q5907540_hujra_nw_2 ,
+        :wd_Q5907540_hujra_nw_3 , :wd_Q5907540_hujra_nw_w , :wd_Q5907540_hujra_ne_n ,
+        :wd_Q5907540_muleteer_n_w , :wd_Q5907540_muleteer_n_e ,
+        :wd_Q5907540_muleteer_w_1 , :wd_Q5907540_muleteer_w_2 ,
+        :wd_Q5907540_muleteer_nw_1 , :wd_Q5907540_muleteer_nw_2 , :wd_Q5907540_muleteer_nw_3 ,
+        :wd_Q5907540_muleteer_nw_4 , :wd_Q5907540_muleteer_nw_5 ,
+        :wd_Q5907540_latrine_nnw , :wd_Q5907540_latrine_wnw ,
+        :wd_Q5907540_latrine_wsw , :wd_Q5907540_latrine_ssw ;
+    bot:containsZone :wd_Q5907540_stables , :wd_Q5907540_hujra ,
+        :wd_Q5907540_muleteer_platform , :wd_Q5907540_latrines ;
+    bot:containsElement :wd_Q5907540_stairs_w , :wd_Q5907540_stairs_e ,
+        :wd_Q5907540_prayer_platform ,
+        :wd_Q5907540_tower_nnw , :wd_Q5907540_tower_nne , :wd_Q5907540_tower_ene ,
+        :wd_Q5907540_tower_ese , :wd_Q5907540_tower_sse , :wd_Q5907540_tower_ssw ,
+        :wd_Q5907540_tower_wsw , :wd_Q5907540_tower_wnw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_first a bot:Storey ;
+    rdfs:label "First floor – Amin-Abad"@en ;
+    rdfs:comment "Coste 4: escaliers du 1er étage. Coupe A-B shows an upper storey over the south entrance mass. No separate first-floor plan."@en ;
+    bot:adjacentElement :wd_Q5907540_stairs_w , :wd_Q5907540_stairs_e ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_terrace a bot:Storey ;
+    rdfs:label "Terrace storey – Amin-Abad"@en ;
+    rdfs:comment "Coste 4 also serves the terraces. No separate terrace plan."@en ;
+    bot:adjacentElement :wd_Q5907540_stairs_w , :wd_Q5907540_stairs_e ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+#################################################################
+# Unique spaces and elements (Coste 1, 2, 5, 6, 11)
+#################################################################
+
+:wd_Q5907540_entrance a persarch:PishtaqSpace , bot:Space ;
+    rdfs:label "Entrance of the caravanserai (Coste 1)"@en ;
+    rdfs:label "Entrée du Caravansérail"@fr ;
+    persarch:locator "1" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_porch , :wd_Q5907540_concierge_w , :wd_Q5907540_concierge_e ,
+        :wd_Q5907540_basin ;
+    bot:adjacentElement :wd_Q5907540_tower_ssw , :wd_Q5907540_tower_sse ;
+    rdfs:comment "South gate, at the bottom of Coste's plan."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_porch a persarch:Hashti , bot:Space ;
+    rdfs:label "Porch / vestibule (Coste 2)"@en ;
+    rdfs:label "Porche"@fr ;
+    persarch:locator "2" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_entrance , :wd_Q5907540_sahn ,
+        :wd_Q5907540_hujra_s_w , :wd_Q5907540_hujra_s_e ,
+        :wd_Q5907540_concierge_w , :wd_Q5907540_concierge_e ;
+    bot:adjacentElement :wd_Q5907540_stairs_w , :wd_Q5907540_stairs_e ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_sahn a persarch:Sahn , bot:Space ;
+    rdfs:label "Courtyard (Coste 5)"@en ;
+    rdfs:label "Cour"@fr ;
+    persarch:locator "5" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_porch ,
+        :wd_Q5907540_hujra_n_1 , :wd_Q5907540_hujra_n_2 , :wd_Q5907540_hujra_n_3 ,
+        :wd_Q5907540_hujra_e_1 , :wd_Q5907540_hujra_e_2 , :wd_Q5907540_hujra_e_3 ,
+        :wd_Q5907540_hujra_w_1 , :wd_Q5907540_hujra_w_2 , :wd_Q5907540_hujra_w_3 ,
+        :wd_Q5907540_hujra_s_w , :wd_Q5907540_hujra_s_e ,
+        :wd_Q5907540_hujra_nw_n , :wd_Q5907540_hujra_nw_1 , :wd_Q5907540_hujra_nw_2 ,
+        :wd_Q5907540_hujra_nw_3 , :wd_Q5907540_hujra_nw_w , :wd_Q5907540_hujra_ne_n ;
+    bot:containsElement :wd_Q5907540_prayer_platform ;
+    crm:P43_has_dimension :dim_wd_Q5907540_sahn_width ;
+    rdfs:comment "Octagonal courtyard. Inner ring of Coste 7 faces this space."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_prayer_platform a bot:Element ;
+    rdfs:label "Prayer platform (Coste 6)"@en ;
+    rdfs:label "Estrade pour la Prière"@fr ;
+    persarch:locator "6" ;
+    dcterms:source :coste_1867_aminabad ;
+    rdfs:comment "Octagonal raised platform in the courtyard, on the north–south axis."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_basin a persarch:Howz , bot:Element ;
+    rdfs:label "Basin outside the caravanserai (Coste 11)"@en ;
+    rdfs:label "Bassin en dehors du Caravanserail"@fr ;
+    persarch:locator "11" ;
+    dcterms:source :coste_1867_aminabad ;
+    rdfs:comment "Square basin drawn south of the plan, outside the building envelope."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+#################################################################
+# Coste 3 concierge — two rooms flanking the porch
+#################################################################
+
+:wd_Q5907540_concierge_w a bot:Space ;
+    rdfs:label "Concierge, west of porch (Coste 3)"@en ;
+    rdfs:label "Concierge et dépendance"@fr ;
+    persarch:locator "3; W" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_entrance , :wd_Q5907540_porch , :wd_Q5907540_hujra_s_w ;
+    bot:adjacentElement :wd_Q5907540_stairs_w ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_concierge_e a bot:Space ;
+    rdfs:label "Concierge, east of porch (Coste 3)"@en ;
+    rdfs:label "Concierge et dépendance"@fr ;
+    persarch:locator "3; E" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_entrance , :wd_Q5907540_porch , :wd_Q5907540_hujra_s_e ;
+    bot:adjacentElement :wd_Q5907540_stairs_e ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+#################################################################
+# Coste 4 stairs — two flights flanking the porch
+#################################################################
+
+:wd_Q5907540_stairs_w a bot:Element ;
+    rdfs:label "Stairs, west of porch (Coste 4)"@en ;
+    rdfs:label "Escaliers du 1er Étage et des Terrasses"@fr ;
+    persarch:locator "4; W" ;
+    dcterms:source :coste_1867_aminabad ;
+    rdfs:comment "Links ground storey to first floor and terraces."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_stairs_e a bot:Element ;
+    rdfs:label "Stairs, east of porch (Coste 4)"@en ;
+    rdfs:label "Escaliers du 1er Étage et des Terrasses"@fr ;
+    persarch:locator "4; E" ;
+    dcterms:source :coste_1867_aminabad ;
+    rdfs:comment "Links ground storey to first floor and terraces."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+#################################################################
+# Eight corner towers (unnumbered; 10 latrines sit in four of them)
+#################################################################
+
+:wd_Q5907540_tower_nnw a persarch:CornerTower , bot:Element ;
+    rdfs:label "North-north-west tower"@en ;
+    dcterms:source :coste_1867_aminabad ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_tower_nne a persarch:CornerTower , bot:Element ;
+    rdfs:label "North-north-east tower"@en ;
+    dcterms:source :coste_1867_aminabad ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_tower_ene a persarch:CornerTower , bot:Element ;
+    rdfs:label "East-north-east tower"@en ;
+    dcterms:source :coste_1867_aminabad ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_tower_ese a persarch:CornerTower , bot:Element ;
+    rdfs:label "East-south-east tower"@en ;
+    dcterms:source :coste_1867_aminabad ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_tower_sse a persarch:CornerTower , bot:Element ;
+    rdfs:label "South-south-east tower"@en ;
+    dcterms:source :coste_1867_aminabad ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_tower_ssw a persarch:CornerTower , bot:Element ;
+    rdfs:label "South-south-west tower"@en ;
+    dcterms:source :coste_1867_aminabad ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_tower_wsw a persarch:CornerTower , bot:Element ;
+    rdfs:label "West-south-west tower"@en ;
+    dcterms:source :coste_1867_aminabad ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_tower_wnw a persarch:CornerTower , bot:Element ;
+    rdfs:label "West-north-west tower"@en ;
+    dcterms:source :coste_1867_aminabad ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+#################################################################
+# Coste 10 latrines — series + four labelled instances
+#################################################################
+
+:wd_Q5907540_latrines a bot:Zone ;
+    rdfs:label "Latrines (Coste 10, series)"@en ;
+    persarch:locator "10" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:containsZone :wd_Q5907540_latrine_nnw , :wd_Q5907540_latrine_wnw ,
+        :wd_Q5907540_latrine_wsw , :wd_Q5907540_latrine_ssw ;
+    rdfs:comment "Numeral 10 is printed in four west-half towers. East-half towers are drawn without the numeral on this raster."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_latrine_nnw a bot:Space ;
+    rdfs:label "Latrine in the NNW tower (Coste 10)"@en ;
+    persarch:locator "10; NNW" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentElement :wd_Q5907540_tower_nnw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_latrine_wnw a bot:Space ;
+    rdfs:label "Latrine in the WNW tower (Coste 10)"@en ;
+    persarch:locator "10; WNW" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentElement :wd_Q5907540_tower_wnw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_latrine_wsw a bot:Space ;
+    rdfs:label "Latrine in the WSW tower (Coste 10)"@en ;
+    persarch:locator "10; WSW" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentElement :wd_Q5907540_tower_wsw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_latrine_ssw a bot:Space ;
+    rdfs:label "Latrine in the SSW tower (Coste 10)"@en ;
+    persarch:locator "10; SSW" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentElement :wd_Q5907540_tower_ssw ;
+    bot:adjacentZone :wd_Q5907540_entrance ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+#################################################################
+# Coste 8 stables — four diagonal ranges
+#################################################################
+
+:wd_Q5907540_stables a bot:Zone ;
+    rdfs:label "Stables (Coste 8, series)"@en ;
+    rdfs:label "Écuries"@fr ;
+    rdfs:label "اصطبلها"@fa ;
+    persarch:locator "8" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:containsZone :wd_Q5907540_stables_nw , :wd_Q5907540_stables_ne ,
+        :wd_Q5907540_stables_se , :wd_Q5907540_stables_sw ;
+    rdfs:comment "Long stables occupy the four diagonal sides. T-stalls inside a range stay unsplit."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_stables_nw a persarch:Stable , bot:Space ;
+    rdfs:label "North-west diagonal stables (Coste 8)"@en ;
+    persarch:locator "8; NW" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_hujra_nw_1 , :wd_Q5907540_hujra_nw_2 , :wd_Q5907540_hujra_nw_3 ,
+        :wd_Q5907540_muleteer_nw_1 , :wd_Q5907540_muleteer_nw_2 , :wd_Q5907540_muleteer_nw_3 ,
+        :wd_Q5907540_muleteer_nw_4 , :wd_Q5907540_muleteer_nw_5 ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_stables_ne a persarch:Stable , bot:Space ;
+    rdfs:label "North-east diagonal stables (Coste 8)"@en ;
+    persarch:locator "8; NE" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_hujra_ne_n , :wd_Q5907540_hujra_n_3 , :wd_Q5907540_hujra_e_1 ;
+    rdfs:comment "Coupe C-D cuts this range."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_stables_se a persarch:Stable , bot:Space ;
+    rdfs:label "South-east diagonal stables (Coste 8)"@en ;
+    persarch:locator "8; SE" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_hujra_s_e , :wd_Q5907540_hujra_e_3 ;
+    bot:adjacentElement :wd_Q5907540_tower_ese , :wd_Q5907540_tower_sse ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_stables_sw a persarch:Stable , bot:Space ;
+    rdfs:label "South-west diagonal stables (Coste 8)"@en ;
+    persarch:locator "8; SW" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_hujra_s_w , :wd_Q5907540_hujra_w_3 ;
+    bot:adjacentElement :wd_Q5907540_tower_wsw , :wd_Q5907540_tower_ssw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+#################################################################
+# Coste 7 hujras — series + twenty labelled rooms
+#################################################################
+
+:wd_Q5907540_hujra a bot:Zone ;
+    rdfs:label "Travellers' rooms (Coste 7, series)"@en ;
+    rdfs:label "Chambres des Voyageurs"@fr ;
+    persarch:locator "7" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:containsZone
+        :wd_Q5907540_hujra_n_1 , :wd_Q5907540_hujra_n_2 , :wd_Q5907540_hujra_n_3 , :wd_Q5907540_hujra_n_dome ,
+        :wd_Q5907540_hujra_e_1 , :wd_Q5907540_hujra_e_2 , :wd_Q5907540_hujra_e_3 , :wd_Q5907540_hujra_e_dome ,
+        :wd_Q5907540_hujra_w_1 , :wd_Q5907540_hujra_w_2 , :wd_Q5907540_hujra_w_3 , :wd_Q5907540_hujra_w_dome ,
+        :wd_Q5907540_hujra_s_w , :wd_Q5907540_hujra_s_e ,
+        :wd_Q5907540_hujra_nw_n , :wd_Q5907540_hujra_nw_1 , :wd_Q5907540_hujra_nw_2 ,
+        :wd_Q5907540_hujra_nw_3 , :wd_Q5907540_hujra_nw_w , :wd_Q5907540_hujra_ne_n ;
+    rdfs:comment "Twenty rooms labelled 7: three court-facing cells plus a domed room on N, E, W; two cells flanking the south porch; five on the NW diagonal inner ring; one circular cell at the NE chamfer."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_n_1 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, north face bay 1 (west)"@en ;
+    persarch:locator "7; N; bay 1 west to east" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_n_2 , :wd_Q5907540_hujra_nw_n ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_n_2 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, north face bay 2 (on axis, south of the dome)"@en ;
+    persarch:locator "7; N; bay 2 west to east" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_n_1 , :wd_Q5907540_hujra_n_3 , :wd_Q5907540_hujra_n_dome ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_n_3 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, north face bay 3 (east)"@en ;
+    persarch:locator "7; N; bay 3 west to east" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_n_2 , :wd_Q5907540_hujra_ne_n ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_n_dome a persarch:Hujra , bot:Space ;
+    rdfs:label "Domed hujra, north axis (Coste 7)"@en ;
+    persarch:locator "7; N; dome" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_hujra_n_2 , :wd_Q5907540_muleteer_n_w , :wd_Q5907540_muleteer_n_e ;
+    rdfs:comment "Octagonal-domed room on the B axis, behind the north court cells."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_e_1 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, east face bay 1 (north)"@en ;
+    persarch:locator "7; E; bay 1 north to south" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_e_2 , :wd_Q5907540_hujra_ne_n ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_e_2 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, east face bay 2 (on axis, west of the dome)"@en ;
+    persarch:locator "7; E; bay 2 north to south" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_e_1 , :wd_Q5907540_hujra_e_3 , :wd_Q5907540_hujra_e_dome ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_e_3 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, east face bay 3 (south)"@en ;
+    persarch:locator "7; E; bay 3 north to south" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_e_2 , :wd_Q5907540_stables_se ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_e_dome a persarch:Hujra , bot:Space ;
+    rdfs:label "Domed hujra, east axis (Coste 7)"@en ;
+    persarch:locator "7; E; dome" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_hujra_e_2 ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_w_1 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, west face bay 1 (north)"@en ;
+    persarch:locator "7; W; bay 1 north to south" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_w_2 , :wd_Q5907540_hujra_nw_w ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_w_2 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, west face bay 2 (on axis, east of the dome)"@en ;
+    persarch:locator "7; W; bay 2 north to south" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_w_1 , :wd_Q5907540_hujra_w_3 , :wd_Q5907540_hujra_w_dome ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_w_3 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, west face bay 3 (south)"@en ;
+    persarch:locator "7; W; bay 3 north to south" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_w_2 , :wd_Q5907540_stables_sw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_w_dome a persarch:Hujra , bot:Space ;
+    rdfs:label "Domed hujra, west axis (Coste 7)"@en ;
+    persarch:locator "7; W; dome" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_hujra_w_2 , :wd_Q5907540_muleteer_w_2 ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_s_w a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, south face west of porch (Coste 7)"@en ;
+    persarch:locator "7; S; W" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_porch , :wd_Q5907540_concierge_w , :wd_Q5907540_stables_sw ;
+    bot:adjacentElement :wd_Q5907540_stairs_w ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_s_e a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, south face east of porch (Coste 7)"@en ;
+    persarch:locator "7; S; E" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_porch , :wd_Q5907540_concierge_e , :wd_Q5907540_stables_se ;
+    bot:adjacentElement :wd_Q5907540_stairs_e ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_nw_n a persarch:Hujra , bot:Space ;
+    rdfs:label "Circular hujra, north end of NW diagonal (Coste 7)"@en ;
+    persarch:locator "7; NW; N circular" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_n_1 , :wd_Q5907540_hujra_nw_1 , :wd_Q5907540_stables_nw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_nw_1 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, NW diagonal inner bay 1"@en ;
+    persarch:locator "7; NW; bay 1 north-east to south-west" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_nw_n , :wd_Q5907540_hujra_nw_2 , :wd_Q5907540_stables_nw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_nw_2 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, NW diagonal inner bay 2"@en ;
+    persarch:locator "7; NW; bay 2 north-east to south-west" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_nw_1 , :wd_Q5907540_hujra_nw_3 , :wd_Q5907540_stables_nw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_nw_3 a persarch:Hujra , bot:Space ;
+    rdfs:label "Hujra, NW diagonal inner bay 3"@en ;
+    persarch:locator "7; NW; bay 3 north-east to south-west" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_nw_2 , :wd_Q5907540_hujra_nw_w , :wd_Q5907540_stables_nw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_nw_w a persarch:Hujra , bot:Space ;
+    rdfs:label "Circular hujra, west end of NW diagonal (Coste 7)"@en ;
+    persarch:locator "7; NW; W circular" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_w_1 , :wd_Q5907540_hujra_nw_3 , :wd_Q5907540_stables_nw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_hujra_ne_n a persarch:Hujra , bot:Space ;
+    rdfs:label "Circular hujra, north end of NE diagonal (Coste 7)"@en ;
+    persarch:locator "7; NE; N circular" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_sahn , :wd_Q5907540_hujra_n_3 , :wd_Q5907540_hujra_e_1 , :wd_Q5907540_stables_ne ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+#################################################################
+# Coste 9 muleteer rooms — series + nine labelled instances
+#################################################################
+
+:wd_Q5907540_muleteer_platform a bot:Zone ;
+    rdfs:label "Muleteer rooms (Coste 9, series)"@en ;
+    rdfs:label "Estrades et Chambres pour les Muletiers et dépôt des harnais et des ballots"@fr ;
+    rdfs:label "سکوهای چارواداران"@fa ;
+    persarch:locator "9" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:containsZone
+        :wd_Q5907540_muleteer_n_w , :wd_Q5907540_muleteer_n_e ,
+        :wd_Q5907540_muleteer_w_1 , :wd_Q5907540_muleteer_w_2 ,
+        :wd_Q5907540_muleteer_nw_1 , :wd_Q5907540_muleteer_nw_2 , :wd_Q5907540_muleteer_nw_3 ,
+        :wd_Q5907540_muleteer_nw_4 , :wd_Q5907540_muleteer_nw_5 ;
+    rdfs:comment "Nine rooms labelled 9 on this raster, all on the north and west. Outer rooms on other sides are morphologically similar but unlabelled and not minted."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_muleteer_n_w a bot:Space ;
+    rdfs:label "Muleteer room, north face west of dome (Coste 9)"@en ;
+    persarch:locator "9; N; W" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_hujra_n_dome , :wd_Q5907540_muleteer_n_e ;
+    bot:adjacentElement :wd_Q5907540_tower_nnw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_muleteer_n_e a bot:Space ;
+    rdfs:label "Muleteer room, north face east of dome (Coste 9)"@en ;
+    persarch:locator "9; N; E" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_hujra_n_dome , :wd_Q5907540_muleteer_n_w ;
+    bot:adjacentElement :wd_Q5907540_tower_nne ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_muleteer_w_1 a bot:Space ;
+    rdfs:label "Muleteer room, west face at WNW tower (Coste 9)"@en ;
+    persarch:locator "9; W; bay 1 north to south" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_muleteer_nw_1 , :wd_Q5907540_latrine_wnw ;
+    bot:adjacentElement :wd_Q5907540_tower_wnw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_muleteer_w_2 a bot:Space ;
+    rdfs:label "Muleteer room, west face beside west dome (Coste 9)"@en ;
+    persarch:locator "9; W; bay 2 north to south" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_hujra_w_dome , :wd_Q5907540_muleteer_w_1 ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_muleteer_nw_1 a bot:Space ;
+    rdfs:label "Muleteer room, NW outer bay 1 (at WNW)"@en ;
+    persarch:locator "9; NW; bay 1 south-west to north-east" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_stables_nw , :wd_Q5907540_muleteer_w_1 , :wd_Q5907540_muleteer_nw_2 ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_muleteer_nw_2 a bot:Space ;
+    rdfs:label "Muleteer room, NW outer bay 2"@en ;
+    persarch:locator "9; NW; bay 2 south-west to north-east" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_stables_nw , :wd_Q5907540_muleteer_nw_1 , :wd_Q5907540_muleteer_nw_3 ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_muleteer_nw_3 a bot:Space ;
+    rdfs:label "Muleteer room, NW outer bay 3"@en ;
+    persarch:locator "9; NW; bay 3 south-west to north-east" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_stables_nw , :wd_Q5907540_muleteer_nw_2 , :wd_Q5907540_muleteer_nw_4 ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_muleteer_nw_4 a bot:Space ;
+    rdfs:label "Muleteer room, NW outer bay 4"@en ;
+    persarch:locator "9; NW; bay 4 south-west to north-east" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_stables_nw , :wd_Q5907540_muleteer_nw_3 , :wd_Q5907540_muleteer_nw_5 ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:wd_Q5907540_muleteer_nw_5 a bot:Space ;
+    rdfs:label "Muleteer room, NW outer bay 5 (at NNW)"@en ;
+    persarch:locator "9; NW; bay 5 south-west to north-east" ;
+    dcterms:source :coste_1867_aminabad ;
+    bot:adjacentZone :wd_Q5907540_stables_nw , :wd_Q5907540_muleteer_nw_4 , :wd_Q5907540_muleteer_n_w ;
+    bot:adjacentElement :wd_Q5907540_tower_nnw ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+#################################################################
+# CIDOC CRM measuring from Coste scale bars
+# Raster 4088×5437. Plan 0–40 m ≈ 1010 px → 25.25 px/m.
+# Coupes 0–20 m share that graphic length → 50.5 px/m.
+# Envelope ±2 m (mid-resolution scan). Printed metres, not UNESCO hectares.
+#################################################################
+
+:Measurement_Coste_Aminabad_scale a crm:E16_Measurement ;
+    rdfs:label "Scale-bar measurement of Amin-Abad from Coste 1867 PL. LXVI"@en ;
+    crm:P39_measured :wd_Q5907540 ;
+    crm:P40_observed_dimension :dim_wd_Q5907540_length_ew , :dim_wd_Q5907540_width_ns ,
+        :dim_wd_Q5907540_area , :dim_wd_Q5907540_sahn_width ;
+    crm:P2_has_type persarch:method_scale_bar ;
+    persarch:locator "échelles: 40 m du plan; 20 m des coupes; PL. LXVI" ;
+    dcterms:source :coste_1867_aminabad ;
+    rdfs:comment "Pixel run on images/plans/amin_abad.png. Outer masonry including towers is about 1610×1586 px. Distinct from UNESCO propertyAreaHectare 0.4 ha."@en ;
+    prov:wasGeneratedBy :Reading_Coste_Aminabad .
+
+:dim_wd_Q5907540_length_ew a crm:E54_Dimension ;
+    rdfs:label "Amin-Abad east–west width including towers"@en ;
+    crm:P2_has_type persarch:dimtype_length ;
+    crm:P90_has_value "64"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_metre ;
+    persarch:uncertaintyMetre "2.0"^^xsd:decimal ;
+    rdfs:comment "Flat-to-flat octagon envelope, towers included; 1610 px on the plan scale (1010 px ≈ 40 m)."@en ;
+    dcterms:source :coste_1867_aminabad .
+
+:dim_wd_Q5907540_width_ns a crm:E54_Dimension ;
+    rdfs:label "Amin-Abad north–south width including towers"@en ;
+    crm:P2_has_type persarch:dimtype_width ;
+    crm:P90_has_value "63"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_metre ;
+    persarch:uncertaintyMetre "2.0"^^xsd:decimal ;
+    rdfs:comment "Flat-to-flat including towers; 1586 px."@en ;
+    dcterms:source :coste_1867_aminabad .
+
+:dim_wd_Q5907540_area a crm:E54_Dimension ;
+    rdfs:label "Amin-Abad footprint area (Coste octagon envelope)"@en ;
+    crm:P2_has_type persarch:dimtype_area ;
+    crm:P90_has_value "3400"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_square_metre ;
+    rdfs:comment "Regular-octagon estimate from 64 m flats, rounded. Not UNESCO 0.4 ha."@en ;
+    dcterms:source :coste_1867_aminabad .
+
+:dim_wd_Q5907540_sahn_width a crm:E54_Dimension ;
+    rdfs:label "Amin-Abad courtyard width"@en ;
+    crm:P2_has_type persarch:dimtype_width ;
+    crm:P90_has_value "32"^^xsd:decimal ;
+    crm:P91_has_unit persarch:unit_metre ;
+    persarch:uncertaintyMetre "2.0"^^xsd:decimal ;
+    rdfs:comment "Octagonal court, flat-to-flat, visual half of the envelope minus the two ranges."@en ;
+    dcterms:source :coste_1867_aminabad .

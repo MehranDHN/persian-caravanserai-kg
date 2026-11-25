@@ -53,3 +53,24 @@ PREFIX : <https://w3id.org/persian-caravanserai-kg#>
 #   OPTIONAL { ?room bot:adjacentZone|bot:adjacentElement ?nbr }
 # }
 # ORDER BY ?loc
+
+# CQ9. Amin-Abad instance inventory (Coste PL. LXVI) — reconstruction layer 1
+# SELECT ?series ?n WHERE {
+#   VALUES ?series {
+#     :wd_Q5907540_hujra :wd_Q5907540_stables
+#     :wd_Q5907540_muleteer_platform :wd_Q5907540_latrines
+#   }
+#   { SELECT ?series (COUNT(?x) AS ?n) WHERE {
+#       ?series bot:containsZone ?x
+#     } GROUP BY ?series }
+# }
+
+# CQ10. Pasangan series still hiding multiple closed rooms (census queue)
+# SELECT ?space ?loc WHERE {
+#   VALUES ?space {
+#     :wd_Q5959343_hujra :wd_Q5959343_traveller_platform :wd_Q5959343_latrines
+#     :wd_Q5959343_stairs :wd_Q5959343_chimneys :wd_Q5959343_niches
+#   }
+#   OPTIONAL { ?space persarch:locator ?loc }
+#   FILTER NOT EXISTS { ?space bot:containsZone ?x }
+# }

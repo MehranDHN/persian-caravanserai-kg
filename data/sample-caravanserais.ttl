@@ -7,6 +7,7 @@
 #   data/unesco-wikidata-links.ttl
 #   data/wikidata-iran-caravanserais.ttl
 #   data/pasangan-coste.ttl
+#   data/amin-abad-coste.ttl
 #   case-studies/persarch-import.ttl
 #
 # owl:imports those graphs conceptually; load them together in the triple store.

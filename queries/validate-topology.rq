@@ -1,0 +1,74 @@
+PREFIX persarch: <https://w3id.org/persian-architecture#>
+PREFIX bot: <https://w3id.org/bot#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <https://w3id.org/persian-caravanserai-kg#>
+
+# Closed-world checks OWL will not raise. Run after loading ontology + harvest +
+# pasangan-coste.ttl + amin-abad-coste.ttl.
+# Reconstruction inventory: every series Zone should contain only Spaces;
+# every Space on a storey should have a locator and local neighbours.
+
+# V1. Series grouping nodes must not be bot:Space
+SELECT ?series WHERE {
+  VALUES ?series {
+    :wd_Q5959343_muleteer_platform :wd_Q5959343_stables
+    :wd_Q5907540_hujra :wd_Q5907540_stables
+    :wd_Q5907540_muleteer_platform :wd_Q5907540_latrines
+  }
+  ?series a bot:Space .
+}
+
+# V2. bot:Element must not carry bot:adjacentZone (BOT: use adjacentElement)
+SELECT ?el ?z WHERE {
+  ?el a bot:Element ; bot:adjacentZone ?z .
+}
+
+# V3. P43 dangling dimensions
+SELECT ?thing ?dim WHERE {
+  ?thing crm:P43_has_dimension ?dim .
+  FILTER NOT EXISTS { ?dim a crm:E54_Dimension }
+}
+
+# V4. Instance spaces of a series, with locator (reconstruction inventory)
+SELECT ?series ?room ?loc WHERE {
+  VALUES ?series {
+    :wd_Q5959343_muleteer_platform
+    :wd_Q5907540_hujra :wd_Q5907540_muleteer_platform :wd_Q5907540_latrines
+  }
+  ?series bot:containsZone ?room .
+  OPTIONAL { ?room persarch:locator ?loc }
+}
+ORDER BY ?series ?loc
+
+# V5. Adjacency graph for redrawing Amin-Abad (topology layer of the 90% test)
+SELECT ?a ?aloc ?b ?bloc WHERE {
+  :wd_Q5907540_ground bot:hasSpace ?a .
+  ?a bot:adjacentZone ?b .
+  OPTIONAL { ?a persarch:locator ?aloc }
+  OPTIONAL { ?b persarch:locator ?bloc }
+}
+ORDER BY ?aloc ?bloc
+
+# V6. Series Spaces still waiting on a morphological census
+# (locator is a bare Coste numeral; no containsZone children).
+# These are the IRIs that hide multiple closed rooms on the plate.
+SELECT ?space ?lab ?loc WHERE {
+  VALUES ?space {
+    :wd_Q5959343_hujra :wd_Q5959343_traveller_platform :wd_Q5959343_latrines
+    :wd_Q5959343_stairs :wd_Q5959343_chimneys :wd_Q5959343_niches
+  }
+  OPTIONAL { ?space rdfs:label ?lab FILTER(lang(?lab) = "en") }
+  OPTIONAL { ?space persarch:locator ?loc }
+  FILTER NOT EXISTS { ?space bot:containsZone ?child }
+}
+ORDER BY ?loc
+
+# V7. Ground-storey inventory vs presentation (Pasangan)
+SELECT ?space ?loc (COUNT(?nbr) AS ?degree) WHERE {
+  :wd_Q5959343_ground bot:hasSpace ?space .
+  OPTIONAL { ?space persarch:locator ?loc }
+  OPTIONAL { ?space bot:adjacentZone ?nbr }
+}
+GROUP BY ?space ?loc
+ORDER BY ?loc

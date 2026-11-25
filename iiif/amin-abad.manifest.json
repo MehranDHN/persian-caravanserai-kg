@@ -1,0 +1,258 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Amin-Abad Caravanserai — Pascal Coste, 1867, PL. LXVI"
+    ],
+    "fa": [
+      "کاروانسرای امین‌آباد — پاسکال کوست"
+    ],
+    "fr": [
+      "Caravanserail Amin-Abad — Pascal Coste, 1867"
+    ]
+  },
+  "summary": {
+    "en": [
+      "Octagonal plan, sections A-B and C-D, and exterior view of Amin-Abad on the Isfahan-Shiraz road. Legend keys 1-11; instance-level BOT on :wd_Q5907540. Raster images/plans/amin_abad.png (4088x5437)."
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Wikidata"
+        ]
+      },
+      "value": {
+        "en": [
+          "Q5907540"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "UNESCO"
+        ]
+      },
+      "value": {
+        "en": [
+          "1668-014"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Author"
+        ]
+      },
+      "value": {
+        "en": [
+          "Pascal Coste"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Source"
+        ]
+      },
+      "value": {
+        "en": [
+          "Monuments modernes de la Perse, Morel, 1867, PL. LXVI"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Rights"
+        ]
+      },
+      "value": {
+        "en": [
+          "Public domain"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Plan, sections and exterior view"
+        ]
+      },
+      "height": 5437,
+      "width": 4088,
+      "items": [
+        {
+          "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/page/painting",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/painting",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg/images/plans/amin_abad.png",
+                "type": "Image",
+                "format": "image/png",
+                "width": 4088,
+                "height": 5437
+              }
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/page/classifying",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/1",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540_entrance",
+                "type": "TextualBody",
+                "value": "Coste 1 — Entree du Caravanserail"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/2",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540_porch",
+                "type": "TextualBody",
+                "value": "Coste 2 — Porche"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/3",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540_concierge_w",
+                "type": "TextualBody",
+                "value": "Coste 3 — Concierge (series: W and E)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/4",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540_stairs_w",
+                "type": "TextualBody",
+                "value": "Coste 4 — Escaliers (W and E)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/5",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540_sahn",
+                "type": "TextualBody",
+                "value": "Coste 5 — Cour"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/6",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540_prayer_platform",
+                "type": "TextualBody",
+                "value": "Coste 6 — Estrade pour la Priere"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/7",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540_hujra",
+                "type": "TextualBody",
+                "value": "Coste 7 — Chambres des Voyageurs (series; 20 rooms)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/8",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540_stables",
+                "type": "TextualBody",
+                "value": "Coste 8 — Ecuries (series; 4 diagonal ranges)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/9",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540_muleteer_platform",
+                "type": "TextualBody",
+                "value": "Coste 9 — Muletiers (series; 9 labelled rooms)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/10",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540_latrines",
+                "type": "TextualBody",
+                "value": "Coste 10 — Latrines (series; 4 labelled towers)"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+            },
+            {
+              "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/11",
+              "type": "Annotation",
+              "motivation": "classifying",
+              "body": {
+                "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540_basin",
+                "type": "TextualBody",
+                "value": "Coste 11 — Bassin en dehors"
+              },
+              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://w3id.org/persian-caravanserai-kg#wd_Q5907540",
+      "type": "Dataset",
+      "format": "text/turtle",
+      "label": {
+        "en": [
+          "RDF record :wd_Q5907540 (harvest + Coste topology)"
+        ]
+      }
+    }
+  ]
+}

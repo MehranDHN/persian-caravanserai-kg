@@ -76,6 +76,44 @@ Bay index, re-findable on the plate: north and south **west→east**; east and w
 
 Keys 4, 5, 8, 9, 11, 12 remain series individuals until the same census.
 
+A later accuracy test is to **redraw the plate from the RDF** and score inventory, topology, and layout against the scan (target: more than 90% agreement). See Amin-Abad: [`docs/amin-abad-coste-plan-to-bot.md`](amin-abad-coste-plan-to-bot.md).
+
+## Instance presentation (SVG)
+
+Each minted space and element is a shape in [`docs/infographics/pasangan-instances.svg`](infographics/pasangan-instances.svg). The SVG `id` is the RDF local name, so
+
+`pasangan-instances.svg#wd_Q5959343_muleteer_platform_n_1`
+
+is the presentation of `:wd_Q5959343_muleteer_platform_n_1`. The group carries `data-iri`, `data-locator`, `data-nbr`, and `data-grain` (`instance` or `series`). Interactive panel: [`pasangan-instances.html`](infographics/pasangan-instances.html). Regenerate after TTL edits:
+
+```powershell
+python scripts/render_pasangan_svg.py
+```
+
+This is a schematic from the square four-iwan grammar (face + bay + Coste key), not a pixel trace of the lithograph. Hatched fills are series IRIs. Dashed outlines are a morphological census and are not in the graph.
+
+## Identifying missed Space instances
+
+Empty bands and hatched series on the instance SVG are closed rooms on Coste that the Turtle never minted. Identification is a census, not inference:
+
+1. **Morphological census on the plate** — count every closed room (wall loop with a distinct neighbour set) *independently of the printed numeral*. A missing `7` or `9` on Amin-Abad’s NE/SE/SW outer ring is still a room. A Coste `4` repeated around Pasangan’s inner court is many rooms.
+2. **SPARQL inventory** — `queries/validate-topology.rq` V4 lists minted children of a series Zone; V6 lists series Spaces that still have no `containsZone` children (`:wd_Q5959343_hujra`, `_traveller_platform`, `_latrines`, and the series Elements 8/11/12). V7 is the Pasangan ground-storey degree table.
+3. **Diff** — plate count minus RDF count. The remainder are candidates. Do not mint an unlabelled key.
+4. **Presentation-only overlay** — dashed `g.candidate` groups in the SVG (ids such as `candidate_hujra_n_1`). They have locators and no `data-iri`. They are the HITL queue, the same role as a MIFAO review row.
+5. **HITL then promote** — pin `#xywh` on the IIIF canvas, write locator (`4; N; cell 2 west to east`), then mint a `bot:Space` with local `adjacentZone`. Keep the old series IRI as a `bot:Zone` that `containsZone` the new instances (Coste 6 and 7 already follow this).
+
+| Key | RDF now | Plate (Coste Passencan) | Next mint |
+| --- | --- | --- | --- |
+| 4 hujra | 1 series Space | ~17 inner cells (5 on N/E/W including the iwan, 2 south of the porch) | instance Spaces; series → Zone |
+| 5 platform | 1 series Space | ~14 court-edge estrades | instance Spaces or Elements |
+| 6 stables | 4 ranges | 4 ranges (stalls unsplit) | stall-level only after a stall census |
+| 7 muleteer | 16 Spaces | 16 outer rooms | done |
+| 8 stairs | 1 series Element | 4 flights | instance Elements |
+| 9 latrines | 1 series Space | 4 corner rooms labelled 9 | instance Spaces |
+| 11 / 12 | 1 series Element each | many fittings inside 4 | instance Elements after a count |
+
+Amin-Abad’s empty outer bands are the same class of miss: nine labelled Coste-9 rooms are minted; the unlabelled NE/E/SE/SW outer cells are dashed candidates on [`amin-abad-instances.svg`](infographics/amin-abad-instances.svg).
+
 ## Adjacency (from the plan)
 
 - 1 entrance `adjacentZone` 2 porch `adjacentZone` 3 sahn

@@ -45,7 +45,8 @@
     dcterms:source <https://upload.wikimedia.org/wikipedia/commons/3/37/Pasangan_caravanserai_by_Pascal_Coste.jpg> ;
     rdfs:seeAlso wd:Q725892 ;
     crm:P70_documents :wd_Q5959343 ;
-    rdfs:comment "Plate with vue extérieure, coupe A-B, coupe C-D, and plan. North at the top of the plan; entrance on the south. Graphic scale: 40 m on the plan, 20 m on the coupes."@en .
+    rdfs:seeAlso <https://w3id.org/persian-caravanserai-kg/docs/infographics/pasangan-instances.svg> ;
+    rdfs:comment "Plate with vue extérieure, coupe A-B, coupe C-D, and plan. North at the top of the plan; entrance on the south. Graphic scale: 40 m on the plan, 20 m on the coupes. Instance SVG fragment ids equal RDF local names (e.g. #wd_Q5959343_muleteer_platform_n_1). Dashed cells in that SVG are a census, not minted spaces."@en .
 
 :wd_Q5959343 a persarch:FourIwanCaravanserai ;
     skos:altLabel "Passencan"@fr , "Passengân"@fr , "Passengan"@fr ;
@@ -54,6 +55,7 @@
     bot:containsZone :wd_Q5959343_sahn , :wd_Q5959343_stables , :wd_Q5959343_muleteer_platform ;
     persarch:hasPlanPresentation :coste_1867_passencan ;
     persarch:hasIiifManifest <https://w3id.org/persian-caravanserai-kg/iiif/pasangan/manifest.json> ;
+    rdfs:seeAlso <https://w3id.org/persian-caravanserai-kg/docs/infographics/pasangan-instances.svg> ;
     persarch:hasAttestation :att_coste_passencan ;
     crm:P43_has_dimension :dim_wd_Q5959343_length_ew , :dim_wd_Q5959343_width_ns ,
         :dim_wd_Q5959343_height , :dim_wd_Q5959343_area ;

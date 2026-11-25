@@ -1,0 +1,14 @@
+
+prefix persarch: <https://w3id.org/persian-architecture#> 
+prefix bot: <https://w3id.org/bot#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mdhn: <http://example.com/mdhn/>
+
+SELECT *
+WHERE {
+  ?resource a mdhn:DigitalResource ;
+            rdfs:label ?label ;
+            mdhn:hasFihristCatalog ?fihristManuscript .
+
+  FILTER(LANG(?label) = "en")
+}
