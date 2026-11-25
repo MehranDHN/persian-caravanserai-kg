@@ -15,7 +15,7 @@
   },
   "summary": {
     "en": [
-      "Octagonal plan, sections A-B and C-D, and exterior view of Amin-Abad on the Isfahan-Shiraz road. Legend keys 1-11; instance-level BOT on :wd_Q5907540. Raster images/plans/amin_abad.png (4088x5437)."
+      "Octagonal plan, sections A-B and C-D, and exterior view of Amin-Abad on the Isfahan-Shiraz road. Legend keys 1-11; instance-level BOT on :wd_Q5907540. Uses Internet Archive canvas 187 (4088x5437)."
     ]
   },
   "metadata": [
@@ -63,7 +63,7 @@
       },
       "value": {
         "en": [
-          "Monuments modernes de la Perse, Morel, 1867, PL. LXVI"
+          "Monuments modernes de la Perse, Morel, 1867, PL. LXVI; Internet Archive canvas 187"
         ]
       }
     },
@@ -82,7 +82,7 @@
   ],
   "items": [
     {
-      "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1",
+      "id": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas",
       "type": "Canvas",
       "label": {
         "en": [
@@ -100,13 +100,20 @@
               "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/painting",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1",
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas",
               "body": {
-                "id": "https://w3id.org/persian-caravanserai-kg/images/plans/amin_abad.png",
+                "id": "https://iiif.archive.org/image/iiif/3/monumentsmodern00cost%2Fmonumentsmodern00cost_jp2.zip%2Fmonumentsmodern00cost_jp2%2Fmonumentsmodern00cost_0187.jp2/full/max/0/default.jpg",
                 "type": "Image",
-                "format": "image/png",
+                "format": "image/jpeg",
                 "width": 4088,
-                "height": 5437
+                "height": 5437,
+                "service": [
+                  {
+                    "id": "https://iiif.archive.org/image/iiif/3/monumentsmodern00cost%2Fmonumentsmodern00cost_jp2.zip%2Fmonumentsmodern00cost_jp2%2Fmonumentsmodern00cost_0187.jp2",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
               }
             }
           ]
@@ -126,7 +133,7 @@
                 "type": "TextualBody",
                 "value": "Coste 1 — Entree du Caravanserail"
               },
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas"
             },
             {
               "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/2",
@@ -137,7 +144,7 @@
                 "type": "TextualBody",
                 "value": "Coste 2 — Porche"
               },
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas"
             },
             {
               "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/3",
@@ -148,7 +155,7 @@
                 "type": "TextualBody",
                 "value": "Coste 3 — Concierge (series: W and E)"
               },
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas"
             },
             {
               "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/4",
@@ -159,7 +166,7 @@
                 "type": "TextualBody",
                 "value": "Coste 4 — Escaliers (W and E)"
               },
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas"
             },
             {
               "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/5",
@@ -170,7 +177,7 @@
                 "type": "TextualBody",
                 "value": "Coste 5 — Cour"
               },
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas"
             },
             {
               "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/6",
@@ -181,7 +188,7 @@
                 "type": "TextualBody",
                 "value": "Coste 6 — Estrade pour la Priere"
               },
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas"
             },
             {
               "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/7",
@@ -192,7 +199,7 @@
                 "type": "TextualBody",
                 "value": "Coste 7 — Chambres des Voyageurs (series; 20 rooms)"
               },
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas"
             },
             {
               "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/8",
@@ -203,7 +210,7 @@
                 "type": "TextualBody",
                 "value": "Coste 8 — Ecuries (series; 4 diagonal ranges)"
               },
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas"
             },
             {
               "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/9",
@@ -214,7 +221,7 @@
                 "type": "TextualBody",
                 "value": "Coste 9 — Muletiers (series; 9 labelled rooms)"
               },
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas"
             },
             {
               "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/10",
@@ -225,7 +232,7 @@
                 "type": "TextualBody",
                 "value": "Coste 10 — Latrines (series; 4 labelled towers)"
               },
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas"
             },
             {
               "id": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/anno/11",
@@ -236,7 +243,7 @@
                 "type": "TextualBody",
                 "value": "Coste 11 — Bassin en dehors"
               },
-              "target": "https://w3id.org/persian-caravanserai-kg/iiif/amin-abad/canvas/1"
+              "target": "https://iiif.archive.org/iiif/monumentsmodern00cost$186/canvas"
             }
           ]
         }
